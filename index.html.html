@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1099Deductions.com — Free Tax Write-Off Finder for Gig Workers 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:     #07111F;
+  --navy:    #0B1E36;
+  --navy2:   #102540;
+  --navy3:   #163052;
+  --steel:   #1E3D65;
+  --gold:    #B8924A;
+  --gold2:   #D4AA66;
+  --gold3:   #F0CB82;
+  --crimson: #7A1520;
+  --crimson2:#9B1C2A;
+  --text:    #C8D8EC;
+  --text2:   #7A96B8;
+  --text3:   #4A6A8A;
+  --border:  rgba(184,146,74,0.18);
+  --border2: rgba(30,61,101,0.8);
+  --white:   #E8F0FA;
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--ink);
+  color: var(--text);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── ALERT ── */
+.alert-bar {
+  background: var(--crimson);
+  color: #F8D0D4;
+  text-align: center;
+  padding: 9px 24px;
+  font-size: 12px;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.06em;
+  border-bottom: 1px solid #5A0A12;
+}
+.alert-bar a { color: #FFB8BE; text-decoration: none; border-bottom: 1px solid rgba(255,184,190,0.4); }
+
+/* ── HEADER ── */
+header {
+  background: var(--navy);
+  border-bottom: 1px solid var(--border);
+  padding: 0 48px;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  box-shadow: 0 1px 32px rgba(0,0,0,0.6);
+}
+.header-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  gap: 24px;
+}
+
+/* SEAL SVG */
+.logo { display:flex; align-items:center; gap:14px; text-decoration:none; flex-shrink:0; }
+.seal-wrap {
+  width:44px; height:44px; flex-shrink:0;
+  position:relative;
+}
+.logo-text { line-height:1.25; }
+.logo-title {
+  font-family:'Playfair Display', serif;
+  font-size:17px;
+  font-weight:700;
+  color: var(--gold2);
+  letter-spacing:0.01em;
+  white-space:nowrap;
+}
+.logo-sub {
+  font-size:10px;
+  color: var(--text3);
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  font-family:'IBM Plex Mono', monospace;
+}
+
+/* NAV */
+nav {
+  display:flex;
+  align-items:center;
+  gap:2px;
+  flex-shrink:0;
+}
+nav a {
+  color: var(--text2);
+  text-decoration:none;
+  padding:6px 13px;
+  border-radius:3px;
+  font-size:13px;
+  font-weight:500;
+  transition:color 0.18s, background 0.18s;
+  white-space:nowrap;
+  letter-spacing:0.01em;
+}
+nav a:hover { color:var(--gold2); background:rgba(184,146,74,0.07); }
+nav a.active { color:var(--gold3); }
+.nav-cta {
+  background: var(--gold) !important;
+  color: var(--ink) !important;
+  font-weight:600 !important;
+  margin-left:10px;
+  padding:7px 16px !important;
+  letter-spacing:0.02em;
+}
+.nav-cta:hover { background:var(--gold2) !important; color:var(--ink) !important; }
+
+/* ── HERO ── */
+.hero {
+  background: linear-gradient(170deg, #0E2240 0%, #07111F 55%, #0A1828 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 72px 48px 64px;
+  position:relative;
+  overflow:hidden;
+}
+/* geometric bg lines */
+.hero::before {
+  content:'';
+  position:absolute; inset:0;
+  background-image:
+    linear-gradient(rgba(184,146,74,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(184,146,74,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events:none;
+}
+.hero::after {
+  content:'';
+  position:absolute;
+  top:-120px; right:-120px;
+  width:560px; height:560px;
+  border-radius:50%;
+  background: radial-gradient(circle, rgba(184,146,74,0.06) 0%, transparent 70%);
+  pointer-events:none;
+}
+.hero-inner {
+  max-width:1240px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns: 1fr 400px;
+  gap:72px;
+  align-items:center;
+  position:relative; z-index:1;
+}
+.eyebrow {
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  background: rgba(184,146,74,0.08);
+  border: 1px solid rgba(184,146,74,0.25);
+  color: var(--gold2);
+  padding:5px 14px;
+  border-radius:2px;
+  font-size:11px;
+  font-family:'IBM Plex Mono', monospace;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  margin-bottom:22px;
+}
+.eyebrow-dot {
+  width:6px; height:6px;
+  background:var(--gold);
+  border-radius:50%;
+  flex-shrink:0;
+}
+.hero h1 {
+  font-family:'Playfair Display', serif;
+  font-size:46px;
+  font-weight:700;
+  color: var(--white);
+  line-height:1.12;
+  margin-bottom:18px;
+  letter-spacing:-0.01em;
+}
+.hero h1 em { color:var(--gold2); font-style:normal; }
+.hero p {
+  color: var(--text2);
+  font-size:15px;
+  line-height:1.75;
+  margin-bottom:30px;
+  max-width:520px;
+  font-weight:300;
+}
+.hero-chips {
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom:40px;
+}
+.chip {
+  background: rgba(22,48,82,0.7);
+  border: 1px solid var(--border2);
+  color: var(--text2);
+  padding:5px 12px;
+  border-radius:2px;
+  font-size:11.5px;
+  font-family:'IBM Plex Mono', monospace;
+  letter-spacing:0.04em;
+}
+.chip-check { color:var(--gold); margin-right:5px; font-size:10px; }
+.hero-kpis {
+  display:flex;
+  gap:40px;
+  padding-top:28px;
+  border-top: 1px solid var(--border);
+}
+.kpi-num {
+  font-family:'Playfair Display', serif;
+  font-size:30px;
+  font-weight:600;
+  color:var(--gold2);
+  display:block;
+  line-height:1;
+  margin-bottom:5px;
+}
+.kpi-label { font-size:11px; color:var(--text3); letter-spacing:0.05em; text-transform:uppercase; font-family:'IBM Plex Mono', monospace; }
+
+/* ── CALC CARD ── */
+.calc-card {
+  background: var(--navy2);
+  border: 1px solid var(--border);
+  border-radius:4px;
+  overflow:hidden;
+  box-shadow: 0 16px 64px rgba(0,0,0,0.5), 0 0 0 1px rgba(184,146,74,0.08);
+}
+.calc-head {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold2) 100%);
+  color: var(--ink);
+  padding:14px 22px;
+  font-family:'IBM Plex Mono', monospace;
+  font-size:12px;
+  font-weight:500;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  display:flex; align-items:center; justify-content:space-between;
+}
+.calc-body { padding:22px; }
+.field { margin-bottom:16px; }
+.field-label {
+  display:block;
+  font-size:10.5px;
+  color:var(--text3);
+  font-family:'IBM Plex Mono', monospace;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  margin-bottom:7px;
+}
+.field select, .field input {
+  width:100%;
+  background: var(--navy);
+  border: 1px solid var(--border2);
+  color: var(--text);
+  padding:10px 14px;
+  border-radius:3px;
+  font-size:13.5px;
+  font-family:'IBM Plex Sans', sans-serif;
+  outline:none;
+  transition: border-color 0.18s;
+  appearance:none;
+}
+.field select:focus, .field input:focus { border-color: var(--gold); }
+.field select option { background: var(--navy2); }
+.calc-submit {
+  width:100%;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold2) 100%);
+  color: var(--ink);
+  border:none;
+  padding:13px;
+  border-radius:3px;
+  font-size:14px;
+  font-weight:600;
+  cursor:pointer;
+  font-family:'IBM Plex Sans', sans-serif;
+  letter-spacing:0.03em;
+  transition: opacity 0.18s, transform 0.12s;
+  margin-top:4px;
+}
+.calc-submit:hover { opacity:0.9; transform:translateY(-1px); }
+.calc-result {
+  display:none;
+  background: var(--navy);
+  border: 1px solid rgba(184,146,74,0.25);
+  border-radius:3px;
+  padding:16px;
+  margin-top:14px;
+  text-align:center;
+}
+.calc-result.show { display:block; animation: fadeUp 0.3s ease; }
+@keyframes fadeUp { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+.res-label { font-size:10px; color:var(--text3); letter-spacing:0.1em; text-transform:uppercase; font-family:'IBM Plex Mono', monospace; margin-bottom:8px; }
+.res-num { font-family:'Playfair Display', serif; font-size:36px; font-weight:600; color:var(--gold2); line-height:1; }
+.res-sub { font-size:11.5px; color:var(--text2); margin-top:8px; line-height:1.5; }
+
+/* ── DEADLINE ── */
+.deadline-strip {
+  background: linear-gradient(135deg, #5A0A12 0%, var(--crimson) 100%);
+  border-bottom: 1px solid #3A0008;
+  padding: 18px 48px;
+}
+.deadline-inner {
+  max-width:1240px; margin:0 auto;
+  display:flex; align-items:center; gap:24px;
+}
+.dl-icon {
+  width:38px; height:38px; flex-shrink:0;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius:3px;
+  display:flex; align-items:center; justify-content:center;
+}
+.dl-icon svg { width:18px; height:18px; }
+.dl-title { font-weight:600; color:#FFE8EA; font-size:14px; margin-bottom:2px; }
+.dl-text { color:#FFAAB0; font-size:12.5px; }
+.dl-date {
+  margin-left:auto;
+  font-family:'Playfair Display', serif;
+  font-size:22px;
+  font-weight:600;
+  color:#FFE0E4;
+  flex-shrink:0;
+  letter-spacing:0.02em;
+}
+
+/* ── SECTION ── */
+.section { padding:64px 48px; border-bottom: 1px solid var(--border2); }
+.section-inner { max-width:1240px; margin:0 auto; }
+.section-eyebrow {
+  font-size:10.5px;
+  font-family:'IBM Plex Mono', monospace;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:10px;
+  display:flex; align-items:center; gap:10px;
+}
+.section-eyebrow::after {
+  content:'';
+  flex:1; max-width:60px;
+  height:1px;
+  background: var(--gold);
+  opacity:0.4;
+}
+.section-h { font-family:'Playfair Display', serif; font-size:32px; font-weight:600; color:var(--white); margin-bottom:10px; line-height:1.2; }
+.section-sub { color:var(--text2); font-size:14.5px; margin-bottom:36px; max-width:580px; line-height:1.7; font-weight:300; }
+
+/* ── JOB GRID ── */
+.job-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
+  gap:10px;
+}
+.job-card {
+  background: var(--navy2);
+  border: 1px solid var(--border2);
+  border-radius:3px;
+  padding:20px 16px 16px;
+  text-align:center;
+  cursor:pointer;
+  transition: border-color 0.18s, transform 0.18s, box-shadow 0.18s;
+  text-decoration:none;
+  display:block;
+  position:relative;
+  overflow:hidden;
+}
+.job-card::before {
+  content:'';
+  position:absolute;
+  bottom:0; left:0; right:0;
+  height:2px;
+  background: linear-gradient(90deg, var(--gold), var(--gold2));
+  transform: scaleX(0);
+  transition: transform 0.22s;
+  transform-origin: left;
+}
+.job-card:hover { border-color:rgba(184,146,74,0.35); transform:translateY(-3px); box-shadow:0 8px 24px rgba(0,0,0,0.4); }
+.job-card:hover::before { transform: scaleX(1); }
+.job-icon-wrap {
+  width:42px; height:42px;
+  background: rgba(184,146,74,0.08);
+  border: 1px solid rgba(184,146,74,0.15);
+  border-radius:3px;
+  display:flex; align-items:center; justify-content:center;
+  margin:0 auto 12px;
+}
+.job-icon-wrap svg { width:20px; height:20px; }
+.job-name { font-size:13px; font-weight:600; color:var(--text); display:block; margin-bottom:4px; }
+.job-count { font-size:11px; color:var(--gold); font-family:'IBM Plex Mono', monospace; }
+
+/* ── TABLE ── */
+.ded-table {
+  width:100%;
+  border-collapse:collapse;
+  font-size:13.5px;
+}
+.ded-table thead tr { border-bottom: 2px solid var(--gold); }
+.ded-table th {
+  background: var(--navy2);
+  color:var(--gold);
+  font-size:10.5px;
+  font-family:'IBM Plex Mono', monospace;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  padding:13px 18px;
+  text-align:left;
+  font-weight:500;
+}
+.ded-table td {
+  padding:13px 18px;
+  border-bottom: 1px solid var(--border2);
+  color:var(--text);
+  vertical-align:middle;
+}
+.ded-table tr:nth-child(even) td { background: rgba(16,37,64,0.4); }
+.ded-table tr:hover td { background: rgba(184,146,74,0.04); }
+.ded-name { font-weight:500; color:var(--white); }
+.ded-note { font-size:12px; color:var(--text2); margin-top:2px; }
+.save-amt { font-family:'Playfair Display', serif; font-size:15px; color:var(--gold2); font-weight:600; }
+.priority {
+  display:inline-block;
+  padding:3px 9px;
+  border-radius:2px;
+  font-size:10px;
+  font-family:'IBM Plex Mono', monospace;
+  font-weight:500;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+}
+.p-high { background:rgba(122,21,32,0.3); color:#FF9EA8; border:1px solid rgba(122,21,32,0.5); }
+.p-med  { background:rgba(184,146,74,0.12); color:var(--gold2); border:1px solid rgba(184,146,74,0.3); }
+.check-mark { color:var(--gold); margin-right:10px; font-size:13px; }
+
+/* ── 3-COL CARDS ── */
+.three-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.info-card {
+  background: var(--navy2);
+  border: 1px solid var(--border2);
+  border-top: 2px solid var(--gold);
+  border-radius:3px;
+  padding:26px;
+}
+.info-card-icon {
+  width:36px; height:36px;
+  background: rgba(184,146,74,0.1);
+  border: 1px solid rgba(184,146,74,0.2);
+  border-radius:3px;
+  display:flex; align-items:center; justify-content:center;
+  margin-bottom:16px;
+}
+.info-card-icon svg { width:18px; height:18px; }
+.info-card h3 { font-weight:600; color:var(--white); font-size:14px; margin-bottom:8px; }
+.info-card p { color:var(--text2); font-size:13px; line-height:1.7; font-weight:300; }
+
+/* ── AFFILIATE ── */
+.aff-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.aff-card {
+  background: var(--navy2);
+  border: 1px solid var(--border2);
+  border-radius:3px;
+  padding:22px;
+  display:flex; flex-direction:column; gap:12px;
+  transition: border-color 0.18s;
+}
+.aff-card:hover { border-color:rgba(184,146,74,0.3); }
+.aff-header { display:flex; align-items:center; gap:10px; }
+.aff-badge {
+  width:8px; height:8px; border-radius:50%; flex-shrink:0;
+}
+.aff-name { font-weight:600; color:var(--white); font-size:14px; }
+.aff-rate { font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--gold); margin-left:auto; }
+.aff-desc { color:var(--text2); font-size:13px; line-height:1.65; flex:1; font-weight:300; }
+.aff-cta {
+  display:block;
+  border: 1px solid rgba(184,146,74,0.3);
+  color:var(--gold2);
+  padding:9px 16px;
+  border-radius:3px;
+  text-align:center;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:500;
+  transition: background 0.18s, color 0.18s;
+  letter-spacing:0.02em;
+}
+.aff-cta:hover { background:var(--gold); color:var(--ink); border-color:var(--gold); }
+
+/* ── FOOTER ── */
+footer {
+  background: var(--navy);
+  border-top: 1px solid var(--border);
+  padding:52px 48px 28px;
+}
+.footer-inner { max-width:1240px; margin:0 auto; }
+.footer-grid {
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:48px;
+  margin-bottom:40px;
+  padding-bottom:40px;
+  border-bottom: 1px solid var(--border2);
+}
+.footer-about p { color:var(--text3); font-size:12.5px; margin-top:14px; line-height:1.7; font-weight:300; }
+.footer-col h4 {
+  font-size:10.5px;
+  font-family:'IBM Plex Mono', monospace;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:16px;
+  font-weight:500;
+}
+.footer-col a {
+  display:block;
+  color:var(--text3);
+  text-decoration:none;
+  font-size:13px;
+  margin-bottom:9px;
+  transition:color 0.15s;
+}
+.footer-col a:hover { color:var(--gold2); }
+.footer-bottom {
+  display:flex; justify-content:space-between; align-items:center;
+}
+.footer-legal { color:var(--text3); font-size:11.5px; line-height:1.6; }
+.irs-badge {
+  background: rgba(184,146,74,0.07);
+  border: 1px solid rgba(184,146,74,0.18);
+  padding:7px 14px;
+  border-radius:2px;
+  font-size:10.5px;
+  color:var(--text3);
+  font-family:'IBM Plex Mono', monospace;
+  letter-spacing:0.04em;
+}
+
+/* page-load animation */
+@keyframes reveal { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
+.hero-inner > * { animation: reveal 0.55s ease both; }
+.hero-inner > *:nth-child(2) { animation-delay:0.1s; }
+</style>
+</head>
+<body>
+
+<!-- ALERT -->
+<div class="alert-bar">
+  Q1 2026 ESTIMATED TAX DEADLINE &mdash; APRIL 15, 2026 &mdash; Miss it and face a 7% IRS underpayment penalty &nbsp;&bull;&nbsp; <a href="#">Calculate your payment now</a>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <!-- US Flag SVG seal -->
+      <div class="seal-wrap">
+        <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="22" cy="22" r="21" stroke="#B8924A" stroke-width="1.2"/>
+          <circle cx="22" cy="22" r="17" stroke="#B8924A" stroke-width="0.6" stroke-dasharray="2 3"/>
+          <!-- US flag stripes simplified -->
+          <rect x="8" y="16" width="28" height="12" rx="1" fill="#7A1520"/>
+          <rect x="8" y="16" width="28" height="1.8" fill="#C8D8EC"/>
+          <rect x="8" y="19.6" width="28" height="1.8" fill="#C8D8EC"/>
+          <rect x="8" y="23.2" width="28" height="1.8" fill="#C8D8EC"/>
+          <rect x="8" y="16" width="11" height="7.5" rx="0.5" fill="#102540"/>
+          <!-- stars simplified -->
+          <circle cx="10.5" cy="18" r="0.7" fill="#C8D8EC"/>
+          <circle cx="13.5" cy="18" r="0.7" fill="#C8D8EC"/>
+          <circle cx="16.5" cy="18" r="0.7" fill="#C8D8EC"/>
+          <circle cx="10.5" cy="20.5" r="0.7" fill="#C8D8EC"/>
+          <circle cx="13.5" cy="20.5" r="0.7" fill="#C8D8EC"/>
+          <circle cx="16.5" cy="20.5" r="0.7" fill="#C8D8EC"/>
+          <!-- laurel lines -->
+          <path d="M12 31 Q22 27 32 31" stroke="#B8924A" stroke-width="0.8" fill="none"/>
+          <path d="M10 33 Q22 29 34 33" stroke="#B8924A" stroke-width="0.6" fill="none" opacity="0.5"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <div class="logo-title">1099Deductions.com</div>
+        <div class="logo-sub">Free &middot; Independent &middot; United States</div>
+      </div>
+    </a>
+
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#">By Job Type</a>
+      <a href="#">Calculator</a>
+      <a href="#">Deadlines</a>
+      <a href="#">Blog</a>
+      <a href="#" class="nav-cta">Find My Deductions</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow"><span class="eyebrow-dot"></span>Updated January 2026 &nbsp;&bull;&nbsp; IRS Schedule C Compliant</div>
+      <h1>Find Every Tax Write-Off<br>You're <em>Missing</em></h1>
+      <p>Free deduction checklists for every major gig job in the United States. Sourced from IRS Schedule C and Publication 334. No registration. No fees. Ever.</p>
+      <div class="hero-chips">
+        <span class="chip"><span class="chip-check">&#10003;</span>IRS Schedule C</span>
+        <span class="chip"><span class="chip-check">&#10003;</span>All 50 States</span>
+        <span class="chip"><span class="chip-check">&#10003;</span>No Registration</span>
+        <span class="chip"><span class="chip-check">&#10003;</span>2026 Tax Rules</span>
+        <span class="chip"><span class="chip-check">&#10003;</span>Free PDF Export</span>
+      </div>
+      <div class="hero-kpis">
+        <div>
+          <span class="kpi-num">76M+</span>
+          <span class="kpi-label">US Gig Workers</span>
+        </div>
+        <div>
+          <span class="kpi-num">$6,400</span>
+          <span class="kpi-label">Avg. Annual Savings</span>
+        </div>
+        <div>
+          <span class="kpi-num">14</span>
+          <span class="kpi-label">Job Categories</span>
+        </div>
+        <div>
+          <span class="kpi-num">Free</span>
+          <span class="kpi-label">Always</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CALCULATOR -->
+    <div class="calc-card">
+      <div class="calc-head">
+        <span>Savings Estimator</span>
+        <span style="opacity:0.6; font-size:10px;">2026 IRS RULES</span>
+      </div>
+      <div class="calc-body">
+        <div class="field">
+          <label class="field-label">Your Gig Job</label>
+          <select id="jobSel">
+            <option value="">Select your job...</option>
+            <option value="uber">Uber / Lyft Driver</option>
+            <option value="doordash">DoorDash / UberEats</option>
+            <option value="airbnb">Airbnb Host</option>
+            <option value="onlyfans">OnlyFans Creator</option>
+            <option value="etsy">Etsy Seller</option>
+            <option value="instacart">Instacart Shopper</option>
+            <option value="freelancer">Upwork / Fiverr</option>
+            <option value="amazon">Amazon Flex</option>
+          </select>
+        </div>
+        <div class="field">
+          <label class="field-label">Annual Gig Income ($)</label>
+          <input type="number" id="incomeIn" placeholder="e.g. 48,000">
+        </div>
+        <div class="field">
+          <label class="field-label">State of Residence</label>
+          <select>
+            <option>California (9.3%)</option>
+            <option>Texas (0%)</option>
+            <option>New York (6.85%)</option>
+            <option>Florida (0%)</option>
+            <option>Illinois (4.95%)</option>
+            <option>Nevada (0%)</option>
+            <option>Washington (0%)</option>
+            <option>Other State</option>
+          </select>
+        </div>
+        <button class="calc-submit" onclick="runCalc()">Calculate My Tax Savings &rarr;</button>
+        <div class="calc-result" id="calcRes">
+          <div class="res-label">Estimated Deductions Available</div>
+          <div class="res-num" id="resNum">$0</div>
+          <div class="res-sub" id="resSub"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEADLINE -->
+<div class="deadline-strip">
+  <div class="deadline-inner">
+    <div class="dl-icon">
+      <svg viewBox="0 0 18 18" fill="none" stroke="#FFB8BE" stroke-width="1.5">
+        <path d="M9 2L9 10M9 13v1M3 16h12L9 2 3 16z"/>
+      </svg>
+    </div>
+    <div>
+      <div class="dl-title">Q1 2026 Estimated Tax Deadline</div>
+      <div class="dl-text">Gig workers earning $400+ must pay quarterly. Missing this deadline triggers a 7% IRS underpayment penalty.</div>
+    </div>
+    <div class="dl-date">April 15, 2026</div>
+  </div>
+</div>
+
+<!-- JOB GRID -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-eyebrow">Deductions by Job</div>
+    <div class="section-h">Select Your Gig Job</div>
+    <div class="section-sub">Every checklist is specific to your job type and reviewed for 2026 IRS rules — not a generic one-size-fits-all list.</div>
+
+    <div class="job-grid">
+
+      <!-- Each job card uses inline SVG icons — clean and professional -->
+      <a href="#" class="job-card">
+        <div class="job-icon-wrap">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#B8924A" stroke-width="1.4">
+            <circle cx="10" cy="10" r="8"/>
+            <path d="M6 13c0-2.2 1.8-4 4-4s4 1.8 4 4"/>
+            <circle cx="10" cy="7.5" r="1.5"/>
+          </svg>
+        </div>
+        <span class="job-name">Uber / Lyft</span>
+        <span class="job-count">38 write-offs</span>
+      </a>
+
+      <a href="#" class="job-card">
+        <div class="job-icon-wrap">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#B8924A" stroke-width="1.4">
+            <rect x="3" y="6" width="14" height="10" rx="1.5"/>
+            <path d="M7 6V5a3 3 0 016 0v1"/>
+            <path d="M10 11v2"/>
+          </svg>
+        </div>
+        <span class="job-name">DoorDash</span>
+        <span class="job-count">34 write-offs</span>
+      </a>
+
+      <a href="#" class="job-card">
+        <div class="job-icon-wrap">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#B8924A" stroke-width="1.4">
+            <path d="M3 8l7-5 7 5v9a1 1 0 01-1 1H4a1 1 0 01-1-1V8z"/>
+            <path d="M8 17v-6h4v6"/>
+          </svg>
+        </div>
+        <span class="job-name">Airbnb Host</span>
+        <span class="job-count">41 write-offs</span>
+      </a>
+
+      <a href="#" class="job-card">
+        <div class="job-icon-wrap">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#B8924A" stroke-width="1.4">
+            <rect x="4" y="3" width="12" height="15" rx="2"/>
+            <path d="M8 7h4M8 10h4M8 13h2"/>
+          </svg>
+        </div>
+        <span class="job-name">OnlyFans</span>
+        <span class="job-count">44 write-offs</span>
+      </a>
+
+      <a href="#" class="job-card">
+        <div class="job-icon-wrap">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#B8924A" stroke-width="1.4">
+            <path d="M10 3l1.5 4.5H16l-3.7 2.7 1.4 4.3L10 12l-3.7 2.5 1.4-4.3L4 7.5h4.5L10 3z"/>
+          </svg>
+        </div>
+        <span class="job-name">Etsy Seller</span>
+        <span class="job-count">36 write-offs</span>
+      </a>
+
+      <a href="#" class="job-card">
+        <div class="job-icon-wrap">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#B8924A" stroke-width="1.4">
+            <circle cx="10" cy="10" r="7"/>
+            <path d="M7 10h6M10 7v6"/>
+          </svg>
+        </div>
+        <span class="job-name">Instacart</span>
+        <span class="job-count">32 write-offs</span>
+      </a>
+
+      <a href="#" class="job-card">
+        <div class="job-icon-wrap">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#B8924A" stroke-width="1.4">
+            <rect x="3" y="4" width="14" height="10" rx="1.5"/>
+            <path d="M7 17h6M10 14v3"/>
+          </svg>
+        </div>
+        <span class="job-name">Upwork / Fiverr</span>
+        <span class="job-count">29 write-offs</span>
+      </a>
+
+      <a href="#" class="job-card">
+        <div class="job-icon-wrap">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#B8924A" stroke-width="1.4">
+            <path d="M4 14l3-8h6l3 8"/>
+            <path d="M2 14h16"/>
+            <path d="M10 6V4"/>
+          </svg>
+        </div>
+        <span class="job-name">Amazon Flex</span>
+        <span class="job-count">33 write-offs</span>
+      </a>
+
+      <a href="#" class="job-card">
+        <div class="job-icon-wrap">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#B8924A" stroke-width="1.4">
+            <circle cx="10" cy="10" r="7"/>
+            <path d="M10 6v4l3 2"/>
+          </svg>
+        </div>
+        <span class="job-name">Turo Host</span>
+        <span class="job-count">28 write-offs</span>
+      </a>
+
+      <a href="#" class="job-card">
+        <div class="job-icon-wrap">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#B8924A" stroke-width="1.4">
+            <path d="M3 5h14v9a1 1 0 01-1 1H4a1 1 0 01-1-1V5z"/>
+            <path d="M7 17h6"/>
+            <circle cx="10" cy="10" r="2.5"/>
+          </svg>
+        </div>
+        <span class="job-name">Twitch / YouTube</span>
+        <span class="job-count">37 write-offs</span>
+      </a>
+
+      <a href="#" class="job-card">
+        <div class="job-icon-wrap">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#B8924A" stroke-width="1.4">
+            <path d="M5 10h10M10 5v10"/>
+            <circle cx="10" cy="10" r="7"/>
+          </svg>
+        </div>
+        <span class="job-name">AI Freelancer</span>
+        <span class="job-count">31 write-offs</span>
+      </a>
+
+      <a href="#" class="job-card">
+        <div class="job-icon-wrap">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#B8924A" stroke-width="1.4">
+            <path d="M10 3c-3.9 0-7 2-7 6 0 2.5 1.2 4 2 5h10c.8-1 2-2.5 2-5 0-4-3.1-6-7-6z"/>
+            <path d="M8 17h4"/>
+          </svg>
+        </div>
+        <span class="job-name">Rover / Wag</span>
+        <span class="job-count">26 write-offs</span>
+      </a>
+
+      <a href="#" class="job-card">
+        <div class="job-icon-wrap">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#B8924A" stroke-width="1.4">
+            <circle cx="10" cy="8" r="4"/>
+            <path d="M4 17c0-3.3 2.7-6 6-6s6 2.7 6 6"/>
+          </svg>
+        </div>
+        <span class="job-name">Photographer</span>
+        <span class="job-count">39 write-offs</span>
+      </a>
+
+      <a href="#" class="job-card">
+        <div class="job-icon-wrap">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#B8924A" stroke-width="1.4">
+            <path d="M5 3h10l2 5H3L5 3z"/>
+            <rect x="3" y="8" width="14" height="9" rx="1"/>
+            <path d="M10 11v4"/>
+          </svg>
+        </div>
+        <span class="job-name">TaskRabbit</span>
+        <span class="job-count">27 write-offs</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- DEDUCTIONS TABLE -->
+<section class="section" style="background:rgba(11,30,54,0.4);">
+  <div class="section-inner">
+    <div class="section-eyebrow">Sample Checklist</div>
+    <div class="section-h">Uber / Lyft Driver — Top Write-Offs</div>
+    <div class="section-sub">Most drivers claim only 3–4 deductions. There are 38. Here are the highest-value ones you're likely missing.</div>
+
+    <table class="ded-table">
+      <thead>
+        <tr>
+          <th>Deduction</th>
+          <th>2026 Rate / Basis</th>
+          <th>Annual Savings</th>
+          <th>Priority</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="check-mark">&#10003;</span>
+            <span class="ded-name">Business Mileage</span>
+            <div class="ded-note" style="padding-left:23px">Standard or actual expense method</div>
+          </td>
+          <td>70&cent; per mile (IRS 2026)</td>
+          <td><span class="save-amt">$3,200 – $8,400</span></td>
+          <td><span class="priority p-high">High</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="check-mark">&#10003;</span>
+            <span class="ded-name">SE Tax Deduction</span>
+            <div class="ded-note" style="padding-left:23px">Deduct 50% of self-employment tax</div>
+          </td>
+          <td>7.65% of net earnings</td>
+          <td><span class="save-amt">$900 – $3,100</span></td>
+          <td><span class="priority p-high">High</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="check-mark">&#10003;</span>
+            <span class="ded-name">Health Insurance Premium</span>
+            <div class="ded-note" style="padding-left:23px">If not eligible for employer coverage</div>
+          </td>
+          <td>100% deductible</td>
+          <td><span class="save-amt">$2,400 – $6,000</span></td>
+          <td><span class="priority p-high">High</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="check-mark">&#10003;</span>
+            <span class="ded-name">Cell Phone Bill</span>
+            <div class="ded-note" style="padding-left:23px">Proportional to business use</div>
+          </td>
+          <td>50 – 80% of monthly bill</td>
+          <td><span class="save-amt">$480 – $960</span></td>
+          <td><span class="priority p-high">High</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="check-mark">&#10003;</span>
+            <span class="ded-name">Car Insurance</span>
+            <div class="ded-note" style="padding-left:23px">% equal to business miles / total miles</div>
+          </td>
+          <td>Proportional to business use</td>
+          <td><span class="save-amt">$400 – $1,200</span></td>
+          <td><span class="priority p-med">Medium</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="check-mark">&#10003;</span>
+            <span class="ded-name">Toll Fees (during rides)</span>
+            <div class="ded-note" style="padding-left:23px">Keep records per trip</div>
+          </td>
+          <td>100% deductible</td>
+          <td><span class="save-amt">$200 – $800</span></td>
+          <td><span class="priority p-med">Medium</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="check-mark">&#10003;</span>
+            <span class="ded-name">Tax Software</span>
+            <div class="ded-note" style="padding-left:23px">TaxAct, Keeper, TurboTax</div>
+          </td>
+          <td>100% deductible</td>
+          <td><span class="save-amt">$50 – $150</span></td>
+          <td><span class="priority p-med">Medium</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-eyebrow">Why 1099Deductions</div>
+    <div class="section-h">Built for Gig Workers. Not CPAs.</div>
+    <div class="three-grid">
+      <div class="info-card">
+        <div class="info-card-icon">
+          <svg viewBox="0 0 18 18" fill="none" stroke="#B8924A" stroke-width="1.4">
+            <rect x="2" y="2" width="14" height="14" rx="2"/>
+            <path d="M6 7h6M6 10h4"/>
+          </svg>
+        </div>
+        <h3>Job-Specific Checklists</h3>
+        <p>Every list is tailored to your exact gig job. Uber drivers and Airbnb hosts have completely different deductions — we cover both in full detail.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon">
+          <svg viewBox="0 0 18 18" fill="none" stroke="#B8924A" stroke-width="1.4">
+            <path d="M9 2l2 5h5l-4 3 1.5 5L9 12l-4.5 3L6 10 2 7h5L9 2z"/>
+          </svg>
+        </div>
+        <h3>Based on IRS Rules</h3>
+        <p>Every deduction is sourced from IRS Schedule C and Publication 334, updated for 2026 including the new OBBBA $2,000 reporting threshold.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon">
+          <svg viewBox="0 0 18 18" fill="none" stroke="#B8924A" stroke-width="1.4">
+            <circle cx="9" cy="9" r="7"/>
+            <path d="M6 9l2 2 4-4"/>
+          </svg>
+        </div>
+        <h3>100% Free. No Signup.</h3>
+        <p>No account, no email, no paywall. Everything on this site is free. Export your checklist as a PDF and hand it to your CPA or file yourself.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AFFILIATE -->
+<section class="section" style="background:rgba(11,30,54,0.4);">
+  <div class="section-inner">
+    <div class="section-eyebrow">Ready to File</div>
+    <div class="section-h">Recommended Filing Services for 1099 Workers</div>
+    <div class="section-sub">These platforms are purpose-built for self-employed income and guide you through Schedule C deductions.</div>
+    <div class="aff-grid">
+      <div class="aff-card">
+        <div class="aff-header">
+          <span class="aff-badge" style="background:#3A9E5A;"></span>
+          <span class="aff-name">TaxAct Self-Employed</span>
+          <span class="aff-rate">From $49.99</span>
+        </div>
+        <div class="aff-desc">Built for 1099 contractors. Step-by-step Schedule C guidance. Imports your deduction list directly.</div>
+        <a href="#" class="aff-cta">File with TaxAct &rarr;</a>
+      </div>
+      <div class="aff-card">
+        <div class="aff-header">
+          <span class="aff-badge" style="background:#2D6FD4;"></span>
+          <span class="aff-name">Keeper Tax</span>
+          <span class="aff-rate">$16/month</span>
+        </div>
+        <div class="aff-desc">Automatically finds deductions in your bank statements year-round. Typically saves users $6,400+ annually.</div>
+        <a href="#" class="aff-cta">Try Keeper Free &rarr;</a>
+      </div>
+      <div class="aff-card">
+        <div class="aff-header">
+          <span class="aff-badge" style="background:#888;"></span>
+          <span class="aff-name">FreeTaxUSA</span>
+          <span class="aff-rate">Federal Free</span>
+        </div>
+        <div class="aff-desc">File your federal return completely free. State returns $14.99. Best option for straightforward 1099 filers.</div>
+        <a href="#" class="aff-cta">File Free &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="#" class="logo">
+          <div class="seal-wrap" style="width:36px;height:36px;">
+            <svg viewBox="0 0 44 44" fill="none">
+              <circle cx="22" cy="22" r="21" stroke="#B8924A" stroke-width="1.2"/>
+              <rect x="8" y="16" width="28" height="12" rx="1" fill="#7A1520"/>
+              <rect x="8" y="16" width="28" height="1.8" fill="#C8D8EC"/>
+              <rect x="8" y="19.6" width="28" height="1.8" fill="#C8D8EC"/>
+              <rect x="8" y="23.2" width="28" height="1.8" fill="#C8D8EC"/>
+              <rect x="8" y="16" width="11" height="7.5" rx="0.5" fill="#102540"/>
+              <circle cx="10.5" cy="18" r="0.7" fill="#C8D8EC"/>
+              <circle cx="13.5" cy="18" r="0.7" fill="#C8D8EC"/>
+              <circle cx="16.5" cy="18" r="0.7" fill="#C8D8EC"/>
+              <circle cx="10.5" cy="20.5" r="0.7" fill="#C8D8EC"/>
+              <circle cx="13.5" cy="20.5" r="0.7" fill="#C8D8EC"/>
+              <circle cx="16.5" cy="20.5" r="0.7" fill="#C8D8EC"/>
+              <path d="M12 31 Q22 27 32 31" stroke="#B8924A" stroke-width="0.8" fill="none"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <div class="logo-title">1099Deductions.com</div>
+            <div class="logo-sub">Free &middot; Independent &middot; US</div>
+          </div>
+        </a>
+        <p>Free tax deduction resource for U.S. gig workers and independent contractors. Not affiliated with the IRS or any government agency. For informational purposes only.</p>
+      </div>
+      <div class="footer-col">
+        <h4>By Job</h4>
+        <a href="#">Uber / Lyft</a>
+        <a href="#">DoorDash</a>
+        <a href="#">Airbnb Host</a>
+        <a href="#">OnlyFans</a>
+        <a href="#">Etsy Seller</a>
+        <a href="#">View All &rarr;</a>
+      </div>
+      <div class="footer-col">
+        <h4>Tools</h4>
+        <a href="#">Tax Calculator</a>
+        <a href="#">Mileage Guide</a>
+        <a href="#">2026 Deadlines</a>
+        <a href="#">PDF Checklists</a>
+        <a href="#">State Tax Rates</a>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <a href="#">Blog</a>
+        <a href="#">About Us</a>
+        <a href="#">IRS Schedule C</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-legal">
+        &copy; 2026 1099Deductions.com &nbsp;&bull;&nbsp; Not affiliated with the IRS or any government agency.<br>
+        Data sourced from IRS.gov &bull; Publication 334 &bull; Schedule C Instructions (2026 edition).
+      </div>
+      <div class="irs-badge">IRS Pub. 334 &bull; Schedule C &bull; Rev. Jan 2026</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+const savingsData = {
+  uber:       { est: 6400, note: "Mileage, SE tax deduction, phone, insurance" },
+  doordash:   { est: 5800, note: "Mileage, thermal bag, phone, tolls" },
+  airbnb:     { est: 8200, note: "Depreciation, utilities, cleaning, supplies" },
+  onlyfans:   { est: 7100, note: "Equipment, subscriptions, home office, internet" },
+  etsy:       { est: 4900, note: "Materials, shipping, platform fees, packaging" },
+  instacart:  { est: 4200, note: "Mileage, bags, phone, health insurance" },
+  freelancer: { est: 5600, note: "Home office, software, internet, courses" },
+  amazon:     { est: 4800, note: "Mileage, phone, equipment, safety gear" },
+};
+
+function runCalc() {
+  const job = document.getElementById('jobSel').value;
+  const income = parseFloat(document.getElementById('incomeIn').value);
+  if (!job || !income || income <= 0) {
+    alert('Please select your job type and enter your annual income.');
+    return;
+  }
+  const d = savingsData[job];
+  const est = Math.round(Math.min(d.est, income * 0.29));
+  document.getElementById('resNum').textContent = '$' + est.toLocaleString();
+  document.getElementById('resSub').textContent = d.note;
+  const r = document.getElementById('calcRes');
+  r.classList.add('show');
+}
+</script>
+</body>
+</html>
