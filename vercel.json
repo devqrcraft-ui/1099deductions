@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/deductions/:page",
+      "destination": "/deductions/:page.html"
+    }
+  ]
+}
