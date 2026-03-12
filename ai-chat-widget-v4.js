@@ -446,29 +446,17 @@ Rules: Answer in 1-3 SHORT sentences max. Ask ONE specific follow-up question. B
     }
   });
 
-  // Auto-open after 6s — but only on desktop
-  setTimeout(() => {
-    playNotificationSound();
-    startGlow();
-    // Auto-open only on desktop (>768px)
-    if (window.innerWidth > 768) {
-      setTimeout(() => {
-        openChat();
-        addMessage(config.greeting, 'bot');
-        messages.push({ role: 'assistant', content: config.greeting });
-      }, 600);
-    }
-    // On mobile: just glow, user taps to open
-  }, 6000);
+  // Show FAB immediately with glow
+  startGlow();
 
-  // When user opens manually and no messages yet — show greeting
-  fab.addEventListener('click', () => {
-    if (messages.length === 0) {
-      setTimeout(() => {
-        addMessage(config.greeting, 'bot');
-        messages.push({ role: 'assistant', content: config.greeting });
-      }, 150);
-    }
-  });
+  // Auto-open after 6s on desktop only
+  if (window.innerWidth > 768) {
+    setTimeout(() => {
+      playNotificationSound();
+      openChat();
+      addMessage(config.greeting, 'bot');
+      messages.push({ role: 'assistant', content: config.greeting });
+    }, 6000);
+  }
 
 })();
