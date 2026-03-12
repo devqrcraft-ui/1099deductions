@@ -1,129 +1,91 @@
 (function () {
+  // Prevent double-load
+  if (window.__aiChatLoaded) return;
+  window.__aiChatLoaded = true;
+
   const WORKER_URL = 'https://dry-flower-b3e7.dev-qrcraft.workers.dev/';
 
   const SITE_CONFIGS = {
     '1099deductions.com': {
       name: '1099 AI',
-      greetings: {
-        en: 'Hi! Ask me about deductions, calculator, deadlines or any gig job type.',
-        uk: 'Привіт! Запитайте про відрахування, калькулятор, дедлайни або тип роботи.',
-        ru: 'Привет! Спрашивайте о вычетах, калькуляторе, дедлайнах или типе работы.'
-      },
-      systemPrompt: `You are a smart, concise AI assistant for 1099Deductions.com — a free US tax deductions tool for gig workers.
+      greeting: 'Hi! Ask me about deductions, calculator, deadlines or any gig job type.',
+      systemPrompt: `You are a helpful assistant for 1099Deductions.com — a free US tax deductions tool for gig workers (1099 contractors).
 
-YOUR ROLE: Guide users to use the site features themselves. Do NOT calculate for them — point them to the right tool/page.
+SITE PAGES (JavaScript SPA):
+- HOME: "Find Every Tax Write-Off You're Missing". Savings Estimator on the right.
+- BY JOB TYPE: Grid of 14 gig jobs → click → deduction checklist for that job.
+- CALCULATOR: 1) pick job 2) enter income 3) pick state 4) click "Calculate My Tax Savings →"
+- DEADLINES: 2026 IRS quarterly dates. Q1: Apr 15, Q2: Jun 16, Q3: Sep 15, Q4: Jan 15 2027.
+- BLOG: Tax articles.
 
-SITE PAGES & NAVIGATION (JavaScript SPA — no page reloads):
-- HOME: Headline "Find Every Tax Write-Off You're Missing". Right side: Savings Estimator widget.
-- BY JOB TYPE (showPage('jobs')): Grid of 14 gig jobs. Click a card → opens deduction checklist.
-- CALCULATOR (showPage('calculator')): Steps: 1) pick job, 2) enter annual income, 3) state, 4) click "Calculate My Tax Savings →".
-- DEADLINES (showPage('deadlines')): 2026 IRS quarterly dates. Q1: Apr 15, Q2: Jun 16, Q3: Sep 15, Q4: Jan 15 2027.
-- BLOG: Tax articles for gig workers.
+GIG JOBS (14): DoorDash, Uber, Instacart, Amazon Flex, Lyft, Etsy, OnlyFans, Airbnb, Fiverr, TaskRabbit, Rover, Upwork, Postmates, Shipt.
 
-AVAILABLE GIG JOBS (14): DoorDash, Uber, Instacart, Amazon Flex, Lyft, Etsy, OnlyFans, Airbnb, Fiverr, TaskRabbit, Rover, Upwork, Postmates, Shipt.
+DEDUCTIONS: Mileage 67¢/mile, phone 50-100%, internet, home office, supplies, platform fees.
 
-TOP DEDUCTIONS:
-- Mileage: 67¢/mile for delivery/rideshare
-- Phone: 50-100% of bill
-- Internet: portion for gig work
-- Home office: for online-based gigs
-- Supplies, platform fees — varies by job
-
-GUIDING APPROACH:
-- Ask what gig job they do if not specified
-- Tell them WHICH PAGE to go to: "Click 'By Job Type' → pick DoorDash → see your full deduction checklist"
-- For amounts → "Use the Calculator tab to get exact numbers for your state"
-- 1-3 sentences max, one guiding question per reply`
+BEHAVIOR:
+- Short answers (1-3 sentences)
+- Guide to site tools, don't calculate yourself
+- Ask ONE follow-up question if needed
+- Off-topic → redirect politely`
     },
     'privatepaycheck.com': {
       name: 'Paycheck AI',
-      greetings: {
-        en: "Hi! I'm your Paycheck Assistant. I know this site inside out — calculator, all 50 states, tax rules. What would you like to know?",
-        uk: 'Привіт! Я ваш помічник з розрахунку зарплати. Знаю калькулятор, всі 50 штатів, податкові правила.',
-        ru: 'Привет! Я ваш помощник по расчёту зарплаты. Знаю калькулятор, все 50 штатов, налоговые правила.'
-      },
-      systemPrompt: `You are the AI assistant for PrivatePaycheck.com — free US paycheck calculator for all 50 states.
-
-YOUR ROLE: Help users navigate the site and understand how to use the calculator. Guide them to the tool — do NOT calculate for them.
+      greeting: "Hi! I'm your Paycheck Assistant. I know this site inside out — calculator, all 50 states, tax rules. What would you like to know?",
+      systemPrompt: `You are the assistant for PrivatePaycheck.com — free US paycheck calculator for all 50 states.
 
 SITE PAGES:
-- HOME: Hero "Calculate Your Exact Take-Home Pay". CTA: "CALCULATE MY PAY →"
-- CALCULATOR (main tool): 1) Pay Type (Annual/Hourly), 2) Gross amount, 3) Pay Frequency, 4) State, 5) Filing Status → hit "CALCULATE MY PAY". Shows: Federal Tax, State Tax, FICA, Net Pay.
-- ALL STATES: Tax rates for all 50 states. No-tax states: FL, TX, NV, WA, WY, SD, TN, NH.
+- HOME: "Calculate Your Exact Take-Home Pay". CTA: "CALCULATE MY PAY →"
+- CALCULATOR: 1) Pay Type (Annual/Hourly) 2) Gross amount 3) Pay Frequency 4) State 5) Filing Status → "CALCULATE MY PAY". Results: Federal Tax, State Tax, FICA, Net Pay.
+- ALL STATES: Tax rates all 50 states. No-tax: FL, TX, NV, WA, WY, SD, TN, NH.
 - BLOG: Tax tips, IRS updates 2026.
 
-KEY FACTS (for context only — always say "use the calculator for your exact number"):
-- FICA: 7.65% (Social Security 6.2% + Medicare 1.45%)
-- Standard deduction 2026: $14,600 single / $29,200 married
-- No data stored, completely free, no registration
+KEY FACTS: FICA 7.65%, standard deduction $14,600 single / $29,200 married. Free, no data stored.
 
-GUIDING APPROACH:
-- Ask what they need: salary or hourly? Which state?
-- Tell them exactly which fields to fill: "Go to the Calculator → set Pay Type to Hourly → enter your rate → pick your state"
-- 1-3 sentences max, one guiding question per reply`
+BEHAVIOR:
+- Short answers (1-3 sentences)
+- Guide to calculator, don't calculate yourself
+- Ask ONE follow-up if needed
+- Off-topic → redirect politely`
     },
     'gigwisetax.com': {
       name: 'GigWise AI',
-      greetings: {
-        en: 'Hi! Ask me about gig taxes, deductions or quarterly payments.',
-        uk: 'Привіт! Запитайте про податки для гіг-воркерів, відрахування або квартальні платежі.',
-        ru: 'Привет! Спрашивайте о налогах для гиг-работников, вычетах или квартальных платежах.'
-      },
-      systemPrompt: `You are the AI assistant for GigWiseTax.com — free self-employment tax calculator for US gig workers.
-
-YOUR ROLE: Explain concepts simply and guide users to the right tool. Do NOT calculate — point to the calculator.
+      greeting: 'Hi! Ask me about gig taxes, deductions or quarterly payments.',
+      systemPrompt: `You are the assistant for GigWiseTax.com — free self-employment tax calculator for US gig workers.
 
 SITE PAGES:
-- HOME: Tab calculator. Tabs: "Tax Calculator" | "2026 Deadlines" | "All Platforms".
-- CALCULATORS: SE Tax (15.3% + state), Quarterly Payment with Google Calendar export.
-- TAX TOOLS: Mileage tracker (67¢/mile), Deductions finder, Home office calculator.
-- BY STATE: All 51 jurisdictions. Each has state rate + gig worker rules.
-- PLATFORMS: DoorDash, Uber, Lyft, Instacart, Etsy, OnlyFans, Airbnb, Upwork, Fiverr — each with specific deductions.
-- RESOURCES: Guides for quarterly taxes, Schedule C, SE tax explained.
+- HOME: Tab calculator. Tabs: "Tax Calculator" | "2026 Deadlines" | "All Platforms"
+- CALCULATORS: SE Tax (15.3% + state), Quarterly Payment with Google Calendar export
+- TAX TOOLS: Mileage tracker (67¢/mile), Deductions finder, Home office calculator
+- BY STATE: All 51 jurisdictions with state rates
+- PLATFORMS: DoorDash, Uber, Lyft, Instacart, Etsy, OnlyFans, Airbnb, Upwork, Fiverr — each with deductions
+- RESOURCES: Guides for quarterly taxes, Schedule C, SE tax
 
-KEY FACTS (context only):
-- SE Tax = 15.3% (12.4% SS + 2.9% Medicare) on net earnings
-- 50% of SE tax is deductible
-- Quarterly 2026: Q1 Apr 15, Q2 Jun 16, Q3 Sep 15, Q4 Jan 15 2027
-- Pay quarterly if you expect to owe $1,000+
-- Top deductions: mileage, phone, internet, supplies, platform fees
+KEY FACTS: SE Tax = 15.3%. Quarterly 2026: Q1 Apr 15, Q2 Jun 16, Q3 Sep 15, Q4 Jan 15 2027. Pay quarterly if owe $1,000+. Mileage: 67¢/mile.
 
-GUIDING APPROACH:
-- Ask which platform they work on if not specified
-- Guide: "Open the Tax Calculator tab → enter your net income → pick your state → see your SE tax + quarterly amount"
-- Explain WHAT a term means, then say "the calculator shows your exact number"
-- 1-3 sentences max, one guiding question per reply`
+BEHAVIOR:
+- Short answers (1-3 sentences)
+- Guide to site tools, don't calculate yourself
+- Ask ONE follow-up if needed
+- Off-topic → redirect politely`
     },
     'compressto20kb.com': {
       name: 'Compress AI',
-      greetings: {
-        en: 'Hi! I can help you compress images to any size. What format is your image?',
-        uk: 'Привіт! Допоможу стиснути зображення до потрібного розміру. Який формат вашого файлу?',
-        ru: 'Привет! Помогу сжать изображение до нужного размера. Какой формат вашего файла?'
-      },
-      systemPrompt: `You are the AI assistant for CompressTo20KB.com — free browser-based image compression tool.
+      greeting: 'Hi! I can help you compress images to any size. What format is your image?',
+      systemPrompt: `You are the assistant for CompressTo20KB.com — free browser-based image compression tool.
 
-YOUR ROLE: Help users understand how to compress their image effectively. Guide them through the steps.
+FEATURES:
+- UPLOAD: Drag & drop or click. JPEG, PNG, WebP, AVIF, GIF.
+- TARGET SIZE: Set desired KB (default 20KB). Presets: Shopify, Etsy, Amazon, Instagram, Gov 20KB, 50KB.
+- MODES: Quality Mode or Exact KB Mode.
+- FORMATS: WebP (70% smaller), AVIF (smallest), JPEG (compatible), PNG (lossless).
+- COMPRESS → DOWNLOAD instantly. No account, no server upload, 100% private.
 
-SITE FEATURES:
-- UPLOAD: Drag & drop or click. Supports JPEG, PNG, WebP, AVIF, GIF.
-- TARGET SIZE: Set desired KB (default: 20KB).
-- COMPRESS: Click "Compress" → auto-reduces quality/resolution to hit target.
-- DOWNLOAD: Instant download. No account needed.
-- FORMATS: Convert between formats (PNG→WebP etc.) for better compression.
-- PRIVACY: Processed in browser, never uploaded to server.
+TIPS: WebP = best balance. AVIF = smallest file. PNG = for logos/transparency. Still too big → try WebP first.
 
-KEY TIPS:
-- WebP = 25-34% smaller than JPEG at same quality
-- AVIF = smallest, but older browsers may not support
-- Photos → JPEG or WebP
-- Logos/graphics with transparency → PNG or WebP
-- Image still too big? → try switching to WebP format first
-
-GUIDING APPROACH:
-- Ask what they're trying to do (what size target? what format is the original?)
-- Give a specific tip based on their situation
-- 1-3 sentences max, one guiding question per reply`
+BEHAVIOR:
+- Short answers (1-3 sentences)
+- Guide through steps, ask what they're trying to achieve
+- Off-topic → redirect politely`
     }
   };
 
@@ -132,37 +94,40 @@ GUIDING APPROACH:
     return SITE_CONFIGS[host] || SITE_CONFIGS['gigwisetax.com'];
   }
 
-  // Detect language from browser OR text
   function detectLang(text) {
-    if (text) {
-      const hasUkr = /[іїєґ]/i.test(text);
-      const hasCyr = /[а-яёА-ЯЁ]/i.test(text);
-      const hasRu = /[ъыэёЪЫЭЁ]/i.test(text);
-      if (hasCyr && !hasRu && hasUkr) return 'uk';
-      if (hasCyr && hasRu) return 'ru';
-      if (hasCyr) return 'uk'; // default Cyrillic to Ukrainian
-    }
-    // Browser language fallback
-    const bl = (navigator.language || 'en').toLowerCase();
-    if (bl.startsWith('uk')) return 'uk';
-    if (bl.startsWith('ru')) return 'ru';
-    return 'en';
+    if (!text) return 'en';
+    const hasCyr = /[а-яёА-ЯЁіїєґІЇЄҐ]/.test(text);
+    if (!hasCyr) return 'en';
+    // Spanish check
+    const hasSpanish = /[áéíóúüñ¿¡]/i.test(text);
+    if (hasSpanish) return 'es';
+    // Ukrainian specific letters
+    const hasUkr = /[іїєґІЇЄҐ]/.test(text);
+    const hasRuOnly = /[ъыэёЪЫЭЁ]/.test(text);
+    if (hasRuOnly) return 'ru';
+    if (hasUkr) return 'uk';
+    return 'ru'; // default Cyrillic = Russian
   }
 
-  const LANG_NAMES = { en: 'English', uk: 'Ukrainian', ru: 'Russian' };
+  // Also detect Spanish without Cyrillic
+  function detectLangFull(text) {
+    if (!text) return 'en';
+    const hasSpanish = /[áéíóúüñ¿¡]/i.test(text);
+    if (hasSpanish) return 'es';
+    return detectLang(text);
+  }
+
+  const LANG_NAMES = { en: 'English', uk: 'Ukrainian', ru: 'Russian', es: 'Spanish' };
 
   const config = getConfig();
   let messages = [];
   let isOpen = false;
   let isSending = false;
-  let detectedLang = detectLang(null); // initial from browser
+  let currentLang = 'en';
 
   // ── STYLES ──
   const style = document.createElement('style');
   style.textContent = `
-    html, body { overflow-x: hidden !important; max-width: 100% !important; }
-    * { box-sizing: border-box; }
-
     #ai-fab {
       position: fixed;
       bottom: 20px;
@@ -178,8 +143,13 @@ GUIDING APPROACH:
       align-items: center;
       justify-content: center;
       box-shadow: 0 3px 14px rgba(184,146,74,0.5);
-      transition: transform 0.2s;
+      transition: transform 0.2s, opacity 0.2s;
       animation: fabGlow 2.5s ease-in-out infinite;
+    }
+    #ai-fab.hidden {
+      opacity: 0;
+      pointer-events: none;
+      transform: scale(0.7);
     }
     #ai-fab:hover { transform: scale(1.08); }
     #ai-fab svg { width: 22px; height: 22px; fill: #fff; }
@@ -190,53 +160,43 @@ GUIDING APPROACH:
 
     #ai-chat-window {
       position: fixed;
-      bottom: 80px;
-      right: 20px;
-      width: 310px;
-      height: 400px;
-      max-height: 60vh;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 50vh;
+      max-height: 50vh;
       background: #0D1F38;
-      border: 1px solid rgba(184,146,74,0.35);
-      border-radius: 12px;
+      border: none;
+      border-top: 1px solid rgba(184,146,74,0.35);
+      border-radius: 14px 14px 0 0;
       display: none;
       flex-direction: column;
       z-index: 9999;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.55);
+      box-shadow: 0 -4px 24px rgba(0,0,0,0.5);
       overflow: hidden;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      box-sizing: border-box;
     }
     #ai-chat-window.open { display: flex; }
 
-    @media (max-width: 600px) {
+    @media (min-width: 601px) {
       #ai-chat-window {
-        position: fixed;
-        left: 0 !important;
-        right: 0 !important;
-        bottom: 0 !important;
-        top: auto !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        height: 55vh !important;
-        max-height: 55vh !important;
+        left: auto;
+        right: 20px;
+        bottom: 0;
+        width: 340px;
+        height: 46vh;
+        max-height: 46vh;
         border-radius: 14px 14px 0 0;
-        border-left: none;
-        border-right: none;
+        border: 1px solid rgba(184,146,74,0.35);
         border-bottom: none;
       }
-      #ai-fab {
-        bottom: 16px;
-        right: 16px;
-        width: 48px;
-        height: 48px;
-      }
-      #ai-fab svg { width: 20px; height: 20px; }
-      .ai-msg { font-size: 14px !important; }
-      #ai-chat-input { font-size: 16px !important; }
     }
 
     #ai-chat-header {
       background: #0A1828;
-      padding: 9px 12px;
+      padding: 10px 14px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -245,22 +205,22 @@ GUIDING APPROACH:
     }
     #ai-chat-header-left { display: flex; align-items: center; gap: 8px; }
     #ai-online-dot { width: 8px; height: 8px; border-radius: 50%; background: #4CAF50; flex-shrink: 0; }
-    #ai-chat-name { color: #B8924A; font-weight: 700; font-size: 13px; }
-    #ai-chat-sub { color: #8899AA; font-size: 10px; margin-top: 1px; }
+    #ai-chat-name { color: #B8924A; font-weight: 700; font-size: 14px; }
+    #ai-chat-sub { color: #8899AA; font-size: 11px; margin-top: 1px; }
     #ai-chat-close {
       background: none; border: none; cursor: pointer;
-      color: #B8924A; font-size: 22px; padding: 0 4px; line-height: 1;
-      font-weight: 700; opacity: 0.8;
+      color: #B8924A; font-size: 24px; padding: 0 4px; line-height: 1;
+      font-weight: 700;
     }
-    #ai-chat-close:hover { color: #fff; opacity: 1; }
+    #ai-chat-close:hover { color: #fff; }
 
     #ai-chat-messages {
       flex: 1;
       overflow-y: auto;
-      padding: 10px;
+      padding: 10px 12px;
       display: flex;
       flex-direction: column;
-      gap: 7px;
+      gap: 8px;
       min-height: 0;
     }
     #ai-chat-messages::-webkit-scrollbar { width: 3px; }
@@ -268,9 +228,9 @@ GUIDING APPROACH:
 
     .ai-msg {
       max-width: 88%;
-      padding: 8px 11px;
+      padding: 8px 12px;
       border-radius: 10px;
-      font-size: 13px;
+      font-size: 14px;
       line-height: 1.5;
       word-break: break-word;
     }
@@ -285,12 +245,12 @@ GUIDING APPROACH:
       color: #fff;
       align-self: flex-end;
     }
-    .ai-msg.typing { color: #8899AA; font-style: italic; font-size: 18px; letter-spacing: 2px; }
+    .ai-msg.typing { color: #8899AA; font-style: italic; }
 
     #ai-chat-input-row {
       display: flex;
-      gap: 6px;
-      padding: 8px 10px;
+      gap: 8px;
+      padding: 9px 12px;
       border-top: 1px solid rgba(184,146,74,0.2);
       background: #0A1828;
       flex-shrink: 0;
@@ -299,10 +259,10 @@ GUIDING APPROACH:
       flex: 1;
       background: #162840;
       border: 1px solid rgba(184,146,74,0.25);
-      border-radius: 7px;
+      border-radius: 8px;
       color: #D0E0F0;
-      font-size: 13px;
-      padding: 7px 10px;
+      font-size: 14px;
+      padding: 8px 11px;
       outline: none;
       min-width: 0;
     }
@@ -311,10 +271,10 @@ GUIDING APPROACH:
     #ai-chat-send {
       background: #B8924A;
       border: none;
-      border-radius: 7px;
+      border-radius: 8px;
       color: #fff;
       font-size: 16px;
-      padding: 0 13px;
+      padding: 0 14px;
       cursor: pointer;
       flex-shrink: 0;
       transition: background 0.15s;
@@ -368,33 +328,35 @@ GUIDING APPROACH:
   }
 
   function openChat() {
+    if (isOpen) return;
     isOpen = true;
     win.classList.add('open');
+    fab.classList.add('hidden');
     if (messages.length === 0) {
-      const greeting = config.greetings[detectedLang] || config.greetings['en'];
       setTimeout(() => {
-        addMessage(greeting, 'bot');
-        messages.push({ role: 'assistant', content: greeting });
-      }, 120);
+        addMessage(config.greeting, 'bot');
+        messages.push({ role: 'assistant', content: config.greeting });
+      }, 150);
     }
-    setTimeout(() => input.focus(), 250);
+    setTimeout(() => input.focus(), 300);
   }
 
   function closeChat() {
     isOpen = false;
     win.classList.remove('open');
+    fab.classList.remove('hidden');
   }
 
-  fab.addEventListener('click', () => { if (isOpen) closeChat(); else openChat(); });
+  fab.addEventListener('click', openChat);
   closeBtn.addEventListener('click', closeChat);
 
   async function sendMessage() {
     const text = input.value.trim();
     if (!text || isSending) return;
 
-    // Update detected language from user's text
-    const msgLang = detectLang(text);
-    if (msgLang !== 'en') detectedLang = msgLang; // update if non-english detected
+    // Detect language from user message
+    const lang = detectLangFull(text);
+    currentLang = lang;
 
     isSending = true;
     sendBtn.disabled = true;
@@ -405,25 +367,21 @@ GUIDING APPROACH:
 
     const typingDiv = addMessage('···', 'bot typing');
 
-    const langName = LANG_NAMES[detectedLang] || 'English';
-    const systemWithLang = `${config.systemPrompt}\n\nLANGUAGE RULE: The user is communicating in ${langName}. You MUST reply ONLY in ${langName}. Never switch languages.`;
+    const langName = LANG_NAMES[currentLang] || 'English';
+    const systemFull = `${config.systemPrompt}\n\nLANGUAGE: User wrote in ${langName}. Reply ONLY in ${langName}. Never switch languages.`;
 
     try {
       const res = await fetch(WORKER_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          systemPrompt: systemWithLang,
+          systemPrompt: systemFull,
           messages: messages.slice(-10)
         })
       });
 
       if (!res.ok) {
-        const errText = await res.text();
-        console.error('Worker error:', res.status, errText);
-        typingDiv.textContent = detectedLang === 'uk' ? 'Сервіс недоступний. Спробуйте пізніше.' :
-                                 detectedLang === 'ru' ? 'Сервис недоступен. Попробуйте позже.' :
-                                 'Service unavailable. Try again shortly.';
+        typingDiv.textContent = 'Service unavailable. Try again shortly.';
         typingDiv.classList.remove('typing');
       } else {
         const data = await res.json();
@@ -433,10 +391,7 @@ GUIDING APPROACH:
         messages.push({ role: 'assistant', content: reply });
       }
     } catch (e) {
-      console.error('Chat error:', e);
-      typingDiv.textContent = detectedLang === 'uk' ? 'Помилка з\'єднання. Перевірте інтернет.' :
-                               detectedLang === 'ru' ? 'Ошибка соединения. Проверьте интернет.' :
-                               'Connection error. Check your internet.';
+      typingDiv.textContent = 'Connection error. Check your internet.';
       typingDiv.classList.remove('typing');
     }
 
