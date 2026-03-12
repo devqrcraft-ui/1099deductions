@@ -330,7 +330,7 @@ Rules: Answer in 1-3 sentences. Ask ONE question. LANGUAGE RULE: always reply in
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          system: systemWithLang,
+          systemPrompt: systemWithLang,
           messages: messages.slice(-10)
         })
       });
