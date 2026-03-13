@@ -1,85 +1,139 @@
 (function () {
+  // Prevent double-load
+  if (window.__aiChatLoaded) return;
+  window.__aiChatLoaded = true;
+
   const WORKER_URL = 'https://dry-flower-b3e7.dev-qrcraft.workers.dev/';
 
   const SITE_CONFIGS = {
     '1099deductions.com': {
       name: '1099 AI',
-      greeting: 'Hi! Ask me about deductions, calculator, deadlines or any job type.',
-      systemPrompt: `You are a smart, concise site admin for 1099Deductions.com.
+      greeting: 'Hi! Ask me about deductions, calculator, deadlines or any gig job type.',
+      systemPrompt: `You are a helpful assistant for 1099Deductions.com — a free US tax deductions tool for gig workers (1099 contractors).
 
-SITE PAGES & NAVIGATION (JavaScript SPA — no page reloads):
-- HOME (showPage('home')): Headline "Find Every Tax Write-Off You're Missing". Right side: Savings Estimator widget. Stats: 76M+ filers, $6,400 avg savings, 14 job types, Free. Badges: IRS Schedule C, All 50 States, No Registration, 2026 Tax Rules, Free PDF Export.
-- BY JOB TYPE (showPage('jobs')): Grid of all gig jobs. Click a card → showJob(key) → opens deduction checklist for that job.
-- CALCULATOR (showPage('calculator')): Savings Estimator. Steps: 1) pick job, 2) enter annual income, 3) state (default California 9.3%), 4) click "Calculate My Tax Savings →". Results: SE Tax, Federal Tax, State Tax, Est. Deductions, Quarterly Payment.
-- DEADLINES (showPage('deadlines')): 2026 IRS quarterly dates. Q1: Apr 15 2026, Q2: Jun 16 2026, Q3: Sep 15 2026, Q4: Jan 15 2027. Miss = 7% IRS underpayment penalty.
-- BLOG (showPage('blog')): Tax articles for gig workers.
+SITE PAGES (JavaScript SPA):
+- HOME: "Find Every Tax Write-Off You're Missing". Savings Estimator on the right.
+- BY JOB TYPE: Grid of 14 gig jobs → click → deduction checklist for that job.
+- CALCULATOR: 1) pick job 2) enter income 3) pick state 4) click "Calculate My Tax Savings →"
+- DEADLINES: 2026 IRS quarterly dates. Q1: Apr 15, Q2: Jun 16, Q3: Sep 15, Q4: Jan 15 2027.
+- BLOG: Tax articles.
 
-AVAILABLE GIG JOBS (14 types): DoorDash, Uber, Instacart, Amazon Flex, Lyft, Etsy, OnlyFans, Airbnb, Fiverr, TaskRabbit, Rover, Upwork, Postmates, Shipt.
-Each job has a specific IRS Schedule C deduction checklist. PDF export available on each job page.
+GIG JOBS (14): DoorDash, Uber, Instacart, Amazon Flex, Lyft, Etsy, OnlyFans, Airbnb, Fiverr, TaskRabbit, Rover, Upwork, Postmates, Shipt.
 
-TOP DEDUCTIONS BY CATEGORY:
-- Mileage: 67¢/mile (2024 IRS rate) for DoorDash, Uber, Instacart, Lyft, Amazon Flex
-- Phone: 50-100% of phone bill if used for gig work
-- Internet: portion used for gig work (Etsy, Upwork, OnlyFans)
-- Home office: for Etsy sellers, Upwork, OnlyFans creators
-- Supplies, equipment, platform fees — varies by job
+DEDUCTIONS: Mileage 67¢/mile, phone 50-100%, internet, home office, supplies, platform fees.
 
-RULES:
-- Answer in 1-3 SHORT sentences max
-- Ask ONE guiding question if needed
-- Be direct, no fluff
-- Off-topic/nonsense → politely redirect to site topics
-- Never invent tax amounts — say "use the calculator"
-- Never make up deduction amounts — refer to IRS Schedule C`
+BEHAVIOR:
+- Short answers (1-3 sentences)
+- Guide to site tools, don't calculate yourself
+- Ask ONE follow-up question if needed
+- Off-topic → redirect politely`
     },
     'privatepaycheck.com': {
       name: 'Paycheck AI',
-      greeting: 'Hi! Ask me about paycheck calculations, taxes or any US state.',
-      systemPrompt: `You are a professional paycheck assistant for PrivatePaycheck.com.
-Site: Home (calculator), All States (50 states tax info), Blog.
-Calculator: Pick Pay Type (Annual/Hourly), enter amount, Pick Pay Frequency + State, Filing Status, click CALCULATE MY PAY.
-Shows: federal tax, state tax, FICA, net take-home.
-Rules: Answer in 1-3 sentences. Ask ONE question. Never guess amounts — use calculator. LANGUAGE RULE: always reply in same language as user message.`
+      greeting: "Hi! I'm your Paycheck Assistant. I know this site inside out — calculator, all 50 states, tax rules. What would you like to know?",
+      systemPrompt: `You are the assistant for PrivatePaycheck.com — free US paycheck calculator for all 50 states.
+
+SITE PAGES:
+- HOME: "Calculate Your Exact Take-Home Pay". CTA: "CALCULATE MY PAY →"
+- CALCULATOR: 1) Pay Type (Annual/Hourly) 2) Gross amount 3) Pay Frequency 4) State 5) Filing Status → "CALCULATE MY PAY". Results: Federal Tax, State Tax, FICA, Net Pay.
+- ALL STATES: Tax rates all 50 states. No-tax: FL, TX, NV, WA, WY, SD, TN, NH.
+- BLOG: Tax tips, IRS updates 2026.
+
+KEY FACTS: FICA 7.65%, standard deduction $14,600 single / $29,200 married. Free, no data stored.
+
+BEHAVIOR:
+- Short answers (1-3 sentences)
+- Guide to calculator, don't calculate yourself
+- Ask ONE follow-up if needed
+- Off-topic → redirect politely`
     },
     'gigwisetax.com': {
       name: 'GigWise AI',
       greeting: 'Hi! Ask me about gig taxes, deductions or quarterly payments.',
-      systemPrompt: `You are a professional tax assistant for GigWiseTax.com — for gig workers (Uber, DoorDash, freelancers).
-Site: Home (SE tax calculator), Calculators (SE tax, quarterly), Tax Tools (mileage, deductions), By State (51 states), Resources, About.
-SE Tax = 15.3% on net earnings. Federal + state income tax on top.
-Quarterly dates 2026: Q1 Apr 15, Q2 Jun 16, Q3 Sep 15, Q4 Jan 15 2027.
-Rules: Answer in 1-3 sentences. Ask ONE question. Never guess amounts. LANGUAGE RULE: always reply in same language as user message.`
+      systemPrompt: `You are the assistant for GigWiseTax.com — free self-employment tax calculator for US gig workers.
+
+SITE PAGES:
+- HOME: Tab calculator. Tabs: "Tax Calculator" | "2026 Deadlines" | "All Platforms"
+- CALCULATORS: SE Tax (15.3% + state), Quarterly Payment with Google Calendar export
+- TAX TOOLS: Mileage tracker (67¢/mile), Deductions finder, Home office calculator
+- BY STATE: All 51 jurisdictions with state rates
+- PLATFORMS: DoorDash, Uber, Lyft, Instacart, Etsy, OnlyFans, Airbnb, Upwork, Fiverr — each with deductions
+- RESOURCES: Guides for quarterly taxes, Schedule C, SE tax
+
+KEY FACTS: SE Tax = 15.3%. Quarterly 2026: Q1 Apr 15, Q2 Jun 16, Q3 Sep 15, Q4 Jan 15 2027. Pay quarterly if owe $1,000+. Mileage: 67¢/mile.
+
+BEHAVIOR:
+- Short answers (1-3 sentences)
+- Guide to site tools, don't calculate yourself
+- Ask ONE follow-up if needed
+- Off-topic → redirect politely`
     },
     'compressto20kb.com': {
       name: 'Compress AI',
-      greeting: 'Hi! Upload your image and I will compress it to your target size.',
-      systemPrompt: `You are a helpful assistant for CompressTo20KB.com — image compression tool.
-Site: Upload image → set target size (KB) → Download compressed result. Supports JPEG, PNG, WebP, AVIF.
-Rules: Answer in 1-3 sentences. Ask ONE question. LANGUAGE RULE: always reply in same language as user message.`
+      greeting: 'Hi! I can help you compress images to any size. What format is your image?',
+      systemPrompt: `You are the assistant for CompressTo20KB.com — free browser-based image compression tool.
+
+FEATURES:
+- UPLOAD: Drag & drop or click. JPEG, PNG, WebP, AVIF, GIF.
+- TARGET SIZE: Set desired KB (default 20KB). Presets: Shopify, Etsy, Amazon, Instagram, Gov 20KB, 50KB.
+- MODES: Quality Mode or Exact KB Mode.
+- FORMATS: WebP (70% smaller), AVIF (smallest), JPEG (compatible), PNG (lossless).
+- COMPRESS → DOWNLOAD instantly. No account, no server upload, 100% private.
+
+TIPS: WebP = best balance. AVIF = smallest file. PNG = for logos/transparency. Still too big → try WebP first.
+
+BEHAVIOR:
+- Short answers (1-3 sentences)
+- Guide through steps, ask what they're trying to achieve
+- Off-topic → redirect politely`
     }
   };
 
   function getConfig() {
     const host = window.location.hostname.replace('www.', '');
-    return SITE_CONFIGS[host] || SITE_CONFIGS['1099deductions.com'];
+    return SITE_CONFIGS[host] || SITE_CONFIGS['gigwisetax.com'];
   }
+
+  function detectLang(text) {
+    if (!text) return 'en';
+    const hasCyr = /[а-яёА-ЯЁіїєґІЇЄҐ]/.test(text);
+    if (!hasCyr) return 'en';
+    // Spanish check
+    const hasSpanish = /[áéíóúüñ¿¡]/i.test(text);
+    if (hasSpanish) return 'es';
+    // Ukrainian specific letters
+    const hasUkr = /[іїєґІЇЄҐ]/.test(text);
+    const hasRuOnly = /[ъыэёЪЫЭЁ]/.test(text);
+    if (hasRuOnly) return 'ru';
+    if (hasUkr) return 'uk';
+    return 'ru'; // default Cyrillic = Russian
+  }
+
+  // Also detect Spanish without Cyrillic
+  function detectLangFull(text) {
+    if (!text) return 'en';
+    const hasSpanish = /[áéíóúüñ¿¡]/i.test(text);
+    if (hasSpanish) return 'es';
+    return detectLang(text);
+  }
+
+  const LANG_NAMES = { en: 'English', uk: 'Ukrainian', ru: 'Russian', es: 'Spanish' };
 
   const config = getConfig();
   let messages = [];
   let isOpen = false;
   let isSending = false;
+  let currentLang = 'en';
 
   // ── STYLES ──
   const style = document.createElement('style');
   style.textContent = `
-    html, body { overflow-x: hidden !important; max-width: 100% !important; }
-    * { box-sizing: border-box; }
     #ai-fab {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      width: 54px;
-      height: 54px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
       background: #B8924A;
       border: none;
@@ -88,65 +142,61 @@ Rules: Answer in 1-3 sentences. Ask ONE question. LANGUAGE RULE: always reply in
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 3px 16px rgba(184,146,74,0.55);
-      transition: transform 0.2s, box-shadow 0.2s;
-      animation: fabGlow 2s ease-in-out infinite;
+      box-shadow: 0 3px 14px rgba(184,146,74,0.5);
+      transition: transform 0.2s, opacity 0.2s;
+      animation: fabGlow 2.5s ease-in-out infinite;
     }
-    #ai-fab:hover { transform: scale(1.1); }
-    #ai-fab svg { width: 26px; height: 26px; fill: #fff; }
+    #ai-fab.hidden {
+      opacity: 0;
+      pointer-events: none;
+      transform: scale(0.7);
+    }
+    #ai-fab:hover { transform: scale(1.08); }
+    #ai-fab svg { width: 22px; height: 22px; fill: #fff; }
     @keyframes fabGlow {
       0%,100% { box-shadow: 0 3px 14px rgba(184,146,74,0.5); }
-      50% { box-shadow: 0 0 28px 10px rgba(184,146,74,0.85); }
+      50% { box-shadow: 0 0 24px 8px rgba(184,146,74,0.8); }
     }
 
     #ai-chat-window {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 300px;
-      height: 390px;
-      max-height: 65vh;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 50vh;
+      max-height: 50vh;
       background: #0D1F38;
-      border: 1px solid rgba(184,146,74,0.35);
-      border-radius: 12px;
+      border: none;
+      border-top: 1px solid rgba(184,146,74,0.35);
+      border-radius: 14px 14px 0 0;
       display: none;
       flex-direction: column;
       z-index: 9999;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.55);
+      box-shadow: 0 -4px 24px rgba(0,0,0,0.5);
       overflow: hidden;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      box-sizing: border-box;
     }
     #ai-chat-window.open { display: flex; }
 
-    /* Mobile */
-    @media (max-width: 600px) {
+    @media (min-width: 601px) {
       #ai-chat-window {
-        position: fixed;
-        left: 0 !important;
-        right: 0 !important;
-        bottom: 0 !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        height: 32vh !important;
-        max-height: 32vh !important;
-        border-radius: 12px 12px 0 0;
-        border-left: none;
-        border-right: none;
+        left: auto;
+        right: 20px;
+        bottom: 0;
+        width: 340px;
+        height: 46vh;
+        max-height: 46vh;
+        border-radius: 14px 14px 0 0;
+        border: 1px solid rgba(184,146,74,0.35);
         border-bottom: none;
       }
-      #ai-fab { bottom: 16px; right: 16px; width: 50px; height: 50px; }
-      #ai-fab svg { width: 20px; height: 20px; }
-      .ai-msg { font-size: 15px !important; line-height: 1.5 !important; }
-      #ai-chat-input { font-size: 16px !important; }
-      #ai-chat-name { font-size: 14px !important; }
-      #ai-chat-sub { font-size: 11px !important; }
-      #ai-chat-header { padding: 8px 12px !important; }
-      #ai-chat-input-row { padding: 7px 10px !important; }
     }
 
     #ai-chat-header {
       background: #0A1828;
-      padding: 10px 12px;
+      padding: 10px 14px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -155,11 +205,11 @@ Rules: Answer in 1-3 sentences. Ask ONE question. LANGUAGE RULE: always reply in
     }
     #ai-chat-header-left { display: flex; align-items: center; gap: 8px; }
     #ai-online-dot { width: 8px; height: 8px; border-radius: 50%; background: #4CAF50; flex-shrink: 0; }
-    #ai-chat-name { color: #B8924A; font-weight: 700; font-size: 13px; }
-    #ai-chat-sub { color: #8899AA; font-size: 10px; margin-top: 1px; }
+    #ai-chat-name { color: #B8924A; font-weight: 700; font-size: 14px; }
+    #ai-chat-sub { color: #8899AA; font-size: 11px; margin-top: 1px; }
     #ai-chat-close {
       background: none; border: none; cursor: pointer;
-      color: #B8924A; font-size: 26px; padding: 0 6px; line-height: 1;
+      color: #B8924A; font-size: 24px; padding: 0 4px; line-height: 1;
       font-weight: 700;
     }
     #ai-chat-close:hover { color: #fff; }
@@ -167,29 +217,28 @@ Rules: Answer in 1-3 sentences. Ask ONE question. LANGUAGE RULE: always reply in
     #ai-chat-messages {
       flex: 1;
       overflow-y: auto;
-      padding: 10px;
+      padding: 10px 12px;
       display: flex;
       flex-direction: column;
       gap: 8px;
       min-height: 0;
     }
     #ai-chat-messages::-webkit-scrollbar { width: 3px; }
-    #ai-chat-messages::-webkit-scrollbar-track { background: transparent; }
     #ai-chat-messages::-webkit-scrollbar-thumb { background: rgba(184,146,74,0.3); border-radius: 2px; }
 
     .ai-msg {
       max-width: 88%;
-      padding: 8px 11px;
+      padding: 8px 12px;
       border-radius: 10px;
-      font-size: 13px;
-      line-height: 1.45;
+      font-size: 14px;
+      line-height: 1.5;
       word-break: break-word;
     }
     .ai-msg.bot {
       background: #162840;
       color: #D0E0F0;
       align-self: flex-start;
-      border: 1px solid rgba(184,146,74,0.15);
+      border: 1px solid rgba(184,146,74,0.12);
     }
     .ai-msg.user {
       background: #B8924A;
@@ -200,8 +249,8 @@ Rules: Answer in 1-3 sentences. Ask ONE question. LANGUAGE RULE: always reply in
 
     #ai-chat-input-row {
       display: flex;
-      gap: 6px;
-      padding: 8px 10px;
+      gap: 8px;
+      padding: 9px 12px;
       border-top: 1px solid rgba(184,146,74,0.2);
       background: #0A1828;
       flex-shrink: 0;
@@ -210,22 +259,22 @@ Rules: Answer in 1-3 sentences. Ask ONE question. LANGUAGE RULE: always reply in
       flex: 1;
       background: #162840;
       border: 1px solid rgba(184,146,74,0.25);
-      border-radius: 6px;
+      border-radius: 8px;
       color: #D0E0F0;
-      font-size: 13px;
-      padding: 7px 10px;
+      font-size: 14px;
+      padding: 8px 11px;
       outline: none;
       min-width: 0;
     }
     #ai-chat-input::placeholder { color: #556677; }
-    #ai-chat-input:focus { border-color: rgba(184,146,74,0.55); }
+    #ai-chat-input:focus { border-color: rgba(184,146,74,0.6); }
     #ai-chat-send {
       background: #B8924A;
       border: none;
-      border-radius: 6px;
+      border-radius: 8px;
       color: #fff;
-      font-size: 15px;
-      padding: 0 12px;
+      font-size: 16px;
+      padding: 0 14px;
       cursor: pointer;
       flex-shrink: 0;
       transition: background 0.15s;
@@ -235,7 +284,7 @@ Rules: Answer in 1-3 sentences. Ask ONE question. LANGUAGE RULE: always reply in
   `;
   document.head.appendChild(style);
 
-  // ── FAB BUTTON ──
+  // ── FAB ──
   const fab = document.createElement('button');
   fab.id = 'ai-fab';
   fab.title = config.name;
@@ -279,39 +328,36 @@ Rules: Answer in 1-3 sentences. Ask ONE question. LANGUAGE RULE: always reply in
   }
 
   function openChat() {
+    if (isOpen) return;
     isOpen = true;
     win.classList.add('open');
-    fab.style.display = 'none';
+    fab.classList.add('hidden');
     if (messages.length === 0) {
       setTimeout(() => {
         addMessage(config.greeting, 'bot');
         messages.push({ role: 'assistant', content: config.greeting });
-      }, 120);
+      }, 150);
     }
-    setTimeout(() => input.focus(), 200);
+    setTimeout(() => input.focus(), 300);
   }
 
   function closeChat() {
     isOpen = false;
     win.classList.remove('open');
-    fab.style.display = 'flex';
+    fab.classList.remove('hidden');
   }
 
   fab.addEventListener('click', openChat);
   closeBtn.addEventListener('click', closeChat);
 
-  // Detect language from text
-  function detectLang(text) {
-    const ua = /[а-яёіїєґ]/i.test(text);
-    const ru = /[ъыэё]/i.test(text);
-    if (ua && !ru) return 'Ukrainian';
-    if (ru) return 'Russian';
-    return 'English';
-  }
-
   async function sendMessage() {
     const text = input.value.trim();
     if (!text || isSending) return;
+
+    // Detect language from user message
+    const lang = detectLangFull(text);
+    currentLang = lang;
+
     isSending = true;
     sendBtn.disabled = true;
     input.value = '';
@@ -319,40 +365,33 @@ Rules: Answer in 1-3 sentences. Ask ONE question. LANGUAGE RULE: always reply in
     addMessage(text, 'user');
     messages.push({ role: 'user', content: text });
 
-    const typingDiv = addMessage('…', 'bot typing');
+    const typingDiv = addMessage('···', 'bot typing');
 
-    // Inject detected language into system prompt
-    const lang = detectLang(text);
-    const systemWithLang = `${config.systemPrompt}\n\nCRITICAL: The user is writing in ${lang}. You MUST reply ONLY in ${lang}. Do not use any other language.`;
+    const langName = LANG_NAMES[currentLang] || 'English';
+    const systemFull = `${config.systemPrompt}\n\nLANGUAGE: User wrote in ${langName}. Reply ONLY in ${langName}. Never switch languages.`;
 
     try {
       const res = await fetch(WORKER_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          systemPrompt: systemWithLang,
+          systemPrompt: systemFull,
           messages: messages.slice(-10)
         })
       });
+
       if (!res.ok) {
-        const errText = await res.text();
-        console.error('Worker error:', res.status, errText);
-        typingDiv.textContent = 'Service unavailable. Try again in a moment.';
+        typingDiv.textContent = 'Service unavailable. Try again shortly.';
         typingDiv.classList.remove('typing');
-        isSending = false;
-        sendBtn.disabled = false;
-        return;
+      } else {
+        const data = await res.json();
+        const reply = data.response || (data.content && data.content[0] && data.content[0].text) || data.reply || data.text || data.message || '...';
+        typingDiv.textContent = reply;
+        typingDiv.classList.remove('typing');
+        messages.push({ role: 'assistant', content: reply });
       }
-      const data = await res.json();
-      const reply = (data.response)
-        || (data.content && data.content[0] && data.content[0].text)
-        || (data.reply) || (data.text) || (data.message) || 'No response. Try again.';
-      typingDiv.textContent = reply;
-      typingDiv.classList.remove('typing');
-      messages.push({ role: 'assistant', content: reply });
     } catch (e) {
-      console.error('Chat fetch error:', e);
-      typingDiv.textContent = 'Connection error. Check your internet and try again.';
+      typingDiv.textContent = 'Connection error. Check your internet.';
       typingDiv.classList.remove('typing');
     }
 
@@ -364,9 +403,8 @@ Rules: Answer in 1-3 sentences. Ask ONE question. LANGUAGE RULE: always reply in
   sendBtn.addEventListener('click', sendMessage);
   input.addEventListener('keydown', e => { if (e.key === 'Enter') sendMessage(); });
 
-  // Show FAB immediately with glow (already via CSS animation)
-
-  // Auto-open after 5s on ALL devices
-  setTimeout(() => openChat(), 5000);
+  // Auto-open after 6s
+  setTimeout(() => { if (!isOpen) openChat(); }, 6000);
 
 })();
+// v12
