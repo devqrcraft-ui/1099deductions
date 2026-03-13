@@ -1,5 +1,18 @@
 {
   "version": 2,
   "builds": [{"src": "**/*", "use": "@vercel/static"}],
-  "routes": [{"src": "/", "dest": "/index.html"}]
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{"type": "host", "value": "1099deductions.com"}],
+      "destination": "https://www.1099deductions.com/$1",
+      "permanent": true
+    }
+  ],
+  "routes": [
+    {"src": "/sitemap.xml", "dest": "/sitemap.xml"},
+    {"src": "/robots.txt", "dest": "/robots.txt"},
+    {"src": "/deductions/(.*)", "dest": "/deductions/$1"},
+    {"src": "/(.*)", "dest": "/index.html"}
+  ]
 }

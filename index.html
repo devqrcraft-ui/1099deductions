@@ -152,7 +152,7 @@ nav a.active{color:var(--gold3);}
 .info-card p{color:var(--text2);font-size:13px;line-height:1.7;font-weight:300;}
 
 /* AFFILIATE */
-.aff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.aff-grid{display:grid;grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));gap:16px;}
 .aff-card{background:var(--navy2);border:1px solid var(--border2);border-radius:3px;padding:22px;display:flex;flex-direction:column;gap:12px;transition:border-color 0.18s;}
 .aff-card:hover{border-color:rgba(184,146,74,0.3);}
 .aff-header{display:flex;align-items:center;gap:10px;}
@@ -181,6 +181,39 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
 .footer-bottom{display:flex;justify-content:space-between;align-items:center;}
 .footer-legal{color:var(--text3);font-size:11.5px;line-height:1.6;}
 .irs-badge{background:rgba(184,146,74,0.07);border:1px solid rgba(184,146,74,0.18);padding:7px 14px;border-radius:2px;font-size:10.5px;color:var(--text3);font-family:'IBM Plex Mono',monospace;letter-spacing:0.04em;}
+
+@media (max-width: 600px) {
+  header { padding: 0 16px !important; }
+  .header-inner { height: auto !important; padding: 10px 0 !important; flex-wrap: wrap !important; gap: 8px !important; }
+  nav { gap: 0 !important; flex-wrap: wrap !important; }
+  nav a { font-size: 11px !important; padding: 4px 7px !important; }
+  .nav-cta { margin-left: 4px !important; padding: 5px 10px !important; }
+  .logo-sub { display: none !important; }
+
+  .deadline-strip { padding: 14px 16px !important; }
+  .deadline-inner { flex-direction: column !important; align-items: flex-start !important; gap: 8px !important; }
+  .dl-date { font-size: 22px !important; }
+
+  .hero { padding: 28px 16px 32px !important; }
+  .hero-inner { grid-template-columns: 1fr !important; gap: 24px !important; }
+  .hero h1 { font-size: 26px !important; line-height: 1.2 !important; }
+  .hero-kpis { gap: 16px !important; flex-wrap: wrap !important; }
+
+  .footer-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
+  .aff-grid { grid-template-columns: 1fr !important; }
+  .aff-card { width: 100% !important; }
+  .aff-cta { min-width: unset !important; width: 100% !important; box-sizing: border-box !important; text-align: center !important; display: block !important; }
+  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+  [style*="min-width:200px"] { min-width: unset !important; width: 100% !important; box-sizing: border-box !important; }
+  [style*="display:grid;grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+}
+  .aff-card { min-width: unset !important; width: 100% !important; }
+  .aff-cta { min-width: unset !important; width: 100% !important; box-sizing: border-box; }
+  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+}
+
+
+@media (max-width:600px){.nav-cta{display:none!important}}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What deductions can all gig workers claim in 2026?","acceptedAnswer":{"@type":"Answer","text":"Mileage ($0.725/mile for driving jobs), phone and data plan (business %), home office (up to $1,500/year), health insurance premiums, and equipment required for the job."}},{"@type":"Question","name":"What is self-employment tax and how much is it?","acceptedAnswer":{"@type":"Answer","text":"SE tax is 15.3% on net profit (Social Security 12.4% + Medicare 2.9%). You can deduct half of SE tax paid on your Form 1040. Deductions reduce net profit and therefore SE tax."}},{"@type":"Question","name":"Do gig workers need to pay quarterly taxes in 2026?","acceptedAnswer":{"@type":"Answer","text":"If you expect to owe $1,000+ in federal tax for the year, you must pay quarterly. Deadlines: April 15, June 16, September 15, January 15, 2027."}},{"@type":"Question","name":"Can gig workers deduct health insurance?","acceptedAnswer":{"@type":"Answer","text":"Yes. If you are not eligible for employer-sponsored health insurance, you can deduct 100% of your health insurance premiums as an above-the-line deduction on Schedule 1."}},{"@type":"Question","name":"What records should gig workers keep for taxes?","acceptedAnswer":{"@type":"Answer","text":"Mileage log (if driving), all receipts for business expenses, bank statements, 1099 forms, and quarterly payment records. Keep for at least 3 years."}}]}</script>
@@ -490,7 +523,7 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
           </div>
           <button class="calc-submit" onclick="runFullCalc()">Calculate My Taxes →</button>
           <div id="fullCalcResult" style="display:none;margin-top:20px;">
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:16px;">
               <div style="background:var(--navy);border:1px solid var(--border2);border-radius:3px;padding:16px;text-align:center;">
                 <div style="font-size:10px;color:var(--text3);font-family:'IBM Plex Mono',monospace;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px;">SE Tax (15.3%)</div>
                 <div style="font-family:'Playfair Display',serif;font-size:24px;color:#FF9EA8;" id="fcSE">$0</div>
@@ -541,7 +574,7 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
         <div style="font-weight:600;color:#FFE8EA;margin-bottom:6px;">⚠️ How to Pay</div>
         <div style="color:#FFAAB0;font-size:13px;line-height:1.7;">Pay online at <strong>IRS.gov/payments</strong> using Direct Pay (free). Or mail IRS Form 1040-ES with a check. Use <strong>EFTPS.gov</strong> for same-day guaranteed processing. Rough estimate: set aside <strong>25–30% of every payment</strong> you receive.</div>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;">
         <div class="aff-card"><div class="aff-header"><span class="aff-badge" style="background:#2D6FD4;"></span><span class="aff-name">Keeper Tax</span></div><div class="aff-desc">Tracks your deductions year-round so your quarterly payment is always accurate.</div><a href="https://www.keepertax.com" target="_blank" class="aff-cta">Try Free →</a></div>
         <div class="aff-card"><div class="aff-header"><span class="aff-badge" style="background:#3A9E5A;"></span><span class="aff-name">TaxAct Self-Employed</span></div><div class="aff-desc">Calculates your exact quarterly payment and reminds you before each deadline.</div><a href="https://www.taxact.com/self-employed-taxes" target="_blank" class="aff-cta">Get Started →</a></div>
       </div>
