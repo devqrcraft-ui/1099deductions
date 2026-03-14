@@ -1,11 +1,4 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "**/*",
-      "use": "@vercel/static"
-    }
-  ],
   "redirects": [
     {
       "source": "/(.*)",
@@ -19,38 +12,10 @@
       "permanent": true
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/sitemap.xml",
-      "dest": "/sitemap.xml"
-    },
-    {
-      "src": "/robots.txt",
-      "dest": "/robots.txt"
-    },
-    {
-      "src": "/deductions/(.*)",
-      "dest": "/deductions/$1"
-    },
-    {
-      "src": "/(.*\\.js)",
-      "dest": "/$1"
-    },
-    {
-      "src": "/(.*\\.css)",
-      "dest": "/$1"
-    },
-    {
-      "src": "/(.*\\.png)",
-      "dest": "/$1"
-    },
-    {
-      "src": "/(.*\\.ico)",
-      "dest": "/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/((?!.*\\.js$|.*\\.css$|.*\\.png$|.*\\.ico$|.*\\.xml$|.*\\.txt$).*)",
+      "destination": "/index.html"
     }
   ]
 }
