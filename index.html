@@ -17,7 +17,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.1099deductions.com/">
 <meta property="og:title" content="1099 Tax Deductions 2026 ” Free Write-Off Finder for Gig Workers">
-<meta property="og:description" content="Find every IRS Schedule C deduction for DoorDash, Uber, Airbnb, Etsy, OnlyFans. Free checklist. No signup. Saves gig workers $2,000“$8,000/yr.">
+<meta property="og:description" content="Find every IRS Schedule C deduction for DoorDash, Uber, Airbnb, Etsy, OnlyFans. Free checklist. No signup. Saves gig workers $2,000–$8,000/yr.">
 <meta property="og:site_name" content="1099Deductions.com">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="1099 Tax Deductions 2026 ” Free Write-Off Finder for Gig Workers">
@@ -1066,7 +1066,7 @@ BEHAVIOR:
 
   function detectLang(text) {
     if (!text) return 'en';
-    const hasCyr = /[Р°-СЏС‘Рђ-РЇРЃС–С—С”Т‘Р†Р‡Р„Тђ]/.test(text);
+    const hasCyr = /[°-СЏС‘Рђ-РЇРЃС–С—С”Т‘Р†Р‡Р„Тђ]/.test(text);
     if (!hasCyr) return 'en';
     // Spanish check
     const hasSpanish = /[ГЎéГ­ГіГєГјГ±ВїВЎ]/i.test(text);
@@ -1374,6 +1374,7 @@ BEHAVIOR:
   input.addEventListener('keydown', e => { if (e.key === 'Enter') sendMessage(); });
 
   // Auto-open after 6s
+  setTimeout(() => { if (!isOpen) { fab.classList.remove('hidden'); } }, 100);
   setTimeout(() => { if (!isOpen) openChat(); }, 6000);
 
 })();
