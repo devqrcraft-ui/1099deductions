@@ -1,0 +1,1361 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B2GFS4HWY4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-B2GFS4HWY4');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://www.1099deductions.com/">
+<title>1099Deductions.com вЂ” Free Tax Write-Off Finder for Gig Workers 2026</title>
+<meta name="description" content="Free tax deduction checklists for every gig job. DoorDash, Uber, Airbnb, Etsy, OnlyFans. IRS Schedule C compliant. No signup. No fees.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.1099deductions.com/">
+<meta property="og:title" content="1099 Tax Deductions 2026 вЂ” Free Write-Off Finder for Gig Workers">
+<meta property="og:description" content="Find every IRS Schedule C deduction for DoorDash, Uber, Airbnb, Etsy, OnlyFans. Free checklist. No signup. Saves gig workers $2,000вЂ“$8,000/yr.">
+<meta property="og:site_name" content="1099Deductions.com">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="1099 Tax Deductions 2026 вЂ” Free Write-Off Finder for Gig Workers">
+<meta name="twitter:description" content="Find every IRS Schedule C deduction for DoorDash, Uber, Airbnb, Etsy, OnlyFans. Free checklist. No signup.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+html,body{overflow-x:hidden;max-width:100%;}
+:root {
+  --ink:#07111F; --navy:#0B1E36; --navy2:#102540; --navy3:#163052; --steel:#1E3D65;
+  --gold:#B8924A; --gold2:#D4AA66; --gold3:#F0CB82; --crimson:#7A1520; --crimson2:#9B1C2A;
+  --text:#C8D8EC; --text2:#7A96B8; --text3:#4A6A8A;
+  --border:rgba(184,146,74,0.18); --border2:rgba(30,61,101,0.8); --white:#E8F0FA;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--ink);color:var(--text);font-family:'IBM Plex Sans',sans-serif;font-size:14px;line-height:1.65;-webkit-font-smoothing:antialiased;}
+
+/* ALERT */
+.alert-bar{background:var(--crimson);color:#F8D0D4;text-align:center;padding:9px 24px;font-size:12px;font-family:'IBM Plex Mono',monospace;letter-spacing:0.06em;border-bottom:1px solid #5A0A12;}
+.alert-bar a{color:#FFB8BE;text-decoration:none;border-bottom:1px solid rgba(255,184,190,0.4);cursor:pointer;}
+
+/* HEADER */
+header{background:var(--navy);border-bottom:1px solid var(--border);padding:0 48px;position:sticky;top:0;z-index:200;box-shadow:0 1px 32px rgba(0,0,0,0.6);}
+.header-inner{max-width:1240px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px;}
+.logo{display:flex;align-items:center;gap:14px;text-decoration:none;flex-shrink:0;cursor:pointer;}
+.seal-wrap{width:44px;height:44px;flex-shrink:0;}
+.logo-title{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--gold2);letter-spacing:0.01em;white-space:nowrap;}
+.logo-sub{font-size:10px;color:var(--text3);letter-spacing:0.1em;text-transform:uppercase;font-family:'IBM Plex Mono',monospace;}
+nav{display:flex;align-items:center;gap:2px;flex-shrink:0;}
+nav a{color:var(--text2);text-decoration:none;padding:6px 13px;border-radius:3px;font-size:13px;font-weight:500;transition:color 0.18s,background 0.18s;white-space:nowrap;letter-spacing:0.01em;cursor:pointer;}
+nav a:hover{color:var(--gold2);background:rgba(184,146,74,0.07);}
+nav a.active{color:var(--gold3);}
+.nav-cta{background:var(--gold)!important;color:var(--ink)!important;font-weight:600!important;margin-left:10px;padding:7px 16px!important;letter-spacing:0.02em;}
+.nav-cta:hover{background:var(--gold2)!important;color:var(--ink)!important;}
+
+/* PAGES */
+.page{display:none;}
+.page.active{display:block;}
+
+/* HERO */
+.hero{background:linear-gradient(170deg,#0E2240 0%,#07111F 55%,#0A1828 100%);border-bottom:1px solid var(--border);padding:72px 48px 64px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(184,146,74,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(184,146,74,0.04) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;}
+.hero::after{content:'';position:absolute;top:-120px;right:-120px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(184,146,74,0.06) 0%,transparent 70%);pointer-events:none;}
+.hero-inner{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 400px;gap:72px;align-items:center;position:relative;z-index:1;}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;background:rgba(184,146,74,0.08);border:1px solid rgba(184,146,74,0.25);color:var(--gold2);padding:5px 14px;border-radius:2px;font-size:11px;font-family:'IBM Plex Mono',monospace;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:22px;}
+.eyebrow-dot{width:6px;height:6px;background:var(--gold);border-radius:50%;flex-shrink:0;}
+.hero h1{font-family:'Playfair Display',serif;font-size:46px;font-weight:700;color:var(--white);line-height:1.12;margin-bottom:18px;letter-spacing:-0.01em;}
+.hero h1 em{color:var(--gold2);font-style:normal;}
+.hero p{color:var(--text2);font-size:15px;line-height:1.75;margin-bottom:30px;max-width:520px;font-weight:300;}
+.hero-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:40px;}
+.chip{background:rgba(22,48,82,0.7);border:1px solid var(--border2);color:var(--text2);padding:5px 12px;border-radius:2px;font-size:11.5px;font-family:'IBM Plex Mono',monospace;letter-spacing:0.04em;}
+.chip-check{color:var(--gold);margin-right:5px;font-size:10px;}
+.hero-kpis{display:flex;gap:40px;padding-top:28px;border-top:1px solid var(--border);}
+.kpi-num{font-family:'Playfair Display',serif;font-size:30px;font-weight:600;color:var(--gold2);display:block;line-height:1;margin-bottom:5px;}
+.kpi-label{font-size:11px;color:var(--text3);letter-spacing:0.05em;text-transform:uppercase;font-family:'IBM Plex Mono',monospace;}
+
+/* CALC CARD */
+.calc-card{background:var(--navy2);border:1px solid var(--border);border-radius:4px;overflow:hidden;box-shadow:0 16px 64px rgba(0,0,0,0.5),0 0 0 1px rgba(184,146,74,0.08);}
+.calc-head{background:linear-gradient(135deg,var(--gold) 0%,var(--gold2) 100%);color:var(--ink);padding:14px 22px;font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;display:flex;align-items:center;justify-content:space-between;}
+.calc-body{padding:22px;}
+.field{margin-bottom:16px;}
+.field-label{display:block;font-size:10.5px;color:var(--text3);font-family:'IBM Plex Mono',monospace;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:7px;}
+.field select,.field input{width:100%;background:var(--navy);border:1px solid var(--border2);color:var(--text);padding:10px 14px;border-radius:3px;font-size:13.5px;font-family:'IBM Plex Sans',sans-serif;outline:none;transition:border-color 0.18s;appearance:none;}
+.field select:focus,.field input:focus{border-color:var(--gold);}
+.field select option{background:var(--navy2);}
+.calc-submit{width:100%;background:linear-gradient(135deg,var(--gold) 0%,var(--gold2) 100%);color:var(--ink);border:none;padding:13px;border-radius:3px;font-size:14px;font-weight:600;cursor:pointer;font-family:'IBM Plex Sans',sans-serif;letter-spacing:0.03em;transition:opacity 0.18s,transform 0.12s;margin-top:4px;}
+.calc-submit:hover{opacity:0.9;transform:translateY(-1px);}
+.calc-result{display:none;background:var(--navy);border:1px solid rgba(184,146,74,0.25);border-radius:3px;padding:16px;margin-top:14px;text-align:center;}
+.calc-result.show{display:block;}
+.res-label{font-size:10px;color:var(--text3);letter-spacing:0.1em;text-transform:uppercase;font-family:'IBM Plex Mono',monospace;margin-bottom:8px;}
+.res-num{font-family:'Playfair Display',serif;font-size:36px;font-weight:600;color:var(--gold2);line-height:1;}
+.res-sub{font-size:11.5px;color:var(--text2);margin-top:8px;line-height:1.5;}
+.res-btn{display:inline-block;margin-top:12px;background:var(--gold);color:var(--ink);padding:8px 18px;border-radius:3px;font-size:12px;font-weight:600;cursor:pointer;border:none;font-family:'IBM Plex Sans',sans-serif;}
+
+/* DEADLINE */
+.deadline-strip{background:linear-gradient(135deg,#5A0A12 0%,var(--crimson) 100%);border-bottom:1px solid #3A0008;padding:18px 48px;}
+.deadline-inner{max-width:1240px;margin:0 auto;display:flex;align-items:center;gap:24px;}
+.dl-title{font-weight:600;color:#FFE8EA;font-size:14px;margin-bottom:2px;}
+.dl-text{color:#FFAAB0;font-size:12.5px;}
+.dl-date{margin-left:auto;font-family:'Playfair Display',serif;font-size:22px;font-weight:600;color:#FFE0E4;flex-shrink:0;}
+
+/* SECTION */
+.section{padding:64px 48px;border-bottom:1px solid var(--border2);}
+.section-inner{max-width:1240px;margin:0 auto;}
+.section-eyebrow{font-size:10.5px;font-family:'IBM Plex Mono',monospace;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:10px;}
+.section-eyebrow::after{content:'';flex:1;max-width:60px;height:1px;background:var(--gold);opacity:0.4;}
+.section-h{font-family:'Playfair Display',serif;font-size:32px;font-weight:600;color:var(--white);margin-bottom:10px;line-height:1.2;}
+.section-sub{color:var(--text2);font-size:14.5px;margin-bottom:36px;max-width:580px;line-height:1.7;font-weight:300;}
+
+/* JOB GRID */
+.job-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:10px;}
+.job-card{background:var(--navy2);border:1px solid var(--border2);border-radius:3px;padding:20px 16px 16px;text-align:center;cursor:pointer;transition:border-color 0.18s,transform 0.18s,box-shadow 0.18s;text-decoration:none;display:block;position:relative;overflow:hidden;}
+.job-card::before{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold2));transform:scaleX(0);transition:transform 0.22s;transform-origin:left;}
+.job-card:hover{border-color:rgba(184,146,74,0.35);transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.4);}
+.job-card:hover::before{transform:scaleX(1);}
+.job-icon-wrap{width:42px;height:42px;background:rgba(184,146,74,0.08);border:1px solid rgba(184,146,74,0.15);border-radius:3px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;}
+.job-icon-wrap svg{width:20px;height:20px;}
+.job-name{font-size:13px;font-weight:600;color:var(--text);display:block;margin-bottom:4px;}
+.job-count{font-size:11px;color:var(--gold);font-family:'IBM Plex Mono',monospace;}
+
+/* DEDUCTION PAGE */
+.ded-page-header{background:linear-gradient(135deg,var(--navy2),var(--navy3));border-bottom:2px solid var(--gold);padding:48px 48px 36px;}
+.ded-page-inner{max-width:1240px;margin:0 auto;}
+.back-btn{display:inline-flex;align-items:center;gap:8px;color:var(--gold);font-size:12px;font-family:'IBM Plex Mono',monospace;letter-spacing:0.06em;cursor:pointer;margin-bottom:20px;background:none;border:none;padding:0;}
+.back-btn:hover{color:var(--gold2);}
+.ded-page-title{font-family:'Playfair Display',serif;font-size:36px;color:var(--white);margin-bottom:8px;}
+.ded-page-sub{color:var(--text2);font-size:14px;margin-bottom:20px;}
+.ded-stats{display:flex;gap:32px;flex-wrap:wrap;}
+.ded-stat{text-align:center;}
+.ded-stat-num{font-family:'Playfair Display',serif;font-size:24px;color:var(--gold2);display:block;}
+.ded-stat-label{font-size:10px;color:var(--text3);font-family:'IBM Plex Mono',monospace;letter-spacing:0.06em;text-transform:uppercase;}
+
+/* TABLE */
+.ded-table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.ded-table thead tr{border-bottom:2px solid var(--gold);}
+.ded-table th{background:var(--navy2);color:var(--gold);font-size:10.5px;font-family:'IBM Plex Mono',monospace;letter-spacing:0.08em;text-transform:uppercase;padding:13px 18px;text-align:left;font-weight:500;}
+.ded-table td{padding:13px 18px;border-bottom:1px solid var(--border2);color:var(--text);vertical-align:middle;}
+.ded-table tr:nth-child(even) td{background:rgba(16,37,64,0.4);}
+.ded-table tr:hover td{background:rgba(184,146,74,0.04);}
+.ded-name{font-weight:500;color:var(--white);}
+.ded-note{font-size:12px;color:var(--text2);margin-top:2px;}
+.save-amt{font-family:'Playfair Display',serif;font-size:15px;color:var(--gold2);font-weight:600;}
+.priority{display:inline-block;padding:3px 9px;border-radius:2px;font-size:10px;font-family:'IBM Plex Mono',monospace;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;}
+.p-high{background:rgba(122,21,32,0.3);color:#FF9EA8;border:1px solid rgba(122,21,32,0.5);}
+.p-med{background:rgba(184,146,74,0.12);color:var(--gold2);border:1px solid rgba(184,146,74,0.3);}
+.check-mark{color:var(--gold);margin-right:10px;font-size:13px;}
+
+/* 3-COL */
+.three-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.info-card{background:var(--navy2);border:1px solid var(--border2);border-top:2px solid var(--gold);border-radius:3px;padding:26px;}
+.info-card h3{font-weight:600;color:var(--white);font-size:14px;margin-bottom:8px;}
+.info-card p{color:var(--text2);font-size:13px;line-height:1.7;font-weight:300;}
+
+/* AFFILIATE */
+.aff-grid{display:grid;grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));gap:16px;}
+.aff-card{background:var(--navy2);border:1px solid var(--border2);border-radius:3px;padding:22px;display:flex;flex-direction:column;gap:12px;transition:border-color 0.18s;}
+.aff-card:hover{border-color:rgba(184,146,74,0.3);}
+.aff-header{display:flex;align-items:center;gap:10px;}
+.aff-badge{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+.aff-name{font-weight:600;color:var(--white);font-size:14px;}
+.aff-rate{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--gold);margin-left:auto;}
+.aff-desc{color:var(--text2);font-size:13px;line-height:1.65;flex:1;font-weight:300;}
+.aff-cta{display:block;border:1px solid rgba(184,146,74,0.3);color:var(--gold2);padding:9px 16px;border-radius:3px;text-align:center;text-decoration:none;font-size:13px;font-weight:500;transition:background 0.18s,color 0.18s;letter-spacing:0.02em;}
+.aff-cta:hover{background:var(--gold);color:var(--ink);border-color:var(--gold);}
+
+/* DEADLINES PAGE */
+.dl-table{width:100%;border-collapse:collapse;}
+.dl-table th{background:var(--navy2);color:var(--gold);font-size:10.5px;font-family:'IBM Plex Mono',monospace;letter-spacing:0.08em;text-transform:uppercase;padding:13px 18px;text-align:left;border-bottom:2px solid var(--gold);}
+.dl-table td{padding:14px 18px;border-bottom:1px solid var(--border2);color:var(--text);font-size:14px;}
+.dl-table tr:hover td{background:rgba(184,146,74,0.03);}
+.urgent-badge{background:rgba(122,21,32,0.4);color:#FF9EA8;border:1px solid rgba(122,21,32,0.5);padding:3px 8px;border-radius:2px;font-size:10px;font-family:'IBM Plex Mono',monospace;margin-left:10px;}
+
+/* FOOTER */
+footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48px 28px;}
+.footer-inner{max-width:1240px;margin:0 auto;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border2);}
+.footer-about p{color:var(--text3);font-size:12.5px;margin-top:14px;line-height:1.7;font-weight:300;}
+.footer-col h4{font-size:10.5px;font-family:'IBM Plex Mono',monospace;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;font-weight:500;}
+.footer-col a{display:block;color:var(--text3);text-decoration:none;font-size:13px;margin-bottom:9px;transition:color 0.15s;cursor:pointer;}
+.footer-col a:hover{color:var(--gold2);}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;}
+.footer-legal{color:var(--text3);font-size:11.5px;line-height:1.6;}
+.irs-badge{background:rgba(184,146,74,0.07);border:1px solid rgba(184,146,74,0.18);padding:7px 14px;border-radius:2px;font-size:10.5px;color:var(--text3);font-family:'IBM Plex Mono',monospace;letter-spacing:0.04em;}
+
+@media (max-width: 600px) {
+  header { padding: 0 16px !important; }
+  .header-inner { height: auto !important; padding: 10px 0 !important; flex-wrap: wrap !important; gap: 8px !important; }
+  nav { gap: 0 !important; flex-wrap: wrap !important; }
+  nav a { font-size: 11px !important; padding: 4px 7px !important; }
+  .nav-cta { margin-left: 4px !important; padding: 5px 10px !important; }
+  .logo-sub { display: none !important; }
+
+  .deadline-strip { padding: 14px 16px !important; }
+  .deadline-inner { flex-direction: column !important; align-items: flex-start !important; gap: 8px !important; }
+  .dl-date { font-size: 22px !important; }
+
+  .hero { padding: 28px 16px 32px !important; }
+  .hero-inner { grid-template-columns: 1fr !important; gap: 24px !important; }
+  .hero h1 { font-size: 26px !important; line-height: 1.2 !important; }
+  .hero-kpis { gap: 16px !important; flex-wrap: wrap !important; }
+
+  .footer-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
+  .aff-grid { grid-template-columns: 1fr !important; }
+  .aff-card { width: 100% !important; }
+  .aff-cta { min-width: unset !important; width: 100% !important; box-sizing: border-box !important; text-align: center !important; display: block !important; }
+  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+  [style*="min-width:200px"] { min-width: unset !important; width: 100% !important; box-sizing: border-box !important; }
+  [style*="display:grid;grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+}
+  .aff-card { min-width: unset !important; width: 100% !important; }
+  .aff-cta { min-width: unset !important; width: 100% !important; box-sizing: border-box; }
+  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+}
+
+
+@media (max-width:600px){.nav-cta{display:none!important}}
+</style>
+<script defer src="/_vercel/insights/script.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What deductions can all gig workers claim in 2026?","acceptedAnswer":{"@type":"Answer","text":"Mileage ($0.725/mile for driving jobs), phone and data plan (business %), home office (up to $1,500/year), health insurance premiums, and equipment required for the job."}},{"@type":"Question","name":"What is self-employment tax and how much is it?","acceptedAnswer":{"@type":"Answer","text":"SE tax is 15.3% on net profit (Social Security 12.4% + Medicare 2.9%). You can deduct half of SE tax paid on your Form 1040. Deductions reduce net profit and therefore SE tax."}},{"@type":"Question","name":"Do gig workers need to pay quarterly taxes in 2026?","acceptedAnswer":{"@type":"Answer","text":"If you expect to owe $1,000+ in federal tax for the year, you must pay quarterly. Deadlines: April 15, June 16, September 15, January 15, 2027."}},{"@type":"Question","name":"Can gig workers deduct health insurance?","acceptedAnswer":{"@type":"Answer","text":"Yes. If you are not eligible for employer-sponsored health insurance, you can deduct 100% of your health insurance premiums as an above-the-line deduction on Schedule 1."}},{"@type":"Question","name":"What records should gig workers keep for taxes?","acceptedAnswer":{"@type":"Answer","text":"Mileage log (if driving), all receipts for business expenses, bank statements, 1099 forms, and quarterly payment records. Keep for at least 3 years."}}]}</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"1099 Tax Deduction Finder 2026","url":"https://www.1099deductions.com","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free tax deduction checklists for gig workers. DoorDash, Uber, Airbnb, Etsy, OnlyFans. IRS Schedule C compliant."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to Find Your 1099 Tax Deductions in 2026","description":"Use this free tool to find every IRS Schedule C deduction for your gig job.","step":[{"@type":"HowToStep","name":"Select your platform","text":"Choose your gig platform: DoorDash, Uber, Etsy, Airbnb, OnlyFans, or others."},{"@type":"HowToStep","name":"Review your deductions","text":"Browse the complete list of IRS-compliant deductions for your specific job type."},{"@type":"HowToStep","name":"Calculate your savings","text":"Use the deduction amounts to reduce your Schedule C taxable income before filing."}]}</script>
+</head>
+<body>
+
+<div class="alert-bar">
+  Q1 2026 ESTIMATED TAX DEADLINE вЂ” APRIL 15, 2026 вЂ” Miss it and face a 7% IRS underpayment penalty &nbsp;вЂў&nbsp; <a onclick="showPage('deadlines')">Calculate your payment now</a>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" onclick="showPage('home')">
+      <div class="seal-wrap">
+        <svg viewBox="0 0 44 44" fill="none">
+          <circle cx="22" cy="22" r="21" stroke="#B8924A" stroke-width="1.2"/>
+          <circle cx="22" cy="22" r="17" stroke="#B8924A" stroke-width="0.6" stroke-dasharray="2 3"/>
+          <rect x="8" y="16" width="28" height="12" rx="1" fill="#7A1520"/>
+          <rect x="8" y="16" width="28" height="1.8" fill="#C8D8EC"/>
+          <rect x="8" y="19.6" width="28" height="1.8" fill="#C8D8EC"/>
+          <rect x="8" y="23.2" width="28" height="1.8" fill="#C8D8EC"/>
+          <rect x="8" y="16" width="11" height="7.5" rx="0.5" fill="#102540"/>
+          <circle cx="10.5" cy="18" r="0.7" fill="#C8D8EC"/>
+          <circle cx="13.5" cy="18" r="0.7" fill="#C8D8EC"/>
+          <circle cx="16.5" cy="18" r="0.7" fill="#C8D8EC"/>
+          <circle cx="10.5" cy="20.5" r="0.7" fill="#C8D8EC"/>
+          <circle cx="13.5" cy="20.5" r="0.7" fill="#C8D8EC"/>
+          <circle cx="16.5" cy="20.5" r="0.7" fill="#C8D8EC"/>
+          <path d="M12 31 Q22 27 32 31" stroke="#B8924A" stroke-width="0.8" fill="none"/>
+        </svg>
+      </div>
+      <div>
+        <div class="logo-title">1099Deductions.com</div>
+        <div class="logo-sub">Free В· Independent В· United States</div>
+      </div>
+    </a>
+    <nav>
+      <a id="nav-home" class="active" onclick="showPage('home')">Home</a>
+      <a id="nav-jobs" onclick="showPage('jobs')">By Job Type</a>
+      <a id="nav-calculator" onclick="showPage('calculator')">Calculator</a>
+      <a id="nav-deadlines" onclick="showPage('deadlines')">Deadlines</a>
+      <a id="nav-blog" onclick="showPage('blog')">Blog</a>
+      <a class="nav-cta" onclick="showPage('jobs')">Find My Deductions</a>
+    </nav>
+  </div>
+</header>
+
+<!-- в•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђ HOME PAGE в•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђ -->
+<div id="page-home" class="page active">
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow"><span class="eyebrow-dot"></span>Updated January 2026 &nbsp;вЂў&nbsp; IRS Schedule C Compliant</div>
+        <h1>1099 Tax Deductions 2026 вЂ” Find Every Write-Off You're <em>Missing</em></h1>
+        <p>Free deduction checklists for every major gig job in the United States. Sourced from IRS Schedule C and Publication 334. No registration. No fees. Ever.</p>
+        <div class="hero-chips">
+          <span class="chip"><span class="chip-check">вњ“</span>IRS Schedule C</span>
+          <span class="chip"><span class="chip-check">вњ“</span>All 50 States</span>
+          <span class="chip"><span class="chip-check">вњ“</span>No Registration</span>
+          <span class="chip"><span class="chip-check">вњ“</span>2026 Tax Rules</span>
+          <span class="chip"><span class="chip-check">вњ“</span>Free PDF Export</span>
+        </div>
+        <div class="hero-kpis">
+          <div><span class="kpi-num">76M+</span><span class="kpi-label">US Gig Workers</span></div>
+          <div><span class="kpi-num">$6,400</span><span class="kpi-label">Avg. Annual Savings</span></div>
+          <div><span class="kpi-num">14</span><span class="kpi-label">Job Categories</span></div>
+          <div><span class="kpi-num">Free</span><span class="kpi-label">Always</span></div>
+        </div>
+      </div>
+      <div class="calc-card">
+        <div class="calc-head"><span>Savings Estimator</span><span style="opacity:0.6;font-size:10px;">2026 IRS RULES</span></div>
+        <div class="calc-body">
+          <div class="field">
+            <label class="field-label">Your Gig Job</label>
+            <select id="jobSel">
+              <option value="">Select your job...</option>
+              <option value="uber">Uber / Lyft Driver</option>
+              <option value="doordash">DoorDash / UberEats</option>
+              <option value="airbnb">Airbnb Host</option>
+              <option value="onlyfans">OnlyFans Creator</option>
+              <option value="etsy">Etsy Seller</option>
+              <option value="instacart">Instacart Shopper</option>
+              <option value="freelancer">Upwork / Fiverr</option>
+              <option value="amazon">Amazon Flex</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="field-label">Annual Gig Income ($)</label>
+            <input type="number" id="incomeIn" placeholder="e.g. 48,000" style="color:#E8F0FA;">
+          </div>
+          <div class="field">
+            <label class="field-label">State of Residence</label>
+            <select id="stateSel">
+              <option value="0.093">California (9.3%)</option>
+              <option value="0">Texas (0%)</option>
+              <option value="0.0685">New York (6.85%)</option>
+              <option value="0">Florida (0%)</option>
+              <option value="0.0495">Illinois (4.95%)</option>
+              <option value="0">Nevada (0%)</option>
+              <option value="0">Washington (0%)</option>
+              <option value="0.05">Other State (~5%)</option>
+            </select>
+          </div>
+          <button class="calc-submit" onclick="runCalc()">Calculate My Tax Savings в†’</button>
+          <div class="calc-result" id="calcRes">
+            <div class="res-label">Estimated Deductions Available</div>
+            <div class="res-num" id="resNum">$0</div>
+            <div class="res-sub" id="resSub"></div>
+            <button class="res-btn" id="resBtn" onclick="">View Full Checklist в†’</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="deadline-strip">
+    <div class="deadline-inner">
+      <div>
+        <div class="dl-title">Q1 2026 Estimated Tax Deadline</div>
+        <div class="dl-text">Gig workers earning $400+ must pay quarterly. Missing this triggers a 7% IRS underpayment penalty.</div>
+      </div>
+      <div class="dl-date">April 15, 2026</div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-eyebrow">Deductions by Job</div>
+      <div class="section-h">Select Your Gig Job</div>
+      <div class="section-sub">Every checklist is specific to your job type вЂ” not a generic one-size-fits-all list.</div>
+      <div class="job-grid" id="homeJobGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" style="background:rgba(11,30,54,0.4);">
+    <div class="section-inner">
+      <div class="section-eyebrow">Ready to File</div>
+      <div class="section-h">Recommended Filing Services for 1099 Workers</div>
+      <div class="section-sub">Purpose-built for self-employed income вЂ” guides you through every Schedule C deduction.</div>
+      <div class="aff-grid">
+        <div class="aff-card">
+          <div class="aff-header"><span class="aff-badge" style="background:#3A9E5A;"></span><span class="aff-name">TaxAct Self-Employed</span><span class="aff-rate">From $49.99</span></div>
+          <div class="aff-desc">Built for 1099 contractors. Step-by-step Schedule C guidance. Imports your deduction list directly.</div>
+          <a href="https://www.taxact.com/self-employed-taxes" target="_blank" class="aff-cta">File with TaxAct в†’</a>
+        </div>
+        <div class="aff-card">
+          <div class="aff-header"><span class="aff-badge" style="background:#2D6FD4;"></span><span class="aff-name">Keeper Tax</span><span class="aff-rate">$16/month</span></div>
+          <div class="aff-desc">Automatically finds deductions in your bank statements year-round. Saves users $6,400+ annually.</div>
+          <a href="https://www.keepertax.com" target="_blank" class="aff-cta">Try Keeper Free в†’</a>
+        </div>
+        <div class="aff-card">
+          <div class="aff-header"><span class="aff-badge" style="background:#888;"></span><span class="aff-name">FreeTaxUSA</span><span class="aff-rate">Federal Free</span></div>
+          <div class="aff-desc">File your federal return completely free. State returns $14.99. Best for straightforward 1099 filers.</div>
+          <a href="https://www.freetaxusa.com" target="_blank" class="aff-cta">File Free в†’</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+<style>
+.faq-item{background:var(--navy2);border:1px solid var(--border2);border-radius:6px;padding:20px;margin-bottom:12px}
+.faq-q{color:var(--white);font-weight:600;font-size:14px;margin-bottom:8px;line-height:1.4}
+.faq-a{color:var(--text2);font-size:13px;line-height:1.7}
+</style>
+<div class="section">
+  <div class="section-title">Frequently Asked Questions</div>
+  
+  <div class="faq-item">
+    <div class="faq-q">What deductions can all gig workers claim in 2026?</div>
+    <div class="faq-a">Mileage ($0.725/mile for driving jobs), phone and data plan (business %), home office (up to $1,500/year), health insurance premiums, and equipment required for the job.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">What is self-employment tax and how much is it?</div>
+    <div class="faq-a">SE tax is 15.3% on net profit (Social Security 12.4% + Medicare 2.9%). You can deduct half of SE tax paid on your Form 1040. Deductions reduce net profit and therefore SE tax.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Do gig workers need to pay quarterly taxes in 2026?</div>
+    <div class="faq-a">If you expect to owe $1,000+ in federal tax for the year, you must pay quarterly. Deadlines: April 15, June 16, September 15, January 15, 2027.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Can gig workers deduct health insurance?</div>
+    <div class="faq-a">Yes. If you are not eligible for employer-sponsored health insurance, you can deduct 100% of your health insurance premiums as an above-the-line deduction on Schedule 1.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">What records should gig workers keep for taxes?</div>
+    <div class="faq-a">Mileage log (if driving), all receipts for business expenses, bank statements, 1099 forms, and quarterly payment records. Keep for at least 3 years.</div>
+  </div>
+</div>
+<footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a class="logo" onclick="showPage('home')" style="display:flex;align-items:center;gap:12px;">
+            <div class="logo-title" style="font-family:'Playfair Display',serif;font-size:15px;color:var(--gold2);">1099Deductions.com</div>
+          </a>
+          <p>Free tax deduction resource for U.S. gig workers and independent contractors. Not affiliated with the IRS or any government agency.</p>
+        </div>
+        <div class="footer-col">
+          <h4>By Job</h4>
+          <a onclick="showJobPage('uber')">Uber / Lyft</a>
+          <a onclick="showJobPage('doordash')">DoorDash</a>
+          <a onclick="showJobPage('airbnb')">Airbnb Host</a>
+          <a onclick="showJobPage('onlyfans')">OnlyFans</a>
+          <a onclick="showJobPage('etsy')">Etsy Seller</a>
+          <a onclick="showPage('jobs')">View All в†’</a>
+        </div>
+        <div class="footer-col">
+          <h4>Tools</h4>
+          <a onclick="showPage('calculator')">Tax Calculator</a>
+          <a onclick="showPage('deadlines')">2026 Deadlines</a>
+          <a onclick="showPage('jobs')">All Job Types</a>
+        </div>
+        <div class="footer-col">
+          <h4>Info</h4>
+          <a onclick="showPage('blog')">Blog</a>
+          <a href="https://www.irs.gov/forms-pubs/about-schedule-c-form-1040" target="_blank">IRS Schedule C</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-legal">В© 2026 1099Deductions.com &nbsp;вЂў&nbsp; Not affiliated with the IRS.<br>Data sourced from IRS.gov вЂў Publication 334 вЂў Schedule C Instructions (2026).</div>
+        <div class="irs-badge">IRS Pub. 334 вЂў Schedule C вЂў Rev. Jan 2026</div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- в•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђ JOBS PAGE в•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђ -->
+<div id="page-jobs" class="page">
+  <section class="section" style="padding-top:48px;">
+    <div class="section-inner">
+      <div class="section-eyebrow">All Job Types</div>
+      <div class="section-h">Find Your Gig Job</div>
+      <div class="section-sub">Click your job to see every deduction you qualify for вЂ” sourced from IRS Schedule C.</div>
+      <div class="job-grid" id="allJobGrid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- в•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђ JOB DEDUCTION PAGE в•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђ -->
+<div id="page-job-detail" class="page">
+  <div class="ded-page-header">
+    <div class="ded-page-inner">
+      <button class="back-btn" onclick="showPage('jobs')">в†ђ Back to All Jobs</button>
+      <div class="ded-page-title" id="detailTitle">Job Deductions</div>
+      <div class="ded-page-sub" id="detailSub"></div>
+      <div class="ded-stats" id="detailStats"></div>
+    </div>
+  </div>
+  <section class="section">
+    <div class="section-inner">
+      <table class="ded-table">
+        <thead><tr><th>Deduction</th><th>2026 Rate / Basis</th><th>Annual Savings</th><th>Priority</th></tr></thead>
+        <tbody id="detailTable"></tbody>
+      </table>
+      <div style="margin-top:32px;padding:24px;background:var(--navy2);border:1px solid var(--border);border-radius:3px;text-align:center;">
+        <div style="color:var(--gold);font-size:11px;font-family:'IBM Plex Mono',monospace;letter-spacing:0.1em;margin-bottom:12px;">READY TO FILE? USE THESE DEDUCTIONS NOW</div>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <a href="https://www.keepertax.com" target="_blank" class="aff-cta" style="min-width:200px;">Try Keeper Tax Free в†’</a>
+          <a href="https://www.taxact.com/self-employed-taxes" target="_blank" class="aff-cta" style="min-width:200px;">File with TaxAct в†’</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- в•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђ CALCULATOR PAGE в•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђ -->
+<div id="page-calculator" class="page">
+  <section class="section" style="padding-top:48px;">
+    <div class="section-inner" style="max-width:640px;">
+      <div class="section-eyebrow">Tax Calculator</div>
+      <div class="section-h">Estimate Your Tax Bill & Savings</div>
+      <div class="section-sub">Enter your income to see your estimated SE tax, federal tax, and total deductions available.</div>
+      <div class="calc-card">
+        <div class="calc-head"><span>Full Tax Estimator</span><span style="opacity:0.6;font-size:10px;">2026 IRS RULES</span></div>
+        <div class="calc-body">
+          <div class="field"><label class="field-label">Your Gig Job</label>
+            <select id="calcJobSel">
+              <option value="">Select your job...</option>
+              <option value="uber">Uber / Lyft Driver</option>
+              <option value="doordash">DoorDash / UberEats</option>
+              <option value="airbnb">Airbnb Host</option>
+              <option value="onlyfans">OnlyFans Creator</option>
+              <option value="etsy">Etsy Seller</option>
+              <option value="instacart">Instacart Shopper</option>
+              <option value="freelancer">Upwork / Fiverr</option>
+              <option value="amazon">Amazon Flex</option>
+            </select>
+          </div>
+          <div class="field"><label class="field-label">Annual Gross Income ($)</label>
+            <input type="number" id="calcIncome" placeholder="e.g. 55,000" style="color:#E8F0FA;">
+          </div>
+          <div class="field"><label class="field-label">State of Residence</label>
+            <select id="calcState">
+              <option value="0.093">California (9.3%)</option>
+              <option value="0">Texas (0%)</option>
+              <option value="0.0685">New York (6.85%)</option>
+              <option value="0">Florida (0%)</option>
+              <option value="0.0495">Illinois (4.95%)</option>
+              <option value="0">Nevada (0%)</option>
+              <option value="0">Washington (0%)</option>
+              <option value="0.05">Other State (~5%)</option>
+            </select>
+          </div>
+          <button class="calc-submit" onclick="runFullCalc()">Calculate My Taxes в†’</button>
+          <div id="fullCalcResult" style="display:none;margin-top:20px;">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:16px;">
+              <div style="background:var(--navy);border:1px solid var(--border2);border-radius:3px;padding:16px;text-align:center;">
+                <div style="font-size:10px;color:var(--text3);font-family:'IBM Plex Mono',monospace;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px;">SE Tax (15.3%)</div>
+                <div style="font-family:'Playfair Display',serif;font-size:24px;color:#FF9EA8;" id="fcSE">$0</div>
+              </div>
+              <div style="background:var(--navy);border:1px solid var(--border2);border-radius:3px;padding:16px;text-align:center;">
+                <div style="font-size:10px;color:var(--text3);font-family:'IBM Plex Mono',monospace;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px;">Federal Income Tax</div>
+                <div style="font-family:'Playfair Display',serif;font-size:24px;color:#FF9EA8;" id="fcFed">$0</div>
+              </div>
+              <div style="background:var(--navy);border:1px solid var(--border2);border-radius:3px;padding:16px;text-align:center;">
+                <div style="font-size:10px;color:var(--text3);font-family:'IBM Plex Mono',monospace;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px;">State Tax</div>
+                <div style="font-family:'Playfair Display',serif;font-size:24px;color:#FF9EA8;" id="fcState">$0</div>
+              </div>
+              <div style="background:rgba(184,146,74,0.08);border:1px solid rgba(184,146,74,0.25);border-radius:3px;padding:16px;text-align:center;">
+                <div style="font-size:10px;color:var(--gold);font-family:'IBM Plex Mono',monospace;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px;">Deductions Available</div>
+                <div style="font-family:'Playfair Display',serif;font-size:24px;color:var(--gold2);" id="fcDed">$0</div>
+              </div>
+            </div>
+            <div style="background:var(--navy2);border:1px solid var(--border);border-radius:3px;padding:16px;margin-bottom:16px;">
+              <div style="font-size:11px;color:var(--text3);font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Quarterly Payment (set aside)</div>
+              <div style="font-family:'Playfair Display',serif;font-size:28px;color:var(--gold2);" id="fcQuarterly">$0</div>
+              <div style="font-size:12px;color:var(--text2);margin-top:4px;">Pay by: Apr 15 В· Jun 16 В· Sep 15 В· Jan 15</div>
+            </div>
+            <a href="https://www.keepertax.com" target="_blank" class="aff-cta" style="display:block;text-align:center;">Find More Deductions with Keeper Tax в†’</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- в•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђ DEADLINES PAGE в•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђ -->
+<div id="page-deadlines" class="page">
+  <section class="section" style="padding-top:48px;">
+    <div class="section-inner">
+      <div class="section-eyebrow">2026 Tax Calendar</div>
+      <div class="section-h">Quarterly Tax Deadlines 2026</div>
+      <div class="section-sub">As a 1099 gig worker, you must pay estimated taxes 4 times per year. Missing a deadline triggers an IRS underpayment penalty.</div>
+      <table class="dl-table" style="margin-bottom:32px;">
+        <thead><tr><th>Quarter</th><th>Income Period</th><th>IRS Deadline</th><th>Penalty if Missed</th></tr></thead>
+        <tbody>
+          <tr><td><strong style="color:var(--white);">Q1 2026</strong> <span class="urgent-badge">UPCOMING</span></td><td>January вЂ“ March</td><td style="color:var(--gold2);font-weight:600;">April 15, 2026</td><td style="color:#FF9EA8;">7% annual rate</td></tr>
+          <tr><td><strong style="color:var(--white);">Q2 2026</strong></td><td>April вЂ“ May</td><td style="color:var(--gold2);font-weight:600;">June 16, 2026</td><td style="color:#FF9EA8;">7% annual rate</td></tr>
+          <tr><td><strong style="color:var(--white);">Q3 2026</strong></td><td>June вЂ“ August</td><td style="color:var(--gold2);font-weight:600;">September 15, 2026</td><td style="color:#FF9EA8;">7% annual rate</td></tr>
+          <tr><td><strong style="color:var(--white);">Q4 2026</strong></td><td>September вЂ“ December</td><td style="color:var(--gold2);font-weight:600;">January 15, 2027</td><td style="color:#FF9EA8;">7% annual rate</td></tr>
+        </tbody>
+      </table>
+      <div style="background:rgba(122,21,32,0.15);border:1px solid rgba(122,21,32,0.4);border-radius:3px;padding:20px 24px;margin-bottom:24px;">
+        <div style="font-weight:600;color:#FFE8EA;margin-bottom:6px;">вљ пёЏ How to Pay</div>
+        <div style="color:#FFAAB0;font-size:13px;line-height:1.7;">Pay online at <strong>IRS.gov/payments</strong> using Direct Pay (free). Or mail IRS Form 1040-ES with a check. Use <strong>EFTPS.gov</strong> for same-day guaranteed processing. Rough estimate: set aside <strong>25вЂ“30% of every payment</strong> you receive.</div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;">
+        <div class="aff-card"><div class="aff-header"><span class="aff-badge" style="background:#2D6FD4;"></span><span class="aff-name">Keeper Tax</span></div><div class="aff-desc">Tracks your deductions year-round so your quarterly payment is always accurate.</div><a href="https://www.keepertax.com" target="_blank" class="aff-cta">Try Free в†’</a></div>
+        <div class="aff-card"><div class="aff-header"><span class="aff-badge" style="background:#3A9E5A;"></span><span class="aff-name">TaxAct Self-Employed</span></div><div class="aff-desc">Calculates your exact quarterly payment and reminds you before each deadline.</div><a href="https://www.taxact.com/self-employed-taxes" target="_blank" class="aff-cta">Get Started в†’</a></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- в•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђ BLOG PAGE в•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђв•ђ -->
+<div id="page-blog" class="page">
+  <section class="section" style="padding-top:48px;">
+    <div class="section-inner">
+      <div class="section-eyebrow">Blog</div>
+      <div class="section-h">Tax Guides for Gig Workers</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;margin-top:32px;">
+        <div style="background:var(--navy2);border:1px solid var(--border2);border-top:2px solid var(--gold);border-radius:3px;padding:24px;">
+          <div style="font-size:10px;color:var(--gold);font-family:'IBM Plex Mono',monospace;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:10px;">Mileage</div>
+          <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--white);margin-bottom:10px;line-height:1.3;">IRS Mileage Rate 2026: 70Вў Per Mile вЂ” What Gig Workers Need to Know</div>
+          <div style="color:var(--text2);font-size:13px;line-height:1.6;margin-bottom:16px;">The 2026 standard mileage rate is $0.70 per mile for business use. Here's how to maximize this deduction as a delivery or rideshare driver.</div>
+          <a href="https://www.irs.gov/tax-professionals/standard-mileage-rates" target="_blank" style="color:var(--gold2);font-size:12px;font-family:'IBM Plex Mono',monospace;text-decoration:none;">Read IRS Source в†’</a>
+        </div>
+        <div style="background:var(--navy2);border:1px solid var(--border2);border-top:2px solid var(--gold);border-radius:3px;padding:24px;">
+          <div style="font-size:10px;color:var(--gold);font-family:'IBM Plex Mono',monospace;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:10px;">1099 Basics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--white);margin-bottom:10px;line-height:1.3;">W-2 vs 1099: The Complete Guide for Gig Workers in 2026</div>
+          <div style="color:var(--text2);font-size:13px;line-height:1.6;margin-bottom:16px;">What's the real difference? How much more tax do 1099 workers pay вЂ” and what deductions close the gap?</div>
+          <a href="https://www.irs.gov/businesses/small-businesses-self-employed/self-employed-individuals-tax-center" target="_blank" style="color:var(--gold2);font-size:12px;font-family:'IBM Plex Mono',monospace;text-decoration:none;">Read IRS Source в†’</a>
+        </div>
+        <div style="background:var(--navy2);border:1px solid var(--border2);border-top:2px solid var(--gold);border-radius:3px;padding:24px;">
+          <div style="font-size:10px;color:var(--gold);font-family:'IBM Plex Mono',monospace;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:10px;">Quarterly Taxes</div>
+          <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--white);margin-bottom:10px;line-height:1.3;">Quarterly Taxes for Gig Workers: Deadlines, How to Pay, What Happens if You Miss</div>
+          <div style="color:var(--text2);font-size:13px;line-height:1.6;margin-bottom:16px;">A complete guide to estimated quarterly tax payments вЂ” who owes them, how much, and how to pay for free online.</div>
+          <a onclick="showPage('deadlines')" style="color:var(--gold2);font-size:12px;font-family:'IBM Plex Mono',monospace;text-decoration:none;cursor:pointer;">See 2026 Deadlines в†’</a>
+        </div>
+        <div style="background:var(--navy2);border:1px solid var(--border2);border-top:2px solid var(--gold);border-radius:3px;padding:24px;">
+          <div style="font-size:10px;color:var(--gold);font-family:'IBM Plex Mono',monospace;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:10px;">Home Office</div>
+          <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--white);margin-bottom:10px;line-height:1.3;">Home Office Deduction 2026: Up to $1,500 for Gig Workers</div>
+          <div style="color:var(--text2);font-size:13px;line-height:1.6;margin-bottom:16px;">The simplified method: $5 per sq ft up to 300 sq ft. Who qualifies, what counts as exclusive use, and how to claim it.</div>
+          <a href="https://www.irs.gov/businesses/small-businesses-self-employed/home-office-deduction" target="_blank" style="color:var(--gold2);font-size:12px;font-family:'IBM Plex Mono',monospace;text-decoration:none;">Read IRS Source в†’</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+// в”Ђв”Ђ DATA в”Ђв”Ђ
+const JOBS = [
+  { id:'uber',      name:'Uber / Lyft',     count:38, icon:'user' },
+  { id:'doordash',  name:'DoorDash',         count:34, icon:'bag' },
+  { id:'airbnb',    name:'Airbnb Host',      count:41, icon:'home' },
+  { id:'onlyfans',  name:'OnlyFans',         count:44, icon:'doc' },
+  { id:'etsy',      name:'Etsy Seller',      count:36, icon:'star' },
+  { id:'instacart', name:'Instacart',        count:32, icon:'plus' },
+  { id:'freelancer',name:'Upwork / Fiverr',  count:29, icon:'screen' },
+  { id:'amazon',    name:'Amazon Flex',      count:33, icon:'truck' },
+  { id:'turo',      name:'Turo Host',        count:28, icon:'clock' },
+  { id:'youtube',   name:'Twitch / YouTube', count:37, icon:'video' },
+  { id:'aifreelancer',name:'AI Freelancer',  count:31, icon:'circle' },
+  { id:'rover',     name:'Rover / Wag',      count:26, icon:'paw' },
+  { id:'photo',     name:'Photographer',     count:39, icon:'user' },
+  { id:'taskrabbit',name:'TaskRabbit',       count:27, icon:'store' },
+];
+
+const ICONS = {
+  user: '<circle cx="10" cy="10" r="8"/><path d="M6 13c0-2.2 1.8-4 4-4s4 1.8 4 4"/><circle cx="10" cy="7.5" r="1.5"/>',
+  bag:  '<rect x="3" y="6" width="14" height="10" rx="1.5"/><path d="M7 6V5a3 3 0 016 0v1"/><path d="M10 11v2"/>',
+  home: '<path d="M3 8l7-5 7 5v9a1 1 0 01-1 1H4a1 1 0 01-1-1V8z"/><path d="M8 17v-6h4v6"/>',
+  doc:  '<rect x="4" y="3" width="12" height="15" rx="2"/><path d="M8 7h4M8 10h4M8 13h2"/>',
+  star: '<path d="M10 3l1.5 4.5H16l-3.7 2.7 1.4 4.3L10 12l-3.7 2.5 1.4-4.3L4 7.5h4.5L10 3z"/>',
+  plus: '<circle cx="10" cy="10" r="7"/><path d="M7 10h6M10 7v6"/>',
+  screen:'<rect x="3" y="4" width="14" height="10" rx="1.5"/><path d="M7 17h6M10 14v3"/>',
+  truck: '<path d="M4 14l3-8h6l3 8"/><path d="M2 14h16"/><path d="M10 6V4"/>',
+  clock: '<circle cx="10" cy="10" r="7"/><path d="M10 6v4l3 2"/>',
+  video: '<path d="M3 5h14v9a1 1 0 01-1 1H4a1 1 0 01-1-1V5z"/><path d="M7 17h6"/><circle cx="10" cy="10" r="2.5"/>',
+  circle:'<path d="M5 10h10M10 5v10"/><circle cx="10" cy="10" r="7"/>',
+  paw:   '<path d="M10 3c-3.9 0-7 2-7 6 0 2.5 1.2 4 2 5h10c.8-1 2-2.5 2-5 0-4-3.1-6-7-6z"/><path d="M8 17h4"/>',
+  store: '<path d="M5 3h10l2 5H3L5 3z"/><rect x="3" y="8" width="14" height="9" rx="1"/><path d="M10 11v4"/>',
+};
+
+const DEDUCTIONS = {
+  uber: {
+    title: 'Uber / Lyft Driver', sub: '38 deductions available вЂ” most drivers claim only 3вЂ“4',
+    totalMin: 6400, totalMax: 18000,
+    items: [
+      { name:'Business Mileage', note:'Standard or actual expense method', rate:'70Вў/mile (IRS 2026)', saveMin:3200, saveMax:8400, p:'high' },
+      { name:'SE Tax Deduction', note:'Deduct 50% of self-employment tax', rate:'7.65% of net earnings', saveMin:900, saveMax:3100, p:'high' },
+      { name:'Health Insurance Premium', note:'If not eligible for employer coverage', rate:'100% deductible', saveMin:2400, saveMax:6000, p:'high' },
+      { name:'Cell Phone Bill', note:'Proportional to business use (50вЂ“80%)', rate:'50вЂ“80% of monthly bill', saveMin:480, saveMax:960, p:'high' },
+      { name:'Car Insurance', note:'Proportional to business miles / total miles', rate:'Business-use %', saveMin:400, saveMax:1200, p:'med' },
+      { name:'Toll Fees (during rides)', note:'Keep records per trip', rate:'100% deductible', saveMin:200, saveMax:800, p:'med' },
+      { name:'Car Washes', note:'For vehicles used exclusively for rideshare', rate:'100% deductible', saveMin:100, saveMax:400, p:'med' },
+      { name:'Phone Mount / Accessories', note:'GPS holder, charger, dashcam', rate:'100% deductible', saveMin:50, saveMax:200, p:'med' },
+      { name:'Roadside Assistance (AAA)', note:'Only business-use portion', rate:'Business-use %', saveMin:50, saveMax:150, p:'med' },
+      { name:'Tax Preparation Software', note:'TaxAct, Keeper, TurboTax', rate:'100% deductible', saveMin:50, saveMax:150, p:'med' },
+    ]
+  },
+  doordash: {
+    title: 'DoorDash / UberEats Driver', sub: '34 deductions available',
+    totalMin: 5800, totalMax: 14000,
+    items: [
+      { name:'Business Mileage', note:'From app open to last delivery drop-off', rate:'70Вў/mile (IRS 2026)', saveMin:2800, saveMax:7200, p:'high' },
+      { name:'SE Tax Deduction', note:'Deduct 50% of self-employment tax', rate:'7.65% of net earnings', saveMin:800, saveMax:2800, p:'high' },
+      { name:'Insulated Delivery Bags', note:'Hot bags, pizza bags, drink carriers', rate:'100% deductible', saveMin:50, saveMax:200, p:'high' },
+      { name:'Cell Phone Bill', note:'70вЂ“80% if used primarily for deliveries', rate:'70вЂ“80% of bill', saveMin:480, saveMax:960, p:'high' },
+      { name:'Health Insurance Premium', note:'Self-employed health insurance deduction', rate:'100% deductible', saveMin:2400, saveMax:6000, p:'high' },
+      { name:'Toll Fees', note:'Keep receipts per delivery run', rate:'100% deductible', saveMin:150, saveMax:600, p:'med' },
+      { name:'Car Washes', note:'For delivery vehicle maintenance', rate:'100% deductible', saveMin:100, saveMax:350, p:'med' },
+      { name:'Parking Fees', note:'At restaurants and delivery locations', rate:'100% deductible', saveMin:100, saveMax:400, p:'med' },
+      { name:'Car Insurance (business %)', note:'Miles driven for DoorDash / total miles', rate:'Business-use %', saveMin:300, saveMax:900, p:'med' },
+      { name:'Tax Software', note:'Cost of filing software is deductible', rate:'100% deductible', saveMin:50, saveMax:150, p:'med' },
+    ]
+  },
+  airbnb: {
+    title: 'Airbnb Host', sub: '41 deductions available вЂ” short-term rental is highly deductible',
+    totalMin: 8200, totalMax: 22000,
+    items: [
+      { name:'Depreciation (Schedule E)', note:'Residential property depreciated over 27.5 years', rate:'Cost basis Г· 27.5', saveMin:3000, saveMax:12000, p:'high' },
+      { name:'Mortgage Interest', note:'Proportional to rental-use days / total days', rate:'Rental-use %', saveMin:2000, saveMax:8000, p:'high' },
+      { name:'Cleaning & Laundry', note:'Professional cleaning between guests', rate:'100% deductible', saveMin:600, saveMax:3000, p:'high' },
+      { name:'Platform Fees (Airbnb)', note:'Airbnb service fees deducted from your payouts', rate:'100% deductible', saveMin:400, saveMax:2000, p:'high' },
+      { name:'Supplies & Amenities', note:'Toiletries, coffee, linens, towels', rate:'100% deductible', saveMin:300, saveMax:1500, p:'high' },
+      { name:'Utilities (rental-use portion)', note:'Electricity, water, gas, internet', rate:'Rental-use %', saveMin:500, saveMax:2400, p:'high' },
+      { name:'Property Management Software', note:'Hostfully, Guesty, PriceLabs', rate:'100% deductible', saveMin:100, saveMax:500, p:'med' },
+      { name:'Home Insurance (rental %)', note:'Rental days / total days used', rate:'Rental-use %', saveMin:200, saveMax:800, p:'med' },
+      { name:'Repairs & Maintenance', note:'Only for issues in rental space', rate:'100% deductible', saveMin:200, saveMax:2000, p:'med' },
+      { name:'Photography for Listing', note:'Professional photos for your listing', rate:'100% deductible', saveMin:100, saveMax:400, p:'med' },
+    ]
+  },
+  onlyfans: {
+    title: 'OnlyFans Creator', sub: '44 deductions available вЂ” creators often miss 60% of their write-offs',
+    totalMin: 7100, totalMax: 18000,
+    items: [
+      { name:'Camera & Photography Equipment', note:'DSLR, mirrorless, ring lights, tripods', rate:'100% (or depreciated)', saveMin:500, saveMax:3000, p:'high' },
+      { name:'Home Office Deduction', note:'Dedicated shooting/editing space at home', rate:'$5/sq ft up to 300 sq ft', saveMin:750, saveMax:1500, p:'high' },
+      { name:'SE Tax Deduction', note:'50% of self-employment tax is deductible', rate:'7.65% of net earnings', saveMin:1000, saveMax:3500, p:'high' },
+      { name:'Internet (business %)', note:'Used for streaming and content upload', rate:'80вЂ“100% of bill', saveMin:500, saveMax:1200, p:'high' },
+      { name:'Costumes & Props', note:'Used exclusively for content creation', rate:'100% deductible', saveMin:300, saveMax:2000, p:'high' },
+      { name:'OnlyFans Platform Fees', note:'20% taken by OnlyFans is deductible', rate:'20% of gross revenue', saveMin:1000, saveMax:8000, p:'high' },
+      { name:'Editing Software', note:'Adobe Premiere, Final Cut Pro, Lightroom', rate:'100% deductible', saveMin:200, saveMax:800, p:'med' },
+      { name:'Health Insurance Premium', note:'Self-employed health insurance deduction', rate:'100% deductible', saveMin:2400, saveMax:6000, p:'med' },
+      { name:'Background / Studio DГ©cor', note:'Used exclusively for filming', rate:'100% deductible', saveMin:200, saveMax:1000, p:'med' },
+      { name:'Cell Phone (business %)', note:'Used for content creation and communication', rate:'60вЂ“80% of bill', saveMin:400, saveMax:960, p:'med' },
+    ]
+  },
+  etsy: {
+    title: 'Etsy Seller', sub: '36 deductions available вЂ” materials, studio, shipping, fees',
+    totalMin: 4900, totalMax: 12000,
+    items: [
+      { name:'Cost of Goods Sold (Materials)', note:'Raw materials used in products you sold', rate:'100% deductible (Schedule C, Part III)', saveMin:1000, saveMax:8000, p:'high' },
+      { name:'Etsy Platform Fees', note:'Listing fees, transaction fees, Ads', rate:'100% deductible', saveMin:400, saveMax:2000, p:'high' },
+      { name:'Shipping & Postage', note:'All postage, packing materials, labels', rate:'100% deductible', saveMin:300, saveMax:1500, p:'high' },
+      { name:'SE Tax Deduction', note:'50% of SE tax is deductible on Schedule 1', rate:'7.65% of net earnings', saveMin:600, saveMax:2200, p:'high' },
+      { name:'Home Studio / Office', note:'Dedicated craft room used exclusively for Etsy', rate:'$5/sq ft up to 300 sq ft', saveMin:750, saveMax:1500, p:'high' },
+      { name:'Packaging Supplies', note:'Boxes, tissue paper, ribbon, tape', rate:'100% deductible', saveMin:100, saveMax:600, p:'med' },
+      { name:'Photography Equipment', note:'For product photography', rate:'100% deductible', saveMin:100, saveMax:500, p:'med' },
+      { name:'Design Software', note:'Canva Pro, Adobe, Procreate', rate:'100% deductible', saveMin:100, saveMax:600, p:'med' },
+      { name:'Health Insurance Premium', note:'If self-employed, deduct 100%', rate:'100% deductible', saveMin:2400, saveMax:6000, p:'med' },
+      { name:'Mileage (post office trips)', note:'Driving to mail packages вЂ” 70Вў/mile', rate:'70Вў/mile', saveMin:50, saveMax:300, p:'med' },
+    ]
+  },
+  instacart: {
+    title: 'Instacart Shopper', sub: '32 deductions available',
+    totalMin: 4200, totalMax: 10000,
+    items: [
+      { name:'Business Mileage', note:'Driving to stores and to customers', rate:'70Вў/mile (IRS 2026)', saveMin:2000, saveMax:5500, p:'high' },
+      { name:'SE Tax Deduction', note:'50% of self-employment tax', rate:'7.65% of net earnings', saveMin:600, saveMax:2000, p:'high' },
+      { name:'Insulated Grocery Bags', note:'Reusable cold bags for deliveries', rate:'100% deductible', saveMin:30, saveMax:100, p:'high' },
+      { name:'Cell Phone Bill', note:'Used for the Instacart app and navigation', rate:'60вЂ“80% of bill', saveMin:400, saveMax:960, p:'high' },
+      { name:'Health Insurance Premium', note:'Self-employed deduction', rate:'100% deductible', saveMin:2400, saveMax:6000, p:'high' },
+      { name:'Car Insurance (business %)', note:'Miles shopped / total miles', rate:'Business-use %', saveMin:300, saveMax:900, p:'med' },
+      { name:'Toll Fees', note:'Tolls paid during shopping/delivery runs', rate:'100% deductible', saveMin:100, saveMax:400, p:'med' },
+      { name:'Parking Fees', note:'At store parking if paid', rate:'100% deductible', saveMin:50, saveMax:300, p:'med' },
+      { name:'Tax Software', note:'Filing software is 100% deductible', rate:'100% deductible', saveMin:50, saveMax:150, p:'med' },
+      { name:'Car Washes', note:'For delivery vehicle', rate:'100% deductible', saveMin:100, saveMax:350, p:'med' },
+    ]
+  },
+  freelancer: {
+    title: 'Upwork / Fiverr Freelancer', sub: '29 deductions available вЂ” digital freelancers miss most of these',
+    totalMin: 5600, totalMax: 14000,
+    items: [
+      { name:'Home Office Deduction', note:'Dedicated workspace used only for work', rate:'$5/sq ft up to 300 sq ft', saveMin:750, saveMax:1500, p:'high' },
+      { name:'SE Tax Deduction', note:'50% of self-employment tax', rate:'7.65% of net earnings', saveMin:1000, saveMax:3500, p:'high' },
+      { name:'Internet Bill', note:'Business-use percentage of monthly internet', rate:'80вЂ“100% if mainly for work', saveMin:600, saveMax:1200, p:'high' },
+      { name:'Platform Fees', note:'Upwork service fees (5вЂ“20%), Fiverr 20%', rate:'100% deductible', saveMin:500, saveMax:3000, p:'high' },
+      { name:'Health Insurance Premium', note:'Self-employed health insurance deduction', rate:'100% deductible', saveMin:2400, saveMax:6000, p:'high' },
+      { name:'Software Subscriptions', note:'Adobe, Figma, Slack, GitHub, Notion, etc.', rate:'100% deductible', saveMin:300, saveMax:1200, p:'med' },
+      { name:'Computer & Equipment', note:'Depreciated or Section 179 expensing', rate:'100% (Section 179)', saveMin:300, saveMax:2000, p:'med' },
+      { name:'Education & Courses', note:'Online courses directly related to your work', rate:'100% deductible', saveMin:100, saveMax:800, p:'med' },
+      { name:'Cell Phone (business %)', note:'For client communication and work calls', rate:'50вЂ“70% of bill', saveMin:300, saveMax:840, p:'med' },
+      { name:'Professional Books / Resources', note:'Industry books, research subscriptions', rate:'100% deductible', saveMin:50, saveMax:300, p:'med' },
+    ]
+  },
+  amazon: {
+    title: 'Amazon Flex Driver', sub: '33 deductions available',
+    totalMin: 4800, totalMax: 11000,
+    items: [
+      { name:'Business Mileage', note:'From when you leave your home to final drop-off', rate:'70Вў/mile (IRS 2026)', saveMin:2500, saveMax:6500, p:'high' },
+      { name:'SE Tax Deduction', note:'50% of self-employment tax', rate:'7.65% of net earnings', saveMin:700, saveMax:2400, p:'high' },
+      { name:'Cell Phone Bill', note:'Used for the Amazon Flex app', rate:'70вЂ“80% of bill', saveMin:480, saveMax:960, p:'high' },
+      { name:'Health Insurance Premium', note:'Self-employed health insurance', rate:'100% deductible', saveMin:2400, saveMax:6000, p:'high' },
+      { name:'Car Insurance (business %)', note:'Business miles / total miles ratio', rate:'Business-use %', saveMin:300, saveMax:900, p:'med' },
+      { name:'Safety Gear', note:'Reflective vest, gloves, back brace', rate:'100% deductible', saveMin:50, saveMax:200, p:'med' },
+      { name:'Toll Fees', note:'Tolls paid during delivery routes', rate:'100% deductible', saveMin:100, saveMax:500, p:'med' },
+      { name:'Parking Fees', note:'Paid parking during deliveries', rate:'100% deductible', saveMin:50, saveMax:300, p:'med' },
+      { name:'Car Washes', note:'Keeping delivery vehicle clean', rate:'100% deductible', saveMin:100, saveMax:350, p:'med' },
+      { name:'Phone Mount / Accessories', note:'GPS mount, charger for navigation', rate:'100% deductible', saveMin:30, saveMax:150, p:'med' },
+    ]
+  },
+  turo: { title:'Turo Host', sub:'28 deductions available', totalMin:3800, totalMax:9000,
+    items:[
+      { name:'Depreciation of Vehicle', note:'Rental vehicle depreciated over 5 years', rate:'MACRS depreciation', saveMin:1500, saveMax:5000, p:'high' },
+      { name:'Car Insurance (rental %)', note:'Days rented / total days', rate:'Rental-use %', saveMin:400, saveMax:1600, p:'high' },
+      { name:'Turo Platform Fee', note:'Turo takes 15вЂ“35% of your earnings', rate:'100% deductible', saveMin:500, saveMax:3000, p:'high' },
+      { name:'Maintenance & Repairs', note:'Oil changes, tires, brake pads (rental %)', rate:'Rental-use %', saveMin:300, saveMax:1200, p:'high' },
+      { name:'Car Washes & Detailing', note:'Between rentals', rate:'100% deductible', saveMin:200, saveMax:800, p:'med' },
+      { name:'Roadside Assistance', note:'AAA or similar plan', rate:'Rental-use %', saveMin:50, saveMax:150, p:'med' },
+      { name:'Registration & Licensing', note:'Vehicle registration fees', rate:'Rental-use %', saveMin:50, saveMax:200, p:'med' },
+      { name:'SE Tax Deduction', note:'50% of self-employment tax', rate:'7.65% of net earnings', saveMin:400, saveMax:1500, p:'high' },
+    ]
+  },
+  youtube: { title:'Twitch / YouTube Creator', sub:'37 deductions available', totalMin:5500, totalMax:14000,
+    items:[
+      { name:'Camera & Video Equipment', note:'Camera, microphone, lighting, capture card', rate:'100% or depreciated', saveMin:500, saveMax:3000, p:'high' },
+      { name:'Home Office / Studio', note:'Dedicated filming/editing space', rate:'$5/sq ft up to 300 sq ft', saveMin:750, saveMax:1500, p:'high' },
+      { name:'Internet Bill (business %)', note:'For streaming, uploading, research', rate:'80вЂ“100% of bill', saveMin:600, saveMax:1200, p:'high' },
+      { name:'SE Tax Deduction', note:'50% of self-employment tax', rate:'7.65% of net earnings', saveMin:800, saveMax:2800, p:'high' },
+      { name:'Editing Software', note:'Adobe Premiere, DaVinci Resolve, After Effects', rate:'100% deductible', saveMin:200, saveMax:800, p:'med' },
+      { name:'Props & Set Design', note:'Used exclusively for videos', rate:'100% deductible', saveMin:100, saveMax:600, p:'med' },
+      { name:'Channel Art & Design', note:'Thumbnails, logos, overlays', rate:'100% deductible', saveMin:100, saveMax:500, p:'med' },
+      { name:'Music & Sound Licenses', note:'Licensed music for content', rate:'100% deductible', saveMin:100, saveMax:400, p:'med' },
+    ]
+  },
+  aifreelancer: { title:'AI Freelancer', sub:'31 deductions available', totalMin:5000, totalMax:13000,
+    items:[
+      { name:'Home Office', note:'Dedicated AI workspace', rate:'$5/sq ft up to 300 sq ft', saveMin:750, saveMax:1500, p:'high' },
+      { name:'AI Software Subscriptions', note:'ChatGPT Plus, Claude Pro, Midjourney, etc.', rate:'100% deductible', saveMin:300, saveMax:1200, p:'high' },
+      { name:'SE Tax Deduction', note:'50% of self-employment tax', rate:'7.65% of net earnings', saveMin:900, saveMax:3200, p:'high' },
+      { name:'Internet (100%)', note:'Essential for AI work', rate:'100% if used exclusively for business', saveMin:600, saveMax:1400, p:'high' },
+      { name:'Computer & GPU Equipment', note:'High-performance hardware for AI tasks', rate:'Section 179 or depreciation', saveMin:500, saveMax:3000, p:'high' },
+      { name:'Courses & Certifications', note:'AI/ML courses on Coursera, Udemy, etc.', rate:'100% deductible', saveMin:100, saveMax:800, p:'med' },
+      { name:'Platform Fees', note:'Upwork, Toptal, Fiverr fees', rate:'100% deductible', saveMin:300, saveMax:1500, p:'med' },
+    ]
+  },
+  rover: { title:'Rover / Wag Dog Walker', sub:'26 deductions available', totalMin:2800, totalMax:7000,
+    items:[
+      { name:'Business Mileage', note:'Driving to pick up / drop off pets', rate:'70Вў/mile (IRS 2026)', saveMin:800, saveMax:3000, p:'high' },
+      { name:'SE Tax Deduction', note:'50% of self-employment tax', rate:'7.65% of net earnings', saveMin:400, saveMax:1400, p:'high' },
+      { name:'Pet Supplies (business use)', note:'Leashes, waste bags, treats for client dogs', rate:'100% deductible', saveMin:100, saveMax:500, p:'high' },
+      { name:'Cell Phone Bill', note:'Used for Rover/Wag app and GPS', rate:'50вЂ“60% of bill', saveMin:300, saveMax:720, p:'med' },
+      { name:'Liability Insurance', note:'Pet sitter / dog walker insurance', rate:'100% deductible', saveMin:150, saveMax:400, p:'med' },
+      { name:'Rover / Wag Platform Fee', note:'Platform takes 20вЂ“25% of earnings', rate:'100% deductible', saveMin:200, saveMax:800, p:'med' },
+    ]
+  },
+  photo: { title:'Photographer', sub:'39 deductions available', totalMin:5500, totalMax:14000,
+    items:[
+      { name:'Camera & Lens Equipment', note:'Professional camera bodies, lenses, flashes', rate:'100% or Section 179', saveMin:500, saveMax:4000, p:'high' },
+      { name:'Home Studio / Office', note:'Dedicated editing/studio space', rate:'$5/sq ft up to 300 sq ft', saveMin:750, saveMax:1500, p:'high' },
+      { name:'SE Tax Deduction', note:'50% of self-employment tax', rate:'7.65% of net earnings', saveMin:800, saveMax:2800, p:'high' },
+      { name:'Editing Software', note:'Lightroom, Photoshop, Capture One', rate:'100% deductible', saveMin:200, saveMax:600, p:'high' },
+      { name:'Storage (hard drives, cloud)', note:'Backup storage for client photos', rate:'100% deductible', saveMin:100, saveMax:400, p:'med' },
+      { name:'Mileage to Shoots', note:'Driving to client locations', rate:'70Вў/mile', saveMin:200, saveMax:1000, p:'med' },
+      { name:'Props & Backgrounds', note:'Backdrops, props used for sessions', rate:'100% deductible', saveMin:100, saveMax:500, p:'med' },
+    ]
+  },
+  taskrabbit: { title:'TaskRabbit Tasker', sub:'27 deductions available', totalMin:3200, totalMax:8000,
+    items:[
+      { name:'Business Mileage', note:'Driving to and from task locations', rate:'70Вў/mile (IRS 2026)', saveMin:800, saveMax:3000, p:'high' },
+      { name:'SE Tax Deduction', note:'50% of self-employment tax', rate:'7.65% of net earnings', saveMin:500, saveMax:1800, p:'high' },
+      { name:'Tools & Equipment', note:'Tools purchased for task work', rate:'100% deductible', saveMin:200, saveMax:1500, p:'high' },
+      { name:'Cell Phone (business %)', note:'For TaskRabbit app and client communication', rate:'50вЂ“60% of bill', saveMin:300, saveMax:720, p:'med' },
+      { name:'Work Clothing / Uniform', note:'Clothing worn exclusively for tasks', rate:'100% deductible', saveMin:50, saveMax:300, p:'med' },
+      { name:'TaskRabbit Platform Fee', note:'Platform service fee deducted from earnings', rate:'100% deductible', saveMin:200, saveMax:800, p:'med' },
+    ]
+  },
+};
+
+const savingsData = {
+  uber:{est:6400,note:"Mileage, SE tax deduction, phone, insurance"},
+  doordash:{est:5800,note:"Mileage, thermal bag, phone, tolls"},
+  airbnb:{est:8200,note:"Depreciation, utilities, cleaning, supplies"},
+  onlyfans:{est:7100,note:"Equipment, subscriptions, home office, internet"},
+  etsy:{est:4900,note:"Materials, shipping, platform fees, packaging"},
+  instacart:{est:4200,note:"Mileage, bags, phone, health insurance"},
+  freelancer:{est:5600,note:"Home office, software, internet, courses"},
+  amazon:{est:4800,note:"Mileage, phone, equipment, safety gear"},
+};
+
+// в”Ђв”Ђ NAVIGATION в”Ђв”Ђ
+function showPage(page) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+  document.getElementById('page-' + page).classList.add('active');
+  const navEl = document.getElementById('nav-' + page);
+  if (navEl) navEl.classList.add('active');
+  window.scrollTo(0,0);
+}
+
+function showJobPage(jobId) {
+  const job = DEDUCTIONS[jobId];
+  if (!job) { showPage('jobs'); return; }
+  document.getElementById('detailTitle').textContent = job.title;
+  document.getElementById('detailSub').textContent = job.sub;
+  document.getElementById('detailStats').innerHTML = `
+    <div class="ded-stat"><span class="ded-stat-num">${job.items.length}+</span><span class="ded-stat-label">Deductions</span></div>
+    <div class="ded-stat"><span class="ded-stat-num">$${job.totalMin.toLocaleString()}</span><span class="ded-stat-label">Min. Savings</span></div>
+    <div class="ded-stat"><span class="ded-stat-num">$${job.totalMax.toLocaleString()}</span><span class="ded-stat-label">Max. Savings</span></div>
+  `;
+  const tbody = document.getElementById('detailTable');
+  tbody.innerHTML = job.items.map(item => `
+    <tr>
+      <td><span class="check-mark">вњ“</span><span class="ded-name">${item.name}</span><div class="ded-note" style="padding-left:23px">${item.note}</div></td>
+      <td>${item.rate}</td>
+      <td><span class="save-amt">$${item.saveMin.toLocaleString()} вЂ“ $${item.saveMax.toLocaleString()}</span></td>
+      <td><span class="priority ${item.p === 'high' ? 'p-high' : 'p-med'}">${item.p === 'high' ? 'High' : 'Medium'}</span></td>
+    </tr>
+  `).join('');
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-job-detail').classList.add('active');
+  window.scrollTo(0,0);
+}
+
+// в”Ђв”Ђ BUILD JOB GRIDS в”Ђв”Ђ
+function buildGrid(containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  container.innerHTML = JOBS.map(job => `
+    <a class="job-card" onclick="showJobPage('${job.id}')">
+      <div class="job-icon-wrap">
+        <svg viewBox="0 0 20 20" fill="none" stroke="#B8924A" stroke-width="1.4">${ICONS[job.icon] || ICONS.user}</svg>
+      </div>
+      <span class="job-name">${job.name}</span>
+      <span class="job-count">${job.count} write-offs</span>
+    </a>
+  `).join('');
+}
+
+// в”Ђв”Ђ CALCULATORS в”Ђв”Ђ
+function runCalc() {
+  const job = document.getElementById('jobSel').value;
+  const income = parseFloat(document.getElementById('incomeIn').value);
+  if (!job || !income || income <= 0) { alert('Please select your job and enter your income.'); return; }
+  const d = savingsData[job];
+  const est = Math.round(Math.min(d.est, income * 0.29));
+  document.getElementById('resNum').textContent = '$' + est.toLocaleString();
+  document.getElementById('resSub').textContent = d.note;
+  document.getElementById('resBtn').onclick = () => showJobPage(job);
+  document.getElementById('calcRes').classList.add('show');
+}
+
+function runFullCalc() {
+  const income = parseFloat(document.getElementById('calcIncome').value);
+  const stateRate = parseFloat(document.getElementById('calcState').value);
+  const job = document.getElementById('calcJobSel').value;
+  if (!income || income <= 0) { alert('Please enter your annual income.'); return; }
+  const netSE = income * 0.9235;
+  const seTax = Math.round(netSE * 0.153);
+  const agi = income - (seTax * 0.5) - 14600;
+  const fedTax = Math.round(Math.max(0, agi) * 0.22);
+  const stateTax = Math.round(income * stateRate);
+  const deductions = job && savingsData[job] ? Math.round(Math.min(savingsData[job].est, income * 0.28)) : Math.round(income * 0.22);
+  const quarterly = Math.round((seTax + fedTax + stateTax) / 4);
+  document.getElementById('fcSE').textContent = '$' + seTax.toLocaleString();
+  document.getElementById('fcFed').textContent = '$' + fedTax.toLocaleString();
+  document.getElementById('fcState').textContent = '$' + stateTax.toLocaleString();
+  document.getElementById('fcDed').textContent = '$' + deductions.toLocaleString();
+  document.getElementById('fcQuarterly').textContent = '$' + quarterly.toLocaleString();
+  document.getElementById('fullCalcResult').style.display = 'block';
+}
+
+// в”Ђв”Ђ INIT в”Ђв”Ђ
+buildGrid('homeJobGrid');
+buildGrid('allJobGrid');
+</script>
+<script>(function () {
+  // Prevent double-load
+  if (window.__aiChatLoaded) return;
+  window.__aiChatLoaded = true;
+
+  const WORKER_URL = 'https://dry-flower-b3e7.dev-qrcraft.workers.dev/';
+
+  const SITE_CONFIGS = {
+    '1099deductions.com': {
+      name: '1099 AI',
+      greeting: 'Hi! Ask me about deductions, calculator, deadlines or any gig job type.',
+      systemPrompt: `You are a helpful assistant for 1099Deductions.com вЂ” a free US tax deductions tool for gig workers (1099 contractors).
+
+SITE PAGES (JavaScript SPA):
+- HOME: "Find Every Tax Write-Off You're Missing". Savings Estimator on the right.
+- BY JOB TYPE: Grid of 14 gig jobs в†’ click в†’ deduction checklist for that job.
+- CALCULATOR: 1) pick job 2) enter income 3) pick state 4) click "Calculate My Tax Savings в†’"
+- DEADLINES: 2026 IRS quarterly dates. Q1: Apr 15, Q2: Jun 16, Q3: Sep 15, Q4: Jan 15 2027.
+- BLOG: Tax articles.
+
+GIG JOBS (14): DoorDash, Uber, Instacart, Amazon Flex, Lyft, Etsy, OnlyFans, Airbnb, Fiverr, TaskRabbit, Rover, Upwork, Postmates, Shipt.
+
+DEDUCTIONS: Mileage 67Вў/mile, phone 50-100%, internet, home office, supplies, platform fees.
+
+BEHAVIOR:
+- Short answers (1-3 sentences)
+- Guide to site tools, don't calculate yourself
+- Ask ONE follow-up question if needed
+- Off-topic в†’ redirect politely`
+    },
+    'privatepaycheck.com': {
+      name: 'Paycheck AI',
+      greeting: "Hi! I'm your Paycheck Assistant. I know this site inside out вЂ” calculator, all 50 states, tax rules. What would you like to know?",
+      systemPrompt: `You are the assistant for PrivatePaycheck.com вЂ” free US paycheck calculator for all 50 states.
+
+SITE PAGES:
+- HOME: "Calculate Your Exact Take-Home Pay". CTA: "CALCULATE MY PAY в†’"
+- CALCULATOR: 1) Pay Type (Annual/Hourly) 2) Gross amount 3) Pay Frequency 4) State 5) Filing Status в†’ "CALCULATE MY PAY". Results: Federal Tax, State Tax, FICA, Net Pay.
+- ALL STATES: Tax rates all 50 states. No-tax: FL, TX, NV, WA, WY, SD, TN, NH.
+- BLOG: Tax tips, IRS updates 2026.
+
+KEY FACTS: FICA 7.65%, standard deduction $14,600 single / $29,200 married. Free, no data stored.
+
+BEHAVIOR:
+- Short answers (1-3 sentences)
+- Guide to calculator, don't calculate yourself
+- Ask ONE follow-up if needed
+- Off-topic в†’ redirect politely`
+    },
+    'gigwisetax.com': {
+      name: 'GigWise AI',
+      greeting: 'Hi! Ask me about gig taxes, deductions or quarterly payments.',
+      systemPrompt: `You are the assistant for GigWiseTax.com вЂ” free self-employment tax calculator for US gig workers.
+
+SITE PAGES:
+- HOME: Tab calculator. Tabs: "Tax Calculator" | "2026 Deadlines" | "All Platforms"
+- CALCULATORS: SE Tax (15.3% + state), Quarterly Payment with Google Calendar export
+- TAX TOOLS: Mileage tracker (67Вў/mile), Deductions finder, Home office calculator
+- BY STATE: All 51 jurisdictions with state rates
+- PLATFORMS: DoorDash, Uber, Lyft, Instacart, Etsy, OnlyFans, Airbnb, Upwork, Fiverr вЂ” each with deductions
+- RESOURCES: Guides for quarterly taxes, Schedule C, SE tax
+
+KEY FACTS: SE Tax = 15.3%. Quarterly 2026: Q1 Apr 15, Q2 Jun 16, Q3 Sep 15, Q4 Jan 15 2027. Pay quarterly if owe $1,000+. Mileage: 67Вў/mile.
+
+BEHAVIOR:
+- Short answers (1-3 sentences)
+- Guide to site tools, don't calculate yourself
+- Ask ONE follow-up if needed
+- Off-topic в†’ redirect politely`
+    },
+    'compressto20kb.com': {
+      name: 'Compress AI',
+      greeting: 'Hi! I can help you compress images to any size. What format is your image?',
+      systemPrompt: `You are the assistant for CompressTo20KB.com вЂ” free browser-based image compression tool.
+
+FEATURES:
+- UPLOAD: Drag & drop or click. JPEG, PNG, WebP, AVIF, GIF.
+- TARGET SIZE: Set desired KB (default 20KB). Presets: Shopify, Etsy, Amazon, Instagram, Gov 20KB, 50KB.
+- MODES: Quality Mode or Exact KB Mode.
+- FORMATS: WebP (70% smaller), AVIF (smallest), JPEG (compatible), PNG (lossless).
+- COMPRESS в†’ DOWNLOAD instantly. No account, no server upload, 100% private.
+
+TIPS: WebP = best balance. AVIF = smallest file. PNG = for logos/transparency. Still too big в†’ try WebP first.
+
+BEHAVIOR:
+- Short answers (1-3 sentences)
+- Guide through steps, ask what they're trying to achieve
+- Off-topic в†’ redirect politely`
+    }
+  };
+
+  function getConfig() {
+    const host = window.location.hostname.replace('www.', '');
+    return SITE_CONFIGS[host] || SITE_CONFIGS['gigwisetax.com'];
+  }
+
+  function detectLang(text) {
+    if (!text) return 'en';
+    const hasCyr = /[Р°-СЏС‘Рђ-РЇРЃС–С—С”Т‘Р†Р‡Р„Тђ]/.test(text);
+    if (!hasCyr) return 'en';
+    // Spanish check
+    const hasSpanish = /[ГЎГ©Г­ГіГєГјГ±ВїВЎ]/i.test(text);
+    if (hasSpanish) return 'es';
+    // Ukrainian specific letters
+    const hasUkr = /[С–С—С”Т‘Р†Р‡Р„Тђ]/.test(text);
+    const hasRuOnly = /[СЉС‹СЌС‘РЄР«Р­РЃ]/.test(text);
+    if (hasRuOnly) return 'ru';
+    if (hasUkr) return 'uk';
+    return 'ru'; // default Cyrillic = Russian
+  }
+
+  // Also detect Spanish without Cyrillic
+  function detectLangFull(text) {
+    if (!text) return 'en';
+    const hasSpanish = /[ГЎГ©Г­ГіГєГјГ±ВїВЎ]/i.test(text);
+    if (hasSpanish) return 'es';
+    return detectLang(text);
+  }
+
+  const LANG_NAMES = { en: 'English', uk: 'Ukrainian', ru: 'Russian', es: 'Spanish' };
+
+  const config = getConfig();
+  let messages = [];
+  let isOpen = false;
+  let isSending = false;
+  let currentLang = 'en';
+
+  // в”Ђв”Ђ STYLES в”Ђв”Ђ
+  const style = document.createElement('style');
+  style.textContent = `
+    #ai-fab {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #B8924A;
+      border: none;
+      cursor: pointer;
+      z-index: 9998;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 3px 14px rgba(184,146,74,0.5);
+      transition: transform 0.2s, opacity 0.2s;
+      animation: fabGlow 2.5s ease-in-out infinite;
+    }
+    #ai-fab.hidden {
+      opacity: 0;
+      pointer-events: none;
+      transform: scale(0.7);
+    }
+    #ai-fab:hover { transform: scale(1.08); }
+    #ai-fab svg { width: 22px; height: 22px; fill: #fff; }
+    @keyframes fabGlow {
+      0%,100% { box-shadow: 0 3px 14px rgba(184,146,74,0.5); }
+      50% { box-shadow: 0 0 24px 8px rgba(184,146,74,0.8); }
+    }
+
+    #ai-chat-window {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 40vh;
+      max-height: 40vh;
+      background: #0D1F38;
+      border: none;
+      border-top: 1px solid rgba(184,146,74,0.35);
+      border-radius: 14px 14px 0 0;
+      display: none;
+      flex-direction: column;
+      z-index: 9999;
+      box-shadow: 0 -4px 24px rgba(0,0,0,0.5);
+      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      box-sizing: border-box;
+    }
+    #ai-chat-window.open { display: flex; }
+
+    @media (min-width: 601px) {
+      #ai-chat-window {
+        left: auto;
+        right: 20px;
+        bottom: 0;
+        width: 340px;
+        height: 46vh;
+        max-height: 46vh;
+        border-radius: 14px 14px 0 0;
+        border: 1px solid rgba(184,146,74,0.35);
+        border-bottom: none;
+      }
+    }
+
+    #ai-chat-header {
+      background: #0A1828;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(184,146,74,0.2);
+      flex-shrink: 0;
+    }
+    #ai-chat-header-left { display: flex; align-items: center; gap: 8px; }
+    #ai-online-dot { width: 8px; height: 8px; border-radius: 50%; background: #4CAF50; flex-shrink: 0; }
+    #ai-chat-name { color: #B8924A; font-weight: 700; font-size: 14px; }
+    #ai-chat-sub { color: #8899AA; font-size: 11px; margin-top: 1px; }
+    #ai-chat-close {
+      background: none; border: none; cursor: pointer;
+      color: #B8924A; font-size: 24px; padding: 0 4px; line-height: 1;
+      font-weight: 700;
+    }
+    #ai-chat-close:hover { color: #fff; }
+
+    #ai-chat-messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-height: 0;
+    }
+    #ai-chat-messages::-webkit-scrollbar { width: 3px; }
+    #ai-chat-messages::-webkit-scrollbar-thumb { background: rgba(184,146,74,0.3); border-radius: 2px; }
+
+    .ai-msg {
+      max-width: 88%;
+      padding: 8px 12px;
+      border-radius: 10px;
+      font-size: 14px;
+      line-height: 1.5;
+      word-break: break-word;
+    }
+    .ai-msg.bot {
+      background: #162840;
+      color: #D0E0F0;
+      align-self: flex-start;
+      border: 1px solid rgba(184,146,74,0.12);
+    }
+    .ai-msg.user {
+      background: #B8924A;
+      color: #fff;
+      align-self: flex-end;
+    }
+    .ai-msg.typing { color: #8899AA; font-style: italic; }
+
+    #ai-chat-input-row {
+      display: flex;
+      gap: 8px;
+      padding: 9px 12px;
+      border-top: 1px solid rgba(184,146,74,0.2);
+      background: #0A1828;
+      flex-shrink: 0;
+    }
+    #ai-chat-input {
+      flex: 1;
+      background: #162840;
+      border: 1px solid rgba(184,146,74,0.25);
+      border-radius: 8px;
+      color: #D0E0F0;
+      font-size: 14px;
+      padding: 8px 11px;
+      outline: none;
+      min-width: 0;
+    }
+    #ai-chat-input::placeholder { color: #556677; }
+    #ai-chat-input:focus { border-color: rgba(184,146,74,0.6); }
+    #ai-chat-send {
+      background: #B8924A;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 16px;
+      padding: 0 14px;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: background 0.15s;
+    }
+    #ai-chat-send:hover { background: #d4a84e; }
+    #ai-chat-send:disabled { background: #4a3a1a; cursor: not-allowed; }
+  `;
+  document.head.appendChild(style);
+
+  // в”Ђв”Ђ FAB в”Ђв”Ђ
+  const fab = document.createElement('button');
+  fab.id = 'ai-fab';
+  fab.title = config.name;
+  fab.innerHTML = `<svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>`;
+  document.body.appendChild(fab);
+
+  // в”Ђв”Ђ CHAT WINDOW в”Ђв”Ђ
+  const win = document.createElement('div');
+  win.id = 'ai-chat-window';
+  win.innerHTML = `
+    <div id="ai-chat-header">
+      <div id="ai-chat-header-left">
+        <div id="ai-online-dot"></div>
+        <div>
+          <div id="ai-chat-name">${config.name}</div>
+          <div id="ai-chat-sub">Online В· Fast replies</div>
+        </div>
+      </div>
+      <button id="ai-chat-close">в€’</button>
+    </div>
+    <div id="ai-chat-messages"></div>
+    <div id="ai-chat-input-row">
+      <input id="ai-chat-input" type="text" placeholder="Ask a question..." autocomplete="off" />
+      <button id="ai-chat-send">&#10148;</button>
+    </div>
+  `;
+  document.body.appendChild(win);
+
+  const msgContainer = win.querySelector('#ai-chat-messages');
+  const input = win.querySelector('#ai-chat-input');
+  const sendBtn = win.querySelector('#ai-chat-send');
+  const closeBtn = win.querySelector('#ai-chat-close');
+
+  function addMessage(text, role) {
+    const div = document.createElement('div');
+    div.className = 'ai-msg ' + role;
+    div.textContent = text;
+    msgContainer.appendChild(div);
+    msgContainer.scrollTop = msgContainer.scrollHeight;
+    return div;
+  }
+
+  function openChat() {
+    if (isOpen) return;
+    isOpen = true;
+    win.classList.add('open');
+    fab.classList.add('hidden');
+    if (messages.length === 0) {
+      setTimeout(() => {
+        addMessage(config.greeting, 'bot');
+        messages.push({ role: 'assistant', content: config.greeting });
+      }, 150);
+    }
+    setTimeout(() => input.focus(), 300);
+  }
+
+  function closeChat() {
+    isOpen = false;
+    win.classList.remove('open');
+    fab.classList.remove('hidden');
+  }
+
+  fab.addEventListener('click', openChat);
+  closeBtn.addEventListener('click', closeChat);
+
+  async function sendMessage() {
+    const text = input.value.trim();
+    if (!text || isSending) return;
+
+    // Detect language from user message
+    const lang = detectLangFull(text);
+    currentLang = lang;
+
+    isSending = true;
+    sendBtn.disabled = true;
+    input.value = '';
+
+    addMessage(text, 'user');
+    messages.push({ role: 'user', content: text });
+
+    const typingDiv = addMessage('В·В·В·', 'bot typing');
+
+    const langName = LANG_NAMES[currentLang] || 'English';
+    const systemFull = `${config.systemPrompt}\n\nLANGUAGE: User wrote in ${langName}. Reply ONLY in ${langName}. Never switch languages.`;
+
+    try {
+      const res = await fetch(WORKER_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          systemPrompt: systemFull,
+          messages: messages.slice(-10)
+        })
+      });
+
+      if (!res.ok) {
+        typingDiv.textContent = 'Service unavailable. Try again shortly.';
+        typingDiv.classList.remove('typing');
+      } else {
+        const data = await res.json();
+        const reply = data.response || (data.content && data.content[0] && data.content[0].text) || data.reply || data.text || data.message || '...';
+        typingDiv.textContent = reply;
+        typingDiv.classList.remove('typing');
+        messages.push({ role: 'assistant', content: reply });
+      }
+    } catch (e) {
+      typingDiv.textContent = 'Connection error. Check your internet.';
+      typingDiv.classList.remove('typing');
+    }
+
+    isSending = false;
+    sendBtn.disabled = false;
+    msgContainer.scrollTop = msgContainer.scrollHeight;
+  }
+
+  sendBtn.addEventListener('click', sendMessage);
+  input.addEventListener('keydown', e => { if (e.key === 'Enter') sendMessage(); });
+
+  // Auto-open after 6s
+  setTimeout(() => { if (!isOpen) openChat(); }, 6000);
+
+})();
+</script>
+</body>
+</html>
