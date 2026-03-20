@@ -29,23 +29,35 @@
       "dest": "/robots.txt"
     },
     {
+      "src": "/deductions/(.+\\.html)",
+      "dest": "/deductions/$1"
+    },
+    {
       "src": "/deductions/(.*)",
       "dest": "/deductions/$1"
     },
     {
-      "src": "/(.*.js)",
+      "src": "/deadlines.html",
+      "dest": "/deadlines.html"
+    },
+    {
+      "src": "/(.+\\.js)",
       "dest": "/$1"
     },
     {
-      "src": "/(.*.css)",
+      "src": "/(.+\\.css)",
       "dest": "/$1"
     },
     {
-      "src": "/(.*.png)",
+      "src": "/(.+\\.png)",
       "dest": "/$1"
     },
     {
-      "src": "/(.*.ico)",
+      "src": "/(.+\\.ico)",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.+\\.xml)",
       "dest": "/$1"
     },
     {
@@ -59,11 +71,11 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
+          "value": "public, max-age=3600"
         },
         {
-          "key": "Pragma",
-          "value": "no-cache"
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
         }
       ]
     }
