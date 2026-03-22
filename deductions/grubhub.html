@@ -70,6 +70,45 @@ h1 span{color:var(--gold2)}
 footer{border-top:1px solid var(--border2);padding:32px;text-align:center;color:var(--text3);font-size:12px;margin-top:64px}
 footer a{color:var(--text3);text-decoration:none}footer a:hover{color:var(--gold2)}
 @media(max-width:640px){nav{padding:0 16px}.hero,.section{padding-left:16px;padding-right:16px}.deduction-grid{grid-template-columns:1fr}.cta-box{padding:24px 16px}}
+
+/* ══ MOBILE FIX v2 ══ */
+@media(max-width:768px){
+  body{font-size:16px!important;}
+  .hero{padding:32px 14px 28px!important;}
+  .section{padding:0 14px;margin-bottom:32px!important;}
+  nav{padding:0 14px!important;height:auto!important;min-height:52px!important;flex-wrap:wrap!important;gap:8px!important;padding-top:10px!important;padding-bottom:10px!important;}
+  .nav-links{flex-wrap:wrap;gap:10px!important;}
+  .nav-links a{font-size:13px!important;}
+  h1{font-size:26px!important;line-height:1.25!important;}
+  .hero-sub{font-size:15px!important;}
+  .deduction-grid{grid-template-columns:1fr!important;}
+  .deduction-card .name{font-size:15px!important;}
+  .deduction-card .desc{font-size:13px!important;}
+  .deduction-card .amount{font-size:14px!important;}
+  .tax-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .tax-table th{font-size:12px!important;padding:8px 10px!important;}
+  .tax-table td{font-size:13px!important;padding:8px 10px!important;}
+  .cta-box{padding:24px 14px!important;margin-left:0!important;margin-right:0!important;}
+  .cta-box h2{font-size:22px!important;}
+  .cta-btn{font-size:15px!important;padding:14px 24px!important;}
+  .related-grid{grid-template-columns:repeat(2,1fr)!important;}
+  .section-title{font-size:20px!important;}
+  .acc-head{font-size:15px!important;padding:14px!important;}
+  .acc-name{font-size:14px!important;}
+  .acc-desc{font-size:13px!important;}
+  .acc-amount{font-size:13px!important;}
+  .breadcrumb{font-size:12px!important;}
+  .badge{font-size:11px!important;padding:5px 10px!important;}
+  .alert-bar{font-size:13px!important;padding:10px 12px!important;line-height:1.5!important;}
+  footer{padding:24px 14px!important;}
+}
+@media(max-width:480px){
+  h1{font-size:24px!important;}
+  .hero-sub{font-size:15px!important;}
+  .related-grid{grid-template-columns:1fr!important;}
+  .cta-box h2{font-size:20px!important;}
+  .logo{font-size:14px!important;}
+}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What can Grubhub drivers deduct on taxes?","acceptedAnswer":{"@type":"Answer","text":"Mileage ($0.67/mile), insulated bags, phone and data plan, car maintenance proportional to deliveries, parking, tolls, and phone accessories."}},{"@type":"Question","name":"Does Grubhub withhold taxes?","acceptedAnswer":{"@type":"Answer","text":"No. Grubhub pays drivers as independent contractors. You pay your own self-employment tax (15.3%) and income tax. Pay quarterly to avoid penalties."}},{"@type":"Question","name":"What mileage rate do Grubhub drivers use in 2026?","acceptedAnswer":{"@type":"Answer","text":"The 2026 IRS standard mileage rate is $0.67 per mile for business driving. Track every delivery mile — to restaurant and to customer."}},{"@type":"Question","name":"Can Grubhub drivers deduct a dash cam?","acceptedAnswer":{"@type":"Answer","text":"Yes. A dash cam is safety equipment used for work. It is a fully deductible business expense on Schedule C."}},{"@type":"Question","name":"Do I need a separate bank account for Grubhub income?","acceptedAnswer":{"@type":"Answer","text":"Not required but strongly recommended. A separate account makes it much easier to track income and expenses for tax purposes."}}]}</script>

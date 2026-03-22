@@ -55,6 +55,45 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:32px 24
 .footer-legal{color:var(--text3);font-size:12px;line-height:1.6;}
 .disclaimer{background:rgba(184,146,74,0.05);border:1px solid rgba(184,146,74,0.15);border-radius:4px;padding:14px 18px;font-size:12px;color:var(--text3);line-height:1.7;margin:32px 0;}
 @media(max-width:768px){h1{font-size:26px;}.grid2,.grid3{grid-template-columns:1fr!important;}}
+
+/* ══ MOBILE FIX v2 ══ */
+@media(max-width:768px){
+  body{font-size:16px!important;}
+  .hero{padding:32px 14px 28px!important;}
+  .section{padding:0 14px;margin-bottom:32px!important;}
+  nav{padding:0 14px!important;height:auto!important;min-height:52px!important;flex-wrap:wrap!important;gap:8px!important;padding-top:10px!important;padding-bottom:10px!important;}
+  .nav-links{flex-wrap:wrap;gap:10px!important;}
+  .nav-links a{font-size:13px!important;}
+  h1{font-size:26px!important;line-height:1.25!important;}
+  .hero-sub{font-size:15px!important;}
+  .deduction-grid{grid-template-columns:1fr!important;}
+  .deduction-card .name{font-size:15px!important;}
+  .deduction-card .desc{font-size:13px!important;}
+  .deduction-card .amount{font-size:14px!important;}
+  .tax-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .tax-table th{font-size:12px!important;padding:8px 10px!important;}
+  .tax-table td{font-size:13px!important;padding:8px 10px!important;}
+  .cta-box{padding:24px 14px!important;margin-left:0!important;margin-right:0!important;}
+  .cta-box h2{font-size:22px!important;}
+  .cta-btn{font-size:15px!important;padding:14px 24px!important;}
+  .related-grid{grid-template-columns:repeat(2,1fr)!important;}
+  .section-title{font-size:20px!important;}
+  .acc-head{font-size:15px!important;padding:14px!important;}
+  .acc-name{font-size:14px!important;}
+  .acc-desc{font-size:13px!important;}
+  .acc-amount{font-size:13px!important;}
+  .breadcrumb{font-size:12px!important;}
+  .badge{font-size:11px!important;padding:5px 10px!important;}
+  .alert-bar{font-size:13px!important;padding:10px 12px!important;line-height:1.5!important;}
+  footer{padding:24px 14px!important;}
+}
+@media(max-width:480px){
+  h1{font-size:24px!important;}
+  .hero-sub{font-size:15px!important;}
+  .related-grid{grid-template-columns:1fr!important;}
+  .cta-box h2{font-size:20px!important;}
+  .logo{font-size:14px!important;}
+}
 </style>
 </head>
 <body>
