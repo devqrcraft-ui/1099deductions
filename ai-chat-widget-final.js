@@ -215,10 +215,8 @@
     <div id="ai-chat-header">
       <div id="ai-chat-header-left">
         <div id="ai-online-dot"></div>
-        <div>
-          <div id="ai-chat-name">${config.name}</div>
-          <div id="ai-chat-sub">Online · Fast replies</div>
-        </div>
+        <div id="ai-chat-name">${config.name}</div>
+        <div id="ai-chat-sub">Online · Fast replies</div>
       </div>
       <button id="ai-chat-close">−</button>
     </div>
