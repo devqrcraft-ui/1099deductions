@@ -121,8 +121,8 @@
     }
     #ai-chat-header-left { display: flex; align-items: center; gap: 8px; }
     #ai-online-dot { width: 8px; height: 8px; border-radius: 50%; background: #4CAF50; flex-shrink: 0; }
-    #ai-chat-name { color: #B8924A; font-weight: 700; font-size: 13px; }
-    #ai-chat-sub { color: #8899AA; font-size: 10px; margin-top: 0; margin-left: 6px; }
+    #ai-chat-name { color: #B8924A; font-weight: 700; font-size: 13px; display: inline; }
+    #ai-chat-sub { color: #8899AA; font-size: 10px; margin-left: 6px; display: inline; }
     #ai-chat-close {
       background: none; border: none; cursor: pointer;
       color: #B8924A; font-size: 26px; padding: 0 6px; line-height: 1;
@@ -331,6 +331,6 @@
   // Show FAB immediately with glow (already via CSS animation)
 
   // Auto-open after 5s on ALL devices
-  setTimeout(() => openChat(), 5000);
+  setTimeout(() => openChat(), 20000);
 
 })();
