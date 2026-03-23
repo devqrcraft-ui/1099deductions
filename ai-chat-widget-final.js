@@ -147,8 +147,8 @@
       max-width: 100%;
       padding: 8px 11px;
       border-radius: 10px;
-      font-size: 13px;
-      line-height: 1.45;
+      font-size: 16px;
+      line-height: 1.5;
       word-break: break-word;
     }
     .ai-msg.bot {
