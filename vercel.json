@@ -61,6 +61,42 @@
       "dest": "/$1"
     },
     {
+      "src": "/doordash-tax-deductions-2026",
+      "dest": "/doordash-tax-deductions-2026.html"
+    },
+    {
+      "src": "/uber-driver-tax-deductions-2026",
+      "dest": "/uber-driver-tax-deductions-2026.html"
+    },
+    {
+      "src": "/onlyfans-tax-deductions-2026",
+      "dest": "/onlyfans-tax-deductions-2026.html"
+    },
+    {
+      "src": "/airbnb-host-tax-deductions-2026",
+      "dest": "/airbnb-host-tax-deductions-2026.html"
+    },
+    {
+      "src": "/instacart-tax-deductions-2026",
+      "dest": "/instacart-tax-deductions-2026.html"
+    },
+    {
+      "src": "/1099-tax-deductions-california-2026",
+      "dest": "/1099-tax-deductions-california-2026.html"
+    },
+    {
+      "src": "/1099-tax-deductions-texas-2026",
+      "dest": "/1099-tax-deductions-texas-2026.html"
+    },
+    {
+      "src": "/1099-tax-deductions-new-york-2026",
+      "dest": "/1099-tax-deductions-new-york-2026.html"
+    },
+    {
+      "src": "/1099-tax-deductions-florida-2026",
+      "dest": "/1099-tax-deductions-florida-2026.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
