@@ -97,6 +97,13 @@
       "dest": "/1099-tax-deductions-florida-2026.html"
     },
     {
+      "src": "/app-data.js",
+      "dest": "/app-data.js",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
