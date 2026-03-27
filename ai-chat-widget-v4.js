@@ -50,7 +50,7 @@ How the calculator works: Select gig job from dropdown â†’ enter annual income â
 Key features: Free deduction checklists, IRS Schedule C compliant, all 50 states, 2026 tax rules, free PDF export, no registration ever.
 
 Common deductions by job:
-- All drivers (Uber/DoorDash/Lyft): mileage ($0.70/mile 2026), phone, insurance
+- All drivers (Uber/DoorDash/Lyft): mileage ($0.725/mile 2026), phone, insurance
 - Etsy/freelance: home office, supplies, software, shipping
 - Airbnb: utilities %, repairs, cleaning, supplies
 - OnlyFans: equipment, internet, home studio, subscriptions
