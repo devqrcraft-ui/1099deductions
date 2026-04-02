@@ -8,6 +8,51 @@
   ],
   "redirects": [
     {
+      "source": "/doordash-tax-deductions-2026.html",
+      "destination": "https://www.1099deductions.com/doordash-tax-deductions-2026",
+      "permanent": true
+    },
+    {
+      "source": "/uber-driver-tax-deductions-2026.html",
+      "destination": "https://www.1099deductions.com/uber-driver-tax-deductions-2026",
+      "permanent": true
+    },
+    {
+      "source": "/onlyfans-tax-deductions-2026.html",
+      "destination": "https://www.1099deductions.com/onlyfans-tax-deductions-2026",
+      "permanent": true
+    },
+    {
+      "source": "/airbnb-host-tax-deductions-2026.html",
+      "destination": "https://www.1099deductions.com/airbnb-host-tax-deductions-2026",
+      "permanent": true
+    },
+    {
+      "source": "/instacart-tax-deductions-2026.html",
+      "destination": "https://www.1099deductions.com/instacart-tax-deductions-2026",
+      "permanent": true
+    },
+    {
+      "source": "/1099-tax-deductions-california-2026.html",
+      "destination": "https://www.1099deductions.com/1099-tax-deductions-california-2026",
+      "permanent": true
+    },
+    {
+      "source": "/1099-tax-deductions-texas-2026.html",
+      "destination": "https://www.1099deductions.com/1099-tax-deductions-texas-2026",
+      "permanent": true
+    },
+    {
+      "source": "/1099-tax-deductions-new-york-2026.html",
+      "destination": "https://www.1099deductions.com/1099-tax-deductions-new-york-2026",
+      "permanent": true
+    },
+    {
+      "source": "/1099-tax-deductions-florida-2026.html",
+      "destination": "https://www.1099deductions.com/1099-tax-deductions-florida-2026",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [
         {
