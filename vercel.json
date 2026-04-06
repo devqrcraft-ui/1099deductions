@@ -8,6 +8,216 @@
   ],
   "redirects": [
     {
+      "source": "/1099-tax-deductions-2026.html",
+      "destination": "https://www.1099deductions.com/1099-tax-deductions-2026",
+      "permanent": true
+    },
+    {
+      "source": "/1099-tax-deductions-list.html",
+      "destination": "https://www.1099deductions.com/1099-tax-deductions-list",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/airbnb.html",
+      "destination": "https://www.1099deductions.com/deductions/airbnb",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/amazon-flex-california.html",
+      "destination": "https://www.1099deductions.com/deductions/amazon-flex-california",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/amazon-flex-florida.html",
+      "destination": "https://www.1099deductions.com/deductions/amazon-flex-florida",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/amazon-flex-new-york.html",
+      "destination": "https://www.1099deductions.com/deductions/amazon-flex-new-york",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/amazon-flex-texas.html",
+      "destination": "https://www.1099deductions.com/deductions/amazon-flex-texas",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/amazon-flex.html",
+      "destination": "https://www.1099deductions.com/deductions/amazon-flex",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/doordash-california.html",
+      "destination": "https://www.1099deductions.com/deductions/doordash-california",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/doordash-florida.html",
+      "destination": "https://www.1099deductions.com/deductions/doordash-florida",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/doordash-new-york.html",
+      "destination": "https://www.1099deductions.com/deductions/doordash-new-york",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/doordash-texas.html",
+      "destination": "https://www.1099deductions.com/deductions/doordash-texas",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/doordash.html",
+      "destination": "https://www.1099deductions.com/deductions/doordash",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/etsy.html",
+      "destination": "https://www.1099deductions.com/deductions/etsy",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/grubhub-california.html",
+      "destination": "https://www.1099deductions.com/deductions/grubhub-california",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/grubhub-florida.html",
+      "destination": "https://www.1099deductions.com/deductions/grubhub-florida",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/grubhub-new-york.html",
+      "destination": "https://www.1099deductions.com/deductions/grubhub-new-york",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/grubhub-texas.html",
+      "destination": "https://www.1099deductions.com/deductions/grubhub-texas",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/grubhub.html",
+      "destination": "https://www.1099deductions.com/deductions/grubhub",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/handyman.html",
+      "destination": "https://www.1099deductions.com/deductions/handyman",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/instacart-california.html",
+      "destination": "https://www.1099deductions.com/deductions/instacart-california",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/instacart-florida.html",
+      "destination": "https://www.1099deductions.com/deductions/instacart-florida",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/instacart-new-york.html",
+      "destination": "https://www.1099deductions.com/deductions/instacart-new-york",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/instacart-texas.html",
+      "destination": "https://www.1099deductions.com/deductions/instacart-texas",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/instacart.html",
+      "destination": "https://www.1099deductions.com/deductions/instacart",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/lyft-california.html",
+      "destination": "https://www.1099deductions.com/deductions/lyft-california",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/lyft-florida.html",
+      "destination": "https://www.1099deductions.com/deductions/lyft-florida",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/lyft-new-york.html",
+      "destination": "https://www.1099deductions.com/deductions/lyft-new-york",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/lyft-texas.html",
+      "destination": "https://www.1099deductions.com/deductions/lyft-texas",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/lyft.html",
+      "destination": "https://www.1099deductions.com/deductions/lyft",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/onlyfans.html",
+      "destination": "https://www.1099deductions.com/deductions/onlyfans",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/photographer.html",
+      "destination": "https://www.1099deductions.com/deductions/photographer",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/real-estate-agent.html",
+      "destination": "https://www.1099deductions.com/deductions/real-estate-agent",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/software-engineer.html",
+      "destination": "https://www.1099deductions.com/deductions/software-engineer",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/truck-driver.html",
+      "destination": "https://www.1099deductions.com/deductions/truck-driver",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/turo.html",
+      "destination": "https://www.1099deductions.com/deductions/turo",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/tutor.html",
+      "destination": "https://www.1099deductions.com/deductions/tutor",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/uber-california.html",
+      "destination": "https://www.1099deductions.com/deductions/uber-california",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/uber-new-york.html",
+      "destination": "https://www.1099deductions.com/deductions/uber-new-york",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/uber-texas.html",
+      "destination": "https://www.1099deductions.com/deductions/uber-texas",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/uber.html",
+      "destination": "https://www.1099deductions.com/deductions/uber",
+      "permanent": true
+    },
+    {
+      "source": "/deductions/walmart-spark.html",
+      "destination": "https://www.1099deductions.com/deductions/walmart-spark",
+      "permanent": true
+    },
+    {
       "source": "/doordash-tax-deductions-2026.html",
       "destination": "https://www.1099deductions.com/doordash-tax-deductions-2026",
       "permanent": true
@@ -147,6 +357,14 @@
       "headers": {
         "Cache-Control": "public, max-age=31536000, immutable"
       }
+    },
+    {
+      "src": "/1099-tax-deductions-2026",
+      "dest": "/1099-tax-deductions-2026.html"
+    },
+    {
+      "src": "/1099-tax-deductions-list",
+      "dest": "/1099-tax-deductions-list.html"
     },
     {
       "src": "/(.*)",
