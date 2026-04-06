@@ -367,6 +367,166 @@
       "dest": "/1099-tax-deductions-list.html"
     },
     {
+      "src": "/deductions/airbnb",
+      "dest": "/deductions/airbnb.html"
+    },
+    {
+      "src": "/deductions/amazon-flex",
+      "dest": "/deductions/amazon-flex.html"
+    },
+    {
+      "src": "/deductions/amazon-flex-california",
+      "dest": "/deductions/amazon-flex-california.html"
+    },
+    {
+      "src": "/deductions/amazon-flex-florida",
+      "dest": "/deductions/amazon-flex-florida.html"
+    },
+    {
+      "src": "/deductions/amazon-flex-new-york",
+      "dest": "/deductions/amazon-flex-new-york.html"
+    },
+    {
+      "src": "/deductions/amazon-flex-texas",
+      "dest": "/deductions/amazon-flex-texas.html"
+    },
+    {
+      "src": "/deductions/doordash",
+      "dest": "/deductions/doordash.html"
+    },
+    {
+      "src": "/deductions/doordash-california",
+      "dest": "/deductions/doordash-california.html"
+    },
+    {
+      "src": "/deductions/doordash-florida",
+      "dest": "/deductions/doordash-florida.html"
+    },
+    {
+      "src": "/deductions/doordash-new-york",
+      "dest": "/deductions/doordash-new-york.html"
+    },
+    {
+      "src": "/deductions/doordash-texas",
+      "dest": "/deductions/doordash-texas.html"
+    },
+    {
+      "src": "/deductions/etsy",
+      "dest": "/deductions/etsy.html"
+    },
+    {
+      "src": "/deductions/grubhub",
+      "dest": "/deductions/grubhub.html"
+    },
+    {
+      "src": "/deductions/grubhub-california",
+      "dest": "/deductions/grubhub-california.html"
+    },
+    {
+      "src": "/deductions/grubhub-florida",
+      "dest": "/deductions/grubhub-florida.html"
+    },
+    {
+      "src": "/deductions/grubhub-new-york",
+      "dest": "/deductions/grubhub-new-york.html"
+    },
+    {
+      "src": "/deductions/grubhub-texas",
+      "dest": "/deductions/grubhub-texas.html"
+    },
+    {
+      "src": "/deductions/handyman",
+      "dest": "/deductions/handyman.html"
+    },
+    {
+      "src": "/deductions/instacart",
+      "dest": "/deductions/instacart.html"
+    },
+    {
+      "src": "/deductions/instacart-california",
+      "dest": "/deductions/instacart-california.html"
+    },
+    {
+      "src": "/deductions/instacart-florida",
+      "dest": "/deductions/instacart-florida.html"
+    },
+    {
+      "src": "/deductions/instacart-new-york",
+      "dest": "/deductions/instacart-new-york.html"
+    },
+    {
+      "src": "/deductions/instacart-texas",
+      "dest": "/deductions/instacart-texas.html"
+    },
+    {
+      "src": "/deductions/lyft",
+      "dest": "/deductions/lyft.html"
+    },
+    {
+      "src": "/deductions/lyft-california",
+      "dest": "/deductions/lyft-california.html"
+    },
+    {
+      "src": "/deductions/lyft-florida",
+      "dest": "/deductions/lyft-florida.html"
+    },
+    {
+      "src": "/deductions/lyft-new-york",
+      "dest": "/deductions/lyft-new-york.html"
+    },
+    {
+      "src": "/deductions/lyft-texas",
+      "dest": "/deductions/lyft-texas.html"
+    },
+    {
+      "src": "/deductions/onlyfans",
+      "dest": "/deductions/onlyfans.html"
+    },
+    {
+      "src": "/deductions/photographer",
+      "dest": "/deductions/photographer.html"
+    },
+    {
+      "src": "/deductions/real-estate-agent",
+      "dest": "/deductions/real-estate-agent.html"
+    },
+    {
+      "src": "/deductions/software-engineer",
+      "dest": "/deductions/software-engineer.html"
+    },
+    {
+      "src": "/deductions/truck-driver",
+      "dest": "/deductions/truck-driver.html"
+    },
+    {
+      "src": "/deductions/turo",
+      "dest": "/deductions/turo.html"
+    },
+    {
+      "src": "/deductions/tutor",
+      "dest": "/deductions/tutor.html"
+    },
+    {
+      "src": "/deductions/uber",
+      "dest": "/deductions/uber.html"
+    },
+    {
+      "src": "/deductions/uber-california",
+      "dest": "/deductions/uber-california.html"
+    },
+    {
+      "src": "/deductions/uber-new-york",
+      "dest": "/deductions/uber-new-york.html"
+    },
+    {
+      "src": "/deductions/uber-texas",
+      "dest": "/deductions/uber-texas.html"
+    },
+    {
+      "src": "/deductions/walmart-spark",
+      "dest": "/deductions/walmart-spark.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
