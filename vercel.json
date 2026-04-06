@@ -288,10 +288,6 @@
       "dest": "/deductions/$1"
     },
     {
-      "src": "/deductions/(.*)",
-      "dest": "/deductions/$1"
-    },
-    {
       "src": "/deadlines.html",
       "dest": "/deadlines.html"
     },
