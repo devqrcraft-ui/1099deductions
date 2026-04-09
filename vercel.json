@@ -284,10 +284,6 @@
       "dest": "/robots.txt"
     },
     {
-      "src": "/deductions/(.+\\.html)",
-      "dest": "/deductions/$1"
-    },
-    {
       "src": "/deadlines.html",
       "dest": "/deadlines.html"
     },
