@@ -581,5 +581,6 @@
         }
       ]
     }
-  ]
+  ],
+  "cleanUrls": true
 }
