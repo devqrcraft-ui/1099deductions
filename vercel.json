@@ -284,10 +284,6 @@
       "dest": "/robots.txt"
     },
     {
-      "src": "/deadlines.html",
-      "dest": "/deadlines.html"
-    },
-    {
       "src": "/(.+\\.js)",
       "dest": "/$1"
     },
@@ -581,6 +577,5 @@
         }
       ]
     }
-  ],
-  "cleanUrls": true
+  ]
 }
