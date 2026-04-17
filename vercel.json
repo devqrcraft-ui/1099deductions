@@ -276,6 +276,11 @@
   ],
   "routes": [
     {
+      "src": "/deductions/(.+)\.html$",
+      "headers": { "Location": "https://www.1099deductions.com/deductions/$1" },
+      "status": 301
+    },
+    {
       "src": "/sitemap.xml",
       "dest": "/sitemap.xml"
     },
