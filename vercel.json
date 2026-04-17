@@ -276,7 +276,7 @@
   ],
   "routes": [
     {
-      "src": "/deductions/(.+)\.html$",
+      "src": "/deductions/(.+)\\.html$",
       "headers": { "Location": "https://www.1099deductions.com/deductions/$1" },
       "status": 301
     },
