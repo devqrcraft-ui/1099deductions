@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1099-NEC vs W-2 Tax Calculator 2026 — Compare What You Really Owe | Free</title>
+<meta name="description" content="Compare your exact 2026 tax bill as a 1099 contractor vs W-2 employee. SE tax, federal, state, and real take-home pay side by side. Free, no signup.">
+<link rel="canonical" href="https://www.1099deductions.com/1099-vs-w2-tax-calculator-2026">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do 1099 workers pay more taxes than W-2 employees?","acceptedAnswer":{"@type":"Answer","text":"1099 contractors pay SE tax of 15.3% on net earnings vs 7.65% FICA for W-2 employees (employers pay the other 7.65%). However, 1099 workers can deduct business expenses, half of SE tax, and up to 20% QBI deduction, often reducing their effective rate significantly."}},{"@type":"Question","name":"What is self-employment tax in 2026?","acceptedAnswer":{"@type":"Answer","text":"SE tax is 15.3% on the first $176,100 of net self-employment income (12.4% Social Security + 2.9% Medicare), applied to 92.35% of net earnings. Above $176,100 only the 2.9% Medicare rate applies. You deduct half of SE tax from gross income."}},{"@type":"Question","name":"What is the QBI deduction for 1099 workers?","acceptedAnswer":{"@type":"Answer","text":"The Qualified Business Income deduction lets eligible self-employed workers deduct up to 20% of qualified business income. Most 1099 gig workers qualify if income is below $197,300 (single) or $394,600 (MFJ) in 2026."}},{"@type":"Question","name":"Should I form an S-Corp to save SE tax?","acceptedAnswer":{"@type":"Answer","text":"High earners (typically $80,000+ net self-employment income) may save SE tax via S-Corp election and paying a reasonable salary. At lower income levels the administrative cost usually outweighs savings. Consult a licensed CPA."}}]}</script>
+<style>
+:root{--bg:#07111F;--navy:#0D1B2A;--card:#0F1E2F;--gold:#B8924A;--gold2:#D4AA6A;--text1:#E8F0FA;--text2:#C8D8EC;--text3:#7A96B8;--red:#FF9EA8;--green:#6EDBA7;--border1:rgba(184,146,74,0.2);--border2:rgba(200,216,236,0.1);}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text2);font-family:"Inter",system-ui,sans-serif;line-height:1.6;font-size:16px;}
+nav{background:rgba(7,17,31,0.97);border-bottom:1px solid var(--border2);padding:0 20px;position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;height:60px;}
+.logo{color:var(--gold2);font-family:"IBM Plex Mono",monospace;font-size:15px;font-weight:600;text-decoration:none;}
+.nav-links{display:flex;gap:20px;align-items:center;}
+.nav-links a{color:var(--text3);font-size:13px;text-decoration:none;}
+.nav-links a:hover{color:var(--text1);}
+.nav-cta{background:var(--gold);color:#07111F !important;padding:7px 16px;border-radius:4px;font-weight:700 !important;font-size:12px !important;}
+.breadcrumb{max-width:780px;margin:0 auto;padding:16px 20px 0;font-size:13px;color:var(--text3);}
+.breadcrumb a{color:var(--gold);text-decoration:none;}
+.hero{max-width:780px;margin:0 auto;padding:32px 20px 24px;}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--gold);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;}
+h1{font-family:"Playfair Display",serif;font-size:clamp(26px,4vw,38px);color:var(--text1);line-height:1.25;margin-bottom:14px;}
+.hero-sub{font-size:16px;color:var(--text3);max-width:560px;}
+.calc-wrap{max-width:780px;margin:0 auto;padding:0 20px 48px;}
+.calc-card{background:var(--card);border:1px solid var(--border1);border-radius:8px;overflow:hidden;}
+.calc-head{background:rgba(184,146,74,0.08);border-bottom:1px solid var(--border1);padding:14px 20px;display:flex;justify-content:space-between;align-items:center;}
+.calc-head span:first-child{font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600;color:var(--gold2);}
+.calc-head span:last-child{font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--text3);letter-spacing:0.08em;}
+.calc-body{padding:24px 20px;}
+.fields-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+@media(max-width:540px){.fields-row{grid-template-columns:1fr;}}
+.field{display:flex;flex-direction:column;gap:6px;}
+.field label{font-size:12px;font-family:"IBM Plex Mono",monospace;color:var(--text3);letter-spacing:0.06em;text-transform:uppercase;}
+.field input,.field select{background:rgba(13,27,42,0.8);border:1px solid var(--border2);border-radius:4px;padding:10px 12px;color:var(--text1);font-size:15px;font-family:"Inter",sans-serif;outline:none;-webkit-appearance:none;}
+.field input:focus,.field select:focus{border-color:var(--gold);}
+.field input::placeholder{color:var(--text3);}
+.calc-btn{width:100%;background:var(--gold);color:#07111F;border:none;border-radius:4px;padding:14px;font-size:15px;font-weight:700;font-family:"Inter",sans-serif;cursor:pointer;margin-top:8px;}
+.calc-btn:hover{opacity:0.88;}
+#results{display:none;margin-top:24px;}
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+@media(max-width:540px){.compare-grid{grid-template-columns:1fr;}}
+.col-card{border-radius:6px;overflow:hidden;}
+.col-head{padding:12px 16px;font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;}
+.col-w2 .col-head{background:rgba(200,216,236,0.08);color:var(--text2);}
+.col-1099 .col-head{background:rgba(184,146,74,0.12);color:var(--gold2);}
+.col-w2{border:1px solid var(--border2);}
+.col-1099{border:1px solid var(--border1);}
+.col-body{padding:16px;}
+.row-item{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border2);font-size:14px;}
+.row-item:last-child{border-bottom:none;}
+.row-label{color:var(--text3);}
+.row-val{font-family:"IBM Plex Mono",monospace;font-weight:600;}
+.row-val.neg{color:var(--red);}
+.row-val.pos{color:var(--green);}
+.row-val.gold{color:var(--gold2);}
+.net-row{display:flex;justify-content:space-between;padding:12px 16px;margin-top:8px;border-radius:4px;font-weight:700;}
+.net-w2{background:rgba(200,216,236,0.06);color:var(--text1);}
+.net-1099{background:rgba(184,146,74,0.1);color:var(--gold2);}
+.net-label{font-size:12px;font-family:"IBM Plex Mono",monospace;letter-spacing:0.06em;text-transform:uppercase;}
+.net-val{font-family:"Playfair Display",serif;font-size:22px;}
+.verdict{background:rgba(110,219,167,0.06);border:1px solid rgba(110,219,167,0.2);border-radius:6px;padding:16px;margin-top:16px;font-size:14px;color:var(--text2);line-height:1.6;}
+.verdict strong{color:var(--green);}
+.disclaimer{font-size:12px;color:var(--text3);margin-top:12px;padding:12px;background:rgba(255,255,255,0.02);border-radius:4px;line-height:1.6;border-left:3px solid var(--border1);}
+.section{max-width:780px;margin:0 auto;padding:0 20px 48px;}
+h2{font-size:20px;font-weight:600;color:var(--text1);margin-bottom:16px;}
+.explainer-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:32px;}
+@media(max-width:540px){.explainer-grid{grid-template-columns:1fr;}}
+.exp-card{background:var(--card);border:1px solid var(--border2);border-radius:6px;padding:20px;}
+.exp-card h3{font-size:15px;font-weight:600;color:var(--text1);margin-bottom:10px;}
+.exp-card p{font-size:13px;color:var(--text3);line-height:1.7;}
+.exp-card ul{margin-top:8px;padding-left:16px;}
+.exp-card ul li{font-size:13px;color:var(--text3);line-height:1.8;}
+.rates-table{width:100%;border-collapse:collapse;font-size:14px;margin-bottom:32px;}
+.rates-table th{text-align:left;padding:10px 12px;color:var(--text3);font-weight:500;border-bottom:1px solid var(--border1);}
+.rates-table td{padding:10px 12px;border-bottom:1px solid var(--border2);}
+.rates-table td:first-child{color:var(--text2);}
+.rates-table td:nth-child(2){color:var(--text3);text-align:center;}
+.rates-table td:nth-child(3){color:var(--gold2);text-align:center;}
+.faq-item{border-bottom:1px solid var(--border2);padding:16px 0;}
+.faq-q{font-size:15px;font-weight:600;color:var(--text1);margin-bottom:8px;}
+.faq-a{font-size:14px;color:var(--text3);line-height:1.7;}
+.related-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+.rel-link{padding:8px 16px;background:var(--card);border:1px solid var(--border2);border-radius:4px;font-size:13px;color:var(--text2);text-decoration:none;}
+.rel-link:hover{border-color:var(--gold);color:var(--gold2);}
+footer{background:var(--navy);border-top:1px solid var(--border2);padding:24px 20px;text-align:center;font-size:12px;color:var(--text3);}
+footer a{color:var(--gold);text-decoration:none;}
+</style></head><body>
+<nav><a class="logo" href="/">1099Deductions.com</a><div class="nav-links"><a href="/">Home</a><a href="/deductions/">By Job Type</a><a href="/#calculator">Calculator</a><a href="/1099-vs-w2-tax-calculator-2026" style="color:var(--gold2);">W-2 vs 1099</a><a class="nav-cta" href="/deductions/">Find My Deductions</a></div></nav>
+<div class="breadcrumb"><a href="/">Home</a> &rsaquo; 1099 vs W-2 Calculator 2026</div>
+<div class="hero"><div class="eyebrow">2026 Tax Calculator</div><h1>1099-NEC vs W-2: What You Owe in Taxes (2026 Calculator)</h1><p class="hero-sub">Enter your income to compare your exact tax bill as a contractor vs employee &mdash; SE tax, federal, state, and real take-home pay side by side.</p></div>
+<div class="calc-wrap"><div class="calc-card">
+<div class="calc-head"><span>1099 vs W-2 Comparison Calculator</span><span>2026 IRS RULES</span></div>
+<div class="calc-body">
+<div class="fields-row">
+<div class="field"><label for="w2In">W-2 Salary (annual $)</label><input type="number" id="w2In" placeholder="e.g. 75,000" min="0" oninput="runCompare()"></div>
+<div class="field"><label for="gigIn">1099 Gross Income (annual $)</label><input type="number" id="gigIn" placeholder="e.g. 75,000" min="0" oninput="runCompare()"></div>
+</div>
+<div class="fields-row">
+<div class="field"><label for="stateSel">State Income Tax</label><select id="stateSel" onchange="runCompare()"><option value="0">No state tax (TX, FL, NV, WA...)</option><option value="0.093">California (9.3%)</option><option value="0.0685">New York (6.85%)</option><option value="0.0495">Illinois (4.95%)</option><option value="0.05">Other state (~5%)</option></select></div>
+<div class="field"><label for="filingSel">Filing Status</label><select id="filingSel" onchange="runCompare()"><option value="single">Single</option><option value="mfj">Married Filing Jointly</option></select></div>
+</div>
+<button class="calc-btn" onclick="runCompare()">Compare My Tax Bill &rarr;</button>
+<div id="results">
+<div class="compare-grid">
+<div class="col-card col-w2"><div class="col-head">W-2 Employee</div><div class="col-body">
+<div class="row-item"><span class="row-label">Gross salary</span><span class="row-val" id="w2Gross">$0</span></div>
+<div class="row-item"><span class="row-label">FICA (employee 7.65%)</span><span class="row-val neg" id="w2Fica">-$0</span></div>
+<div class="row-item"><span class="row-label">Federal income tax</span><span class="row-val neg" id="w2Fed">-$0</span></div>
+<div class="row-item"><span class="row-label">State income tax</span><span class="row-val neg" id="w2State">-$0</span></div>
+</div><div class="net-row net-w2"><span class="net-label">Take-home pay</span><span class="net-val" id="w2Net">$0</span></div></div>
+<div class="col-card col-1099"><div class="col-head">1099 Contractor</div><div class="col-body">
+<div class="row-item"><span class="row-label">Gross income</span><span class="row-val gold" id="g99Gross">$0</span></div>
+<div class="row-item"><span class="row-label">SE tax (15.3%)</span><span class="row-val neg" id="g99SE">-$0</span></div>
+<div class="row-item"><span class="row-label">Half SE deduction</span><span class="row-val pos" id="g99HalfSE">+$0</span></div>
+<div class="row-item"><span class="row-label">QBI deduction (20%)</span><span class="row-val pos" id="g99QBI">+$0</span></div>
+<div class="row-item"><span class="row-label">Federal income tax</span><span class="row-val neg" id="g99Fed">-$0</span></div>
+<div class="row-item"><span class="row-label">State income tax</span><span class="row-val neg" id="g99State">-$0</span></div>
+</div><div class="net-row net-1099"><span class="net-label">Take-home pay</span><span class="net-val" id="g99Net">$0</span></div></div>
+</div>
+<div class="verdict" id="verdict"></div>
+<div class="disclaimer">Rough estimate for educational purposes only. Real results depend on actual business expenses, state details, filing deductions, and your specific situation. This is not tax advice &mdash; consult a licensed CPA or tax professional.</div>
+</div></div></div></div>
+<div class="section">
+<h2>Why 1099 and W-2 Taxes Are Different</h2>
+<div class="explainer-grid">
+<div class="exp-card"><h3>W-2 Employee</h3><p>Your employer withholds taxes and pays half your FICA (7.65%). You never see the employer half &mdash; but on a $75,000 salary it costs them ~$5,750 extra.</p><ul><li>FICA: you pay 7.65%</li><li>Employer pays other 7.65%</li><li>Federal and state withheld automatically</li><li>Benefits (health, 401k) often included</li></ul></div>
+<div class="exp-card"><h3>1099 Contractor</h3><p>You pay both halves of FICA as SE tax (15.3%), but can deduct business expenses, half of SE tax, and up to 20% QBI deduction &mdash; often closing the gap significantly.</p><ul><li>SE tax: 15.3% on 92.35% of net income</li><li>Deduct half SE tax from AGI</li><li>QBI deduction: up to 20%</li><li>All business expenses: Schedule C</li></ul></div>
+</div>
+<h2>2026 Key Tax Rates</h2>
+<div style="overflow-x:auto;"><table class="rates-table">
+<thead><tr><th>Type</th><th>W-2 Employee</th><th>1099 Contractor</th></tr></thead><tbody>
+<tr style="background:rgba(13,27,42,0.5);"><td>FICA / SE tax</td><td>7.65% (employee) + 7.65% (employer)</td><td>15.3% on 92.35% of net</td></tr>
+<tr><td>SS wage base</td><td>$176,100</td><td>$176,100</td></tr>
+<tr style="background:rgba(13,27,42,0.5);"><td>Standard deduction (single)</td><td>$15,000</td><td>$15,000</td></tr>
+<tr><td>Standard deduction (MFJ)</td><td>$30,000</td><td>$30,000</td></tr>
+<tr style="background:rgba(13,27,42,0.5);"><td>Half SE tax deduction</td><td>N/A</td><td>Reduces AGI dollar-for-dollar</td></tr>
+<tr><td>QBI deduction</td><td>N/A</td><td>Up to 20% of qualified income</td></tr>
+<tr style="background:rgba(13,27,42,0.5);"><td>Business expense deductions</td><td>Very limited</td><td>Full Schedule C write-offs</td></tr>
+</tbody></table></div>
+<h2 style="margin-top:32px;">Frequently Asked Questions</h2>
+<div class="faq-item"><div class="faq-q">Do 1099 workers pay more taxes than W-2 employees?</div><div class="faq-a">1099 contractors pay SE tax of 15.3% vs 7.65% FICA for W-2 workers. However, deductions (half SE tax, QBI, Schedule C expenses) often bring the effective rate close to or below W-2 taxes. The more legitimate expenses you deduct, the more favorable 1099 becomes.</div></div>
+<div class="faq-item"><div class="faq-q">What is self-employment tax in 2026?</div><div class="faq-a">SE tax is 15.3% on the first $176,100 of net self-employment income (12.4% Social Security + 2.9% Medicare), applied to 92.35% of net earnings. Above $176,100 only the 2.9% Medicare rate applies. You deduct half of SE tax from gross income before calculating federal tax.</div></div>
+<div class="faq-item"><div class="faq-q">What is the QBI deduction and who qualifies?</div><div class="faq-a">The Qualified Business Income (QBI) deduction lets eligible self-employed workers deduct up to 20% of qualified business income. Most gig workers qualify if income is below $197,300 (single) or $394,600 (MFJ) in 2026. Certain professional service businesses have additional limits.</div></div>
+<div class="faq-item"><div class="faq-q">Should I form an S-Corp to reduce SE tax?</div><div class="faq-a">High earners (typically $80,000+ net self-employment income) may save SE tax via S-Corp election and a reasonable salary. At lower income levels the administrative costs usually outweigh any savings. Consult a licensed CPA before making this decision.</div></div>
+<h2 style="margin-top:32px;">Related Tools</h2>
+<div class="related-links">
+<a class="rel-link" href="/">Home &mdash; Deduction Finder &rarr;</a>
+<a class="rel-link" href="/deductions/">By Job Type &rarr;</a>
+<a class="rel-link" href="/deductions/truck-driver">Truck Driver Deductions &rarr;</a>
+<a class="rel-link" href="/deductions/real-estate-agent">Real Estate Agent Deductions &rarr;</a>
+<a class="rel-link" href="/deductions/photographer">Photographer Deductions &rarr;</a>
+<a class="rel-link" href="https://gigwisetax.com">GigWiseTax Calculator &rarr;</a>
+</div></div>
+<footer><p>&copy; 2026 1099Deductions.com &mdash; <a href="/">Home</a> &mdash; <a href="/deductions/">By Job Type</a></p><p style="margin-top:8px;">Not tax advice. Consult a licensed CPA for your specific situation.</p></footer>
+<script>
+function fmt(n){return "$"+Math.round(n).toLocaleString();}
+function fedTax(taxable,filing){
+  var b=filing==="mfj"
+    ?[[0,23850,.10],[23850,96950,.12],[96950,206700,.22],[206700,394600,.24],[394600,501050,.32],[501050,751600,.35],[751600,1e9,.37]]
+    :[[0,11925,.10],[11925,48475,.12],[48475,103350,.22],[103350,197300,.24],[197300,250525,.32],[250525,626350,.35],[626350,1e9,.37]];
+  var tax=0;
+  for(var i=0;i<b.length;i++){var lo=b[i][0],hi=b[i][1],r=b[i][2];if(taxable<=lo)break;tax+=(Math.min(taxable,hi)-lo)*r;}
+  return Math.max(0,tax);
+}
+function runCompare(){
+  var w2=Math.max(0,parseFloat(document.getElementById("w2In").value)||0);
+  var gig=Math.max(0,parseFloat(document.getElementById("gigIn").value)||0);
+  var sr=parseFloat(document.getElementById("stateSel").value)||0;
+  var filing=document.getElementById("filingSel").value;
+  if(w2===0&&gig===0)return;
+  var std=filing==="mfj"?30000:15000;
+  var w2Fica=Math.min(w2,176100)*.062+w2*.0145;
+  var w2Fed=fedTax(Math.max(0,w2-std),filing);
+  var w2St=w2*sr;
+  var w2Net=w2-w2Fica-w2Fed-w2St;
+  var netSE=gig*.9235;
+  var se=Math.min(netSE,176100)*.153+Math.max(0,netSE-176100)*.029;
+  var halfSE=se/2;
+  var qbi=(gig-halfSE)*.20;
+  var g99Fed=fedTax(Math.max(0,gig-halfSE-qbi-std),filing);
+  var g99St=gig*sr;
+  var g99Net=gig-se-g99Fed-g99St;
+  document.getElementById("w2Gross").textContent=fmt(w2);
+  document.getElementById("w2Fica").textContent="-"+fmt(w2Fica);
+  document.getElementById("w2Fed").textContent="-"+fmt(w2Fed);
+  document.getElementById("w2State").textContent="-"+fmt(w2St);
+  document.getElementById("w2Net").textContent=fmt(w2Net);
+  document.getElementById("g99Gross").textContent=fmt(gig);
+  document.getElementById("g99SE").textContent="-"+fmt(se);
+  document.getElementById("g99HalfSE").textContent="+"+fmt(halfSE);
+  document.getElementById("g99QBI").textContent="+"+fmt(qbi);
+  document.getElementById("g99Fed").textContent="-"+fmt(g99Fed);
+  document.getElementById("g99State").textContent="-"+fmt(g99St);
+  document.getElementById("g99Net").textContent=fmt(g99Net);
+  var diff=g99Net-w2Net;
+  var vEl=document.getElementById("verdict");
+  if(gig>0&&w2>0){vEl.innerHTML="<strong>"+(diff>0?"1099 nets "+fmt(Math.abs(diff))+" more":"W-2 nets "+fmt(Math.abs(diff))+" more")+"</strong> at these income levels after SE tax, QBI deduction, and federal tax. Real results vary based on actual business expenses &mdash; more Schedule C deductions make 1099 increasingly favorable.";}
+  else{vEl.innerHTML="Enter both a W-2 salary and 1099 income above to see the full comparison.";}
+  document.getElementById("results").style.display="block";
+}
+</script></body></html>
