@@ -1,0 +1,66 @@
+# 1099 Deductions
+> Free 1099 tax deductions guide for self-employed workers and independent contractors in the US. Updated for 2026 including OBBBA changes.
+
+## What this site does
+1099deductions.com is a specialized resource for independent contractors and self-employed workers. Covers every major tax deduction available to 1099 workers, quarterly estimated tax guidance, state-specific deduction guides, and gig economy tax tools. Updated for 2026 OBBBA tax law changes.
+
+## Key pages
+- /index.html — Home: 1099 tax deductions overview 2026
+- /1099-tax-deductions-list.html — Complete list of 1099 tax deductions
+- /1099-tax-deductions-2026.html — 1099 tax deductions guide 2026
+- /quarterly-tax-guide-2026.html — Quarterly estimated tax guide 2026
+- /1099-vs-w2-tax-calculator-2026.html — 1099 vs W-2 tax calculator 2026
+
+## State-specific guides
+- /1099-tax-deductions-california-2026.html — California 1099 deductions 2026
+- /1099-tax-deductions-florida-2026.html — Florida 1099 deductions 2026
+- /1099-tax-deductions-new-york-2026.html — New York 1099 deductions 2026
+- /1099-tax-deductions-texas-2026.html — Texas 1099 deductions 2026
+
+## Gig worker specific guides
+- /doordash-tax-deductions-2026.html — DoorDash driver tax deductions 2026
+- /uber-driver-tax-deductions-2026.html — Uber driver tax deductions 2026
+- /instacart-tax-deductions-2026.html — Instacart shopper tax deductions 2026
+- /airbnb-host-tax-deductions-2026.html — Airbnb host tax deductions 2026
+- /onlyfans-tax-deductions-2026.html — OnlyFans creator tax deductions 2026
+
+## 2026 OBBBA tax law changes for 1099 workers
+- No Tax on Tips: up to 25,000 federal deduction for eligible workers including delivery and restaurant workers
+- QBI deduction: 20% of net business income — now permanent (was expiring after 2025)
+- 100% bonus depreciation: restored and permanent — deduct full cost of equipment in year of purchase
+- 1099-NEC reporting threshold: raised from 600 to 2,000 (effective 2026)
+- SALT deduction: raised to 40,000 (was 10,000) — important for contractors in CA, NY, NJ
+- Mileage rate 2026: 72.5 cents per mile (up from 70 cents in 2025)
+## Top tax deductions covered
+- Mileage deduction: 72.5 cents per mile (2026)
+- Home office deduction: simplified method 5 per sq ft up to 300 sq ft
+- Health insurance premiums: 100% deductible for self-employed
+- Self-employment tax deduction: deduct 50% of SE tax
+- QBI deduction: 20% of qualified business income (now permanent, OBBBA)
+- Phone and internet: business-use percentage
+- Vehicle expenses: actual costs or standard mileage
+- Equipment and tools: 100% bonus depreciation (OBBBA 2026)
+- Professional development and education
+- Business insurance premiums
+- Retirement contributions: SEP-IRA up to 72,000 for 2026, Solo 401k up to 72,000
+- Advertising and marketing expenses
+- Bank fees and payment processing fees
+- Professional services: accounting, legal
+
+## Tax rates for 1099 workers (2026)
+- Self-employment tax: 15.3% (12.4% Social Security + 2.9% Medicare)
+- Social Security wage base: 176,100
+- Federal income tax brackets: 10% to 37%
+- Quarterly estimated tax due dates: April 15, June 16, September 15, January 15
+
+## Who this is for
+Independent contractors, freelancers, gig workers (DoorDash, Uber, Instacart, Airbnb, OnlyFans), sole proprietors, anyone receiving 1099-NEC or 1099-K income.
+
+## What this site does NOT cover
+W-2 employee paycheck calculations. For W-2 workers see privatepaycheck.com. For gig worker tax calculators see gigwisetax.com.
+
+## Colors and design
+Background: 07111F, Accent: B8924A, Text: C8D8EC
+
+## Sitemap
+https://www.1099deductions.com/sitemap.xml
