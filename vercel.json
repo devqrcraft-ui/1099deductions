@@ -278,7 +278,9 @@
   "routes": [
     {
       "src": "/deductions/(.+)\\.html$",
-      "headers": { "Location": "https://www.1099deductions.com/deductions/$1" },
+      "headers": {
+        "Location": "https://www.1099deductions.com/deductions/$1"
+      },
       "status": 301
     },
     {
@@ -526,6 +528,15 @@
     }
   ],
   "headers": [
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    },
     {
       "source": "/index.html",
       "headers": [
