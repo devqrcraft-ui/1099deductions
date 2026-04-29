@@ -523,6 +523,26 @@
       "dest": "/deductions/walmart-spark.html"
     },
     {
+      "src": "/1099-vs-w2-tax-calculator-2026",
+      "dest": "/1099-vs-w2-tax-calculator-2026.html"
+    },
+    {
+      "src": "/airbnb-host-tax-deductions-2026",
+      "dest": "/airbnb-host-tax-deductions-2026.html"
+    },
+    {
+      "src": "/obbba-tax-changes-2026",
+      "dest": "/obbba-tax-changes-2026.html"
+    },
+    {
+      "src": "/quarterly-tax-guide-2026",
+      "dest": "/quarterly-tax-guide-2026.html"
+    },
+    {
+      "src": "/deductions",
+      "dest": "/index.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
