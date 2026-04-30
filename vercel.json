@@ -9,6 +9,11 @@
   ],
   "redirects": [
     {
+      "source": "/deadlines",
+      "destination": "https://www.1099deductions.com/quarterly-tax-guide-2026",
+      "permanent": true
+    },
+    {
       "source": "/1099-tax-deductions-2026.html",
       "destination": "https://www.1099deductions.com/1099-tax-deductions-2026",
       "permanent": true
