@@ -28,13 +28,13 @@ window.addEventListener('load',function(){
 body{background:var(--ink);color:var(--text);font-family:'IBM Plex Sans',sans-serif;font-size:14px;line-height:1.65;-webkit-font-smoothing:antialiased}
 nav{background:var(--navy);border-bottom:1px solid var(--border2);padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:56px;position:sticky;top:0;z-index:100}
 .logo{font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:500;color:var(--gold2);text-decoration:none}
-.logo span{color:var(--text2);font-size:11px;display:block;font-weight:300;letter-spacing:.05em}
+.logo span{color:var(--text2);font-size:13px;display:block;font-weight:300;letter-spacing:.05em}
 .nav-links{display:flex;gap:24px;align-items:center}
 .nav-links a{color:var(--text2);text-decoration:none;font-size:13px}
 .nav-links a:hover{color:var(--gold2)}
-.nav-cta{background:var(--crimson);color:#F8D0D4 !important;padding:8px 16px;border-radius:4px;font-weight:600 !important;font-size:12px !important}
+.nav-cta{background:var(--crimson);color:#F8D0D4 !important;padding:8px 16px;border-radius:4px;font-weight:600 !important;font-size:13px !important}
 .hero{padding:64px 32px 48px;max-width:900px;margin:0 auto}
-.breadcrumb{font-size:12px;color:var(--text3);margin-bottom:16px;font-family:'IBM Plex Mono',monospace}
+.breadcrumb{font-size:13px;color:var(--text3);margin-bottom:16px;font-family:'IBM Plex Mono',monospace}
 .breadcrumb a{color:var(--text3);text-decoration:none}
 .breadcrumb a:hover{color:var(--gold2)}
 h1{font-family:'Playfair Display',serif;font-size:32px;color:var(--white);line-height:1.25;margin-bottom:16px;font-weight:700}
@@ -43,7 +43,7 @@ h1{font-family:'Playfair Display',serif;font-size:32px;color:var(--white);line-h
 h2{font-family:'Playfair Display',serif;font-size:22px;color:var(--white);margin:36px 0 14px;font-weight:600}
 p{color:var(--text);font-size:14px;line-height:1.8;margin-bottom:14px}
 table{width:100%;border-collapse:collapse;margin-bottom:24px;font-size:13px}
-th{background:var(--navy3);color:var(--gold2);padding:10px 14px;text-align:left;font-weight:600;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.04em}
+th{background:var(--navy3);color:var(--gold2);padding:10px 14px;text-align:left;font-weight:600;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.04em}
 td{padding:10px 14px;border-bottom:1px solid var(--border2);color:var(--text)}
 tr:hover td{background:rgba(30,61,101,0.3)}
 .cta-box{background:linear-gradient(135deg,#0E2240,#07111F);border:1px solid rgba(184,146,74,0.3);border-radius:6px;padding:28px 24px;text-align:center;margin:32px 0}
@@ -54,11 +54,11 @@ tr:hover td{background:rgba(30,61,101,0.3)}
 .faq-q{font-weight:600;color:var(--white);font-size:14px;margin-bottom:8px}
 .faq-a{color:var(--text2);font-size:13px;line-height:1.7}
 .step{background:var(--navy2);border-left:3px solid var(--gold);border-radius:0 6px 6px 0;padding:16px 20px;margin-bottom:12px}
-.step-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--gold2);margin-bottom:6px;letter-spacing:.06em}
+.step-num{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--gold2);margin-bottom:6px;letter-spacing:.06em}
 .step-title{font-weight:600;color:var(--white);font-size:14px;margin-bottom:4px}
 .step-text{font-size:13px;color:var(--text2);line-height:1.7}
-.deadline-badge{display:inline-block;background:var(--crimson);color:#F8D0D4;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:3px 8px;border-radius:3px;font-weight:600}
-footer{background:var(--navy);border-top:1px solid var(--border2);padding:24px 32px;text-align:center;font-size:12px;color:var(--text3)}
+.deadline-badge{display:inline-block;background:var(--crimson);color:#F8D0D4;font-family:'IBM Plex Mono',monospace;font-size:13px;padding:3px 8px;border-radius:3px;font-weight:600}
+footer{background:var(--navy);border-top:1px solid var(--border2);padding:24px 32px;text-align:center;font-size:13px;color:var(--text3)}
 footer a{color:var(--text3);text-decoration:none}
 footer a:hover{color:var(--gold2)}
 @media(max-width:600px){.nav-links{display:none}h1{font-size:24px}.hero{padding:32px 20px 28px}.content{padding:0 20px 48px}}
@@ -101,9 +101,9 @@ footer a:hover{color:var(--gold2)}
     <thead><tr><th>Quarter</th><th>Income Period</th><th>Due Date</th><th>Status</th></tr></thead>
     <tbody>
       <tr><td>Q1 2026</td><td>Jan 1 – Mar 31</td><td><strong>April 15, 2026</strong></td><td><span class="deadline-badge">PAST DUE</span></td></tr>
-      <tr><td>Q2 2026</td><td>Apr 1 – May 31</td><td><strong>June 16, 2026</strong></td><td><span style="color:var(--gold2);font-family:'IBM Plex Mono',monospace;font-size:11px;">UPCOMING</span></td></tr>
-      <tr><td>Q3 2026</td><td>Jun 1 – Aug 31</td><td><strong>September 15, 2026</strong></td><td><span style="color:var(--text3);font-family:'IBM Plex Mono',monospace;font-size:11px;">FUTURE</span></td></tr>
-      <tr><td>Q4 2026</td><td>Sep 1 – Dec 31</td><td><strong>January 15, 2027</strong></td><td><span style="color:var(--text3);font-family:'IBM Plex Mono',monospace;font-size:11px;">FUTURE</span></td></tr>
+      <tr><td>Q2 2026</td><td>Apr 1 – May 31</td><td><strong>June 16, 2026</strong></td><td><span style="color:var(--gold2);font-family:'IBM Plex Mono',monospace;font-size:13px;">UPCOMING</span></td></tr>
+      <tr><td>Q3 2026</td><td>Jun 1 – Aug 31</td><td><strong>September 15, 2026</strong></td><td><span style="color:var(--text3);font-family:'IBM Plex Mono',monospace;font-size:13px;">FUTURE</span></td></tr>
+      <tr><td>Q4 2026</td><td>Sep 1 – Dec 31</td><td><strong>January 15, 2027</strong></td><td><span style="color:var(--text3);font-family:'IBM Plex Mono',monospace;font-size:13px;">FUTURE</span></td></tr>
     </tbody>
   </table>
 
@@ -130,7 +130,7 @@ footer a:hover{color:var(--gold2)}
       <tr><td>$100,000</td><td>~$31,200</td><td>~$7,800</td></tr>
     </tbody>
   </table>
-  <p style="font-size:12px;color:var(--text3);">Estimates include SE tax (15.3%) and federal income tax. State tax not included. Use the calculator for your exact state amount.</p>
+  <p style="font-size:13px;color:var(--text3);">Estimates include SE tax (15.3%) and federal income tax. State tax not included. Use the calculator for your exact state amount.</p>
 
   <h2>How to Pay the IRS Quarterly</h2>
   <div class="step">
@@ -171,7 +171,7 @@ footer a:hover{color:var(--gold2)}
     <div class="faq-a">Most states with income tax require quarterly estimated payments with similar thresholds ($500-$1,000 owed). Deadlines are usually the same as federal but vary by state. Check your state revenue department website for exact deadlines and payment portals.</div>
   </div>
 
-  <div style="margin-top:32px;background:rgba(184,146,74,0.05);border:1px solid rgba(184,146,74,0.15);border-radius:4px;padding:14px 18px;font-size:12px;color:#4A6A8A;line-height:1.7;">
+  <div style="margin-top:32px;background:rgba(184,146,74,0.05);border:1px solid rgba(184,146,74,0.15);border-radius:4px;padding:14px 18px;font-size:13px;color:#4A6A8A;line-height:1.7;">
     <strong style="color:var(--text2);">Disclaimer:</strong> This page provides general educational information only. Not personalized tax advice. Consult a licensed CPA for your specific situation. <a href="https://www.irs.gov/businesses/small-businesses-self-employed/estimated-taxes" target="_blank" rel="noopener" style="color:var(--gold);">IRS Estimated Taxes →</a>
   </div>
 
@@ -186,7 +186,7 @@ footer a:hover{color:var(--gold2)}
 <footer>
   <p>&copy; 2026 1099Deductions.com &nbsp;&middot;&nbsp; Free forever &nbsp;&middot;&nbsp; No registration &nbsp;&middot;&nbsp;
   <a href="/privacy">Privacy</a> &nbsp;&middot;&nbsp; <a href="/terms">Terms</a></p>
-  <p style="margin-top:8px;font-size:11px">Not tax advice. Consult a CPA for your specific situation.</p>
+  <p style="margin-top:8px;font-size:13px">Not tax advice. Consult a CPA for your specific situation.</p>
 </footer>
 </body>
 </html>
