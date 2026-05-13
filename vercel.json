@@ -537,11 +537,6 @@
       "dest": "/quarterly-tax-guide-2026.html"
     },
     {
-      "src": "/deadlines",
-      "headers": { "Location": "https://www.1099deductions.com/quarterly-tax-guide-2026" },
-      "status": 308
-    },
-    {
       "src": "/deductions",
       "dest": "/index.html"
     },
