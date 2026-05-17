@@ -1,0 +1,12 @@
+# 1099Deductions
+
+> Complete guide to tax deductions for 1099 independent contractors and freelancers in the US 2026. Covers home office, mileage, health insurance, retirement, and all self-employment deductions.
+
+## Key pages
+
+- / : 1099 tax deductions guide 2026
+- /home-office-deduction : Home office deduction for freelancers
+- /mileage-deduction : Mileage deduction 72.5 cents/mile 2026
+- /health-insurance-deduction : Self-employed health insurance deduction
+- /retirement-deduction : SEP-IRA and Solo 401k deductions
+- /phone-internet-deduction : Phone and internet tax deduction
