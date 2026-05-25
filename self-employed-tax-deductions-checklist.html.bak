@@ -177,47 +177,19 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:32px 24
 
 </div>
 
-<footer style="background:#0a1628;border-top:1px solid rgba(184,146,74,0.12);padding:40px clamp(16px,4vw,32px) 24px">
-  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px 24px">
-    <div>
-      <div style="font-size:15px;font-weight:700;color:#C8D8EC;margin-bottom:12px">1099Deductions.com</div>
-      <p style="font-size:13px;color:rgba(200,216,236,0.5);line-height:1.6;margin:0">Free tax deduction resource for U.S. gig workers and independent contractors. Not affiliated with the IRS or any government agency.</p>
-    </div>
-    <div>
-      <div style="font-size:12px;font-weight:700;color:#B8924A;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px">By Job</div>
-      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px">
-        <li><a href="/deductions/uber" style="font-size:13px;color:rgba(200,216,236,0.6);text-decoration:none">Uber / Lyft</a></li>
-        <li><a href="/deductions/doordash" style="font-size:13px;color:rgba(200,216,236,0.6);text-decoration:none">DoorDash</a></li>
-        <li><a href="/deductions/airbnb" style="font-size:13px;color:rgba(200,216,236,0.6);text-decoration:none">Airbnb Host</a></li>
-        <li><a href="/deductions/onlyfans" style="font-size:13px;color:rgba(200,216,236,0.6);text-decoration:none">OnlyFans</a></li>
-        <li><a href="/deductions/etsy" style="font-size:13px;color:rgba(200,216,236,0.6);text-decoration:none">Etsy Seller</a></li>
-        <li><a href="/deductions/" style="font-size:13px;color:#B8924A;text-decoration:none">View All &#8594;</a></li>
-      </ul>
-    </div>
-    <div>
-      <div style="font-size:12px;font-weight:700;color:#B8924A;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px">Tools</div>
-      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px">
-        <li><a href="https://gigwisetax.com" target="_blank" rel="noopener" style="font-size:13px;color:rgba(200,216,236,0.6);text-decoration:none">Tax Calculator</a></li>
-        <li><a href="/deadlines" style="font-size:13px;color:rgba(200,216,236,0.6);text-decoration:none">2026 Deadlines</a></li>
-        <li><a href="/deductions/" style="font-size:13px;color:rgba(200,216,236,0.6);text-decoration:none">All Job Types</a></li>
-      </ul>
-    </div>
-    <div>
-      <div style="font-size:12px;font-weight:700;color:#B8924A;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px">Info</div>
-      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px">
-        <li><a href="/blog" style="font-size:13px;color:rgba(200,216,236,0.6);text-decoration:none">Blog</a></li>
-        <li><a href="https://www.irs.gov/forms-pubs/about-schedule-c-form-1040" target="_blank" rel="noopener" style="font-size:13px;color:rgba(200,216,236,0.6);text-decoration:none">IRS Schedule C</a></li>
-        <li><a href="https://www.irs.gov/businesses/gig-economy-tax-center" target="_blank" rel="noopener" style="font-size:13px;color:rgba(200,216,236,0.6);text-decoration:none">IRS Gig Economy Center</a></li>
-      </ul>
-    </div>
-  </div>
-  <div style="max-width:1100px;margin:32px auto 0;border-top:1px solid rgba(184,146,74,0.1);padding-top:20px">
-    <p style="font-size:12px;color:rgba(200,216,236,0.35);line-height:1.7;margin:0">
-      &copy; 2026 1099Deductions.com &nbsp;&bull;&nbsp; Not affiliated with the IRS.<br>
-      1099Deductions.com provides educational information to help U.S. gig workers and independent contractors understand common tax deductions. We are not the IRS or a tax preparation company, and nothing on this site is personalized tax or legal advice. For official guidance, refer to IRS resources and consult a CPA or enrolled agent.<br>
-      Data sourced from IRS.gov &bull; Publication 334 &bull; Schedule C Instructions (2026).
-    </p>
-  </div>
+<footer>
+<div class="footer-inner">
+<div class="footer-legal">
+<strong style="color:var(--gold2);">1099Deductions.com</strong><br>
+Free tax calculators for independent contractors and gig workers. Not affiliated with the IRS.<br>
+&copy; 2026 1099Deductions. For informational purposes only.
+</div>
+<nav style="display:flex;gap:20px;flex-wrap:wrap;">
+<a href="/" style="color:var(--text3);font-size:13px;">Home</a>
+<a href="/1099-tax-deductions-2026" style="color:var(--text3);font-size:13px;">Deductions 2026</a>
+<a href="/self-employed-tax-guide-2026" style="color:var(--text3);font-size:13px;">Tax Guide</a>
+</nav>
+</div>
 </footer>
 
 <script>
