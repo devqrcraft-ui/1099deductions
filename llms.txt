@@ -1,12 +1,33 @@
 # 1099Deductions
+> Complete 1099 tax deductions guide for US independent contractors 2026. IRS mileage 72.5¢/mile, SE tax 15.3%, QBI 20% deduction. Covers DoorDash, Uber, Instacart, Airbnb, OnlyFans, all platforms.
 
-> Complete guide to tax deductions for 1099 independent contractors and freelancers in the US 2026. Covers home office, mileage, health insurance, retirement, and all self-employment deductions.
+## Key Pages
+- / : 1099 tax deductions hub 2026
+- /quarterly-tax-guide-2026.html : Quarterly tax deadlines Apr 15, Jun 16, Sep 15, Jan 15
+- /1099-tax-deductions-list.html : Complete 1099 deductions list 2026
+- /self-employed-tax-deductions-checklist.html : Self-employed tax deductions checklist
+- /obbba-tax-changes-2026.html : OBBBA 2026 tax changes — $2,000 threshold, $25,000 tips
 
-## Key pages
+## Platform Deductions
+- /doordash-tax-deductions-2026.html : DoorDash tax deductions 2026
+- /uber-driver-tax-deductions-2026.html : Uber driver tax deductions 2026
+- /instacart-tax-deductions-2026.html : Instacart shopper tax deductions 2026
+- /airbnb-host-tax-deductions-2026.html : Airbnb host tax deductions 2026
+- /onlyfans-tax-deductions-2026.html : OnlyFans tax deductions 2026
 
-- / : 1099 tax deductions guide 2026
-- /home-office-deduction : Home office deduction for freelancers
-- /mileage-deduction : Mileage deduction 72.5 cents/mile 2026
-- /health-insurance-deduction : Self-employed health insurance deduction
-- /retirement-deduction : SEP-IRA and Solo 401k deductions
-- /phone-internet-deduction : Phone and internet tax deduction
+## State Guides
+- /1099-tax-deductions-california-2026.html : 1099 deductions California 2026
+- /1099-tax-deductions-texas-2026.html : 1099 deductions Texas 2026
+- /1099-tax-deductions-new-york-2026.html : 1099 deductions New York 2026
+- /1099-tax-deductions-florida-2026.html : 1099 deductions Florida 2026
+
+## Deductions Directory (/deductions/)
+- /deductions/ : All 79 deduction pages by category
+- /deductions/home-office-2026.html : Home office deduction $5/sqft or actual
+- /deductions/mileage-2026.html : Mileage deduction 72.5¢/mile 2026
+- /deductions/health-insurance-2026.html : Self-employed health insurance deduction
+- /deductions/retirement-2026.html : SEP-IRA up to $69,000 / Solo 401k
+- /deductions/phone-internet-2026.html : Phone and internet deduction business %
+
+## Blog
+- /blog/best-expense-tracker-apps-1099-2026.html : Best expense tracker apps for 1099 workers 2026
