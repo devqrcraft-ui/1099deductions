@@ -309,13 +309,6 @@
       "dest": "/$1"
     },
     {
-      "src": "/deductions/(?<slug>[a-z0-9-]+)\\.html",
-      "status": 301,
-      "headers": {
-        "Location": "/deductions/$slug/"
-      }
-    },
-    {
       "src": "/doordash-tax-deductions-2026",
       "dest": "/doordash-tax-deductions-2026.html"
     },
