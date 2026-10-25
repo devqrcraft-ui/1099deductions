@@ -17,7 +17,7 @@ export const PAGES = [
     "deductions": [
       [
         "Standard Mileage",
-        "$0.725/mile",
+        "72.5¢/mile (Jan–Jun) or 76¢/mile (Jul–Dec)",
         "Track every delivery mile — your single largest write-off."
       ],
       [
@@ -115,7 +115,7 @@ export const PAGES = [
     "deductions": [
       [
         "Standard Mileage",
-        "$0.725/mile",
+        "72.5¢/mile (Jan–Jun) or 76¢/mile (Jul–Dec)",
         "Track every online mile — your single largest write-off."
       ],
       [
@@ -213,7 +213,7 @@ export const PAGES = [
     "deductions": [
       [
         "Standard Mileage",
-        "$0.725/mile",
+        "72.5¢/mile (Jan–Jun) or 76¢/mile (Jul–Dec)",
         "Track every online mile — your single largest write-off."
       ],
       [
@@ -311,7 +311,7 @@ export const PAGES = [
     "deductions": [
       [
         "Standard Mileage",
-        "$0.725/mile",
+        "72.5¢/mile (Jan–Jun) or 76¢/mile (Jul–Dec)",
         "Track every shopping + delivery mile."
       ],
       [
@@ -409,7 +409,7 @@ export const PAGES = [
     "deductions": [
       [
         "Standard Mileage",
-        "$0.725/mile",
+        "72.5¢/mile (Jan–Jun) or 76¢/mile (Jul–Dec)",
         "Track every delivery mile — your single largest write-off."
       ],
       [
@@ -507,7 +507,7 @@ export const PAGES = [
     "deductions": [
       [
         "Standard Mileage",
-        "$0.725/mile",
+        "72.5¢/mile (Jan–Jun) or 76¢/mile (Jul–Dec)",
         "Track every delivery mile — your single largest write-off."
       ],
       [
@@ -605,7 +605,7 @@ export const PAGES = [
     "deductions": [
       [
         "Standard Mileage",
-        "$0.725/mile",
+        "72.5¢/mile (Jan–Jun) or 76¢/mile (Jul–Dec)",
         "Track every online mile — your single largest write-off."
       ],
       [
@@ -703,7 +703,7 @@ export const PAGES = [
     "deductions": [
       [
         "Standard Mileage",
-        "$0.725/mile",
+        "72.5¢/mile (Jan–Jun) or 76¢/mile (Jul–Dec)",
         "Track every online mile — your single largest write-off."
       ],
       [
@@ -801,7 +801,7 @@ export const PAGES = [
     "deductions": [
       [
         "Standard Mileage",
-        "$0.725/mile",
+        "72.5¢/mile (Jan–Jun) or 76¢/mile (Jul–Dec)",
         "Track every shopping + delivery mile."
       ],
       [
@@ -899,7 +899,7 @@ export const PAGES = [
     "deductions": [
       [
         "Standard Mileage",
-        "$0.725/mile",
+        "72.5¢/mile (Jan–Jun) or 76¢/mile (Jul–Dec)",
         "Track every delivery mile — your single largest write-off."
       ],
       [
@@ -997,7 +997,7 @@ export const PAGES = [
     "deductions": [
       [
         "Standard Mileage",
-        "$0.725/mile",
+        "72.5¢/mile (Jan–Jun) or 76¢/mile (Jul–Dec)",
         "Track every online mile — your single largest write-off."
       ],
       [
@@ -1095,7 +1095,7 @@ export const PAGES = [
     "deductions": [
       [
         "Standard Mileage",
-        "$0.725/mile",
+        "72.5¢/mile (Jan–Jun) or 76¢/mile (Jul–Dec)",
         "Track every online mile — your single largest write-off."
       ],
       [
@@ -1193,7 +1193,7 @@ export const PAGES = [
     "deductions": [
       [
         "Standard Mileage",
-        "$0.725/mile",
+        "72.5¢/mile (Jan–Jun) or 76¢/mile (Jul–Dec)",
         "Track every shopping + delivery mile."
       ],
       [
@@ -1679,7 +1679,7 @@ export const PAGES = [
     "deductions": [
       [
         "Standard Mileage",
-        "$0.725/mile",
+        "72.5¢/mile (Jan–Jun) or 76¢/mile (Jul–Dec)",
         "Track every online mile — your single largest write-off."
       ],
       [
@@ -1777,7 +1777,7 @@ export const PAGES = [
     "deductions": [
       [
         "Standard Mileage",
-        "$0.725/mile",
+        "72.5¢/mile (Jan–Jun) or 76¢/mile (Jul–Dec)",
         "Track every delivery mile — your single largest write-off."
       ],
       [
@@ -1875,7 +1875,7 @@ export const PAGES = [
     "deductions": [
       [
         "Standard Mileage",
-        "$0.725/mile",
+        "72.5¢/mile (Jan–Jun) or 76¢/mile (Jul–Dec)",
         "Track every shopping + delivery mile."
       ],
       [

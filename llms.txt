@@ -1,9 +1,9 @@
 # 1099Deductions
-> Complete 1099 tax deductions guide for US independent contractors 2026. IRS mileage 72.5¢/mile, SE tax 15.3%, QBI 20% deduction. Covers DoorDash, Uber, Instacart, Airbnb, OnlyFans, all platforms.
+> Complete 1099 tax deductions guide for US independent contractors 2026. IRS mileage 72.5¢/mile (Jan–Jun) or 76¢/mile (Jul–Dec), SE tax 15.3%, QBI 20% deduction. Covers DoorDash, Uber, Instacart, Airbnb, OnlyFans, all platforms.
 
 ## Key Pages
 - [1099 tax deductions hub 2026](https://www.1099deductions.com/)
-- [Quarterly tax deadlines Apr 15, Jun 16, Sep 15, Jan 15](https://www.1099deductions.com/quarterly-tax-guide-2026.html)
+- [Quarterly tax deadlines Apr 15, Jun 15, Sep 15, Jan 15](https://www.1099deductions.com/quarterly-tax-guide-2026.html)
 - [Complete 1099 deductions list 2026](https://www.1099deductions.com/1099-tax-deductions-list.html)
 - [Self-employed tax deductions checklist](https://www.1099deductions.com/self-employed-tax-deductions-checklist.html)
 - [OBBBA 2026 tax changes — $2,000 threshold, $25,000 tips](https://www.1099deductions.com/obbba-tax-changes-2026.html)
@@ -23,11 +23,6 @@
 
 ## Deductions Directory (/deductions/)
 - [All 79 deduction pages by category](https://www.1099deductions.com/deductions/)
-- [Home office deduction $5/sqft or actual](https://www.1099deductions.com/deductions/home-office-2026.html)
-- [Mileage deduction 72.5¢/mile 2026](https://www.1099deductions.com/deductions/mileage-2026.html)
-- [Self-employed health insurance deduction](https://www.1099deductions.com/deductions/health-insurance-2026.html)
-- [SEP-IRA up to $69,000 / Solo 401k](https://www.1099deductions.com/deductions/retirement-2026.html)
-- [Phone and internet deduction business %](https://www.1099deductions.com/deductions/phone-internet-2026.html)
-
+- [Home office deduction $5/sqft or actual](https://www.1099deductions.com/deductions/home-office-2026/)
 ## Blog
 - [Best expense tracker apps for 1099 workers 2026](https://www.1099deductions.com/blog/best-expense-tracker-apps-1099-2026.html)
