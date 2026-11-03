@@ -1,10 +1,10 @@
 # 1099Deductions
-> Complete 1099 tax deductions guide for US independent contractors 2026. IRS mileage 72.5¢/mile (Jan–Jun) or 76¢/mile (Jul–Dec), SE tax 15.3%, QBI 20% deduction. Covers DoorDash, Uber, Instacart, Airbnb, OnlyFans, all platforms.
+> General information on potential 2026 business deductions for gig workers and freelancers. A Form 1099 does not establish worker classification, and eligibility, limits, and reporting depend on the activity and individual facts.
 
 ## Key Pages
 - [1099 tax deductions hub 2026](https://www.1099deductions.com/)
 - [Quarterly tax deadlines Apr 15, Jun 15, Sep 15, Jan 15](https://www.1099deductions.com/quarterly-tax-guide-2026.html)
-- [Complete 1099 deductions list 2026](https://www.1099deductions.com/1099-tax-deductions-list.html)
+- [Complete 1099 deductions guide 2026](https://www.1099deductions.com/1099-tax-deductions-2026)
 - [Self-employed tax deductions checklist](https://www.1099deductions.com/self-employed-tax-deductions-checklist.html)
 - [OBBBA 2026 tax changes — $2,000 threshold, $25,000 tips](https://www.1099deductions.com/obbba-tax-changes-2026.html)
 
@@ -14,12 +14,6 @@
 - [Instacart shopper tax deductions 2026](https://www.1099deductions.com/instacart-tax-deductions-2026.html)
 - [Airbnb host tax deductions 2026](https://www.1099deductions.com/airbnb-host-tax-deductions-2026.html)
 - [OnlyFans tax deductions 2026](https://www.1099deductions.com/onlyfans-tax-deductions-2026.html)
-
-## State Guides
-- [1099 deductions California 2026](https://www.1099deductions.com/1099-tax-deductions-california-2026.html)
-- [1099 deductions Texas 2026](https://www.1099deductions.com/1099-tax-deductions-texas-2026.html)
-- [1099 deductions New York 2026](https://www.1099deductions.com/1099-tax-deductions-new-york-2026.html)
-- [1099 deductions Florida 2026](https://www.1099deductions.com/1099-tax-deductions-florida-2026.html)
 
 ## Deductions Directory (/deductions/)
 - [All 79 deduction pages by category](https://www.1099deductions.com/deductions/)

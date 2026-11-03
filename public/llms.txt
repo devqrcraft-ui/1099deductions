@@ -1,21 +1,18 @@
 # 1099 Deductions
-> Free 1099 tax deductions guide for self-employed workers and independent contractors in the US. Updated for 2026 including OBBBA changes.
+> General 2026 information on potential deductions for gig workers and self-employed businesses. Form 1099 reporting does not by itself determine worker classification or deduction eligibility.
 
 ## What this site does
-1099deductions.com is a specialized resource for independent contractors and self-employed workers. Covers every major tax deduction available to 1099 workers, quarterly estimated tax guidance, state-specific deduction guides, and gig economy tax tools. Updated for 2026 OBBBA tax law changes.
+1099deductions.com provides educational guides and checklists for gig workers and self-employed businesses. Deductions, tax forms, and filing treatment depend on the activity, documentation, and individual tax facts.
 
 ## Key pages
 - /index.html — Home: 1099 tax deductions overview 2026
-- /1099-tax-deductions-list.html — Complete list of 1099 tax deductions
-- /1099-tax-deductions-2026.html — 1099 tax deductions guide 2026
+- /1099-tax-deductions-list/ — Complete list of 1099 tax deductions
+- /1099-tax-deductions-2026 — 1099 tax deductions guide 2026
 - /quarterly-tax-guide-2026.html — Quarterly estimated tax guide 2026
 - /1099-vs-w2-tax-calculator-2026.html — 1099 vs W-2 tax calculator 2026
 
-## State-specific guides
-- /1099-tax-deductions-california-2026.html — California 1099 deductions 2026
-- /1099-tax-deductions-florida-2026.html — Florida 1099 deductions 2026
-- /1099-tax-deductions-new-york-2026.html — New York 1099 deductions 2026
-- /1099-tax-deductions-texas-2026.html — Texas 1099 deductions 2026
+## State and job-specific checklists
+Browse /deductions/ for available job-specific checklists. State and tax treatment depend on the work and individual facts.
 
 ## Gig worker specific guides
 - /doordash-tax-deductions-2026.html — DoorDash driver tax deductions 2026

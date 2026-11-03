@@ -18,7 +18,14 @@
   <meta name="twitter:creator" content="@1099deductions">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do 1099 workers pay more taxes than W-2 employees?","acceptedAnswer":{"@type":"Answer","text":"1099 contractors pay SE tax of 15.3% on net earnings vs 7.65% FICA for W-2 employees (employers pay the other 7.65%). However, 1099 workers can deduct business expenses, half of SE tax, and up to 20% QBI deduction, often reducing their effective rate significantly."}},{"@type":"Question","name":"What is self-employment tax in 2026?","acceptedAnswer":{"@type":"Answer","text":"SE tax is 15.3% on the first $176,100 of net self-employment income (12.4% Social Security + 2.9% Medicare), applied to 92.35% of net earnings. Above $176,100 only the 2.9% Medicare rate applies. You deduct half of SE tax from gross income."}},{"@type":"Question","name":"What is the QBI deduction for 1099 workers?","acceptedAnswer":{"@type":"Answer","text":"The Qualified Business Income deduction lets eligible self-employed workers deduct up to 20% of qualified business income. Most 1099 gig workers qualify if income is below $197,300 (single) or $394,600 (MFJ) in 2026."}},{"@type":"Question","name":"Should I form an S-Corp to save SE tax?","acceptedAnswer":{"@type":"Answer","text":"High earners (typically $80,000+ net self-employment income) may save SE tax via S-Corp election and paying a reasonable salary. At lower income levels the administrative cost usually outweighs savings. Consult a licensed CPA."}}]}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"Do 1099 workers pay more taxes than W-2 employees?","acceptedAnswer":{"@type":"Answer","text":"Self-employed workers generally pay both the employer and employee shares of Social Security and Medicare taxes. W-2 employees pay the employee share through payroll withholding, and their employer pays the employer share. Business expenses and other deductions may affect the overall comparison."}},
+  {"@type":"Question","name":"What is self-employment tax in 2026?","acceptedAnswer":{"@type":"Answer","text":"Self-employment tax generally applies at 15.3% to 92.35% of net earnings, up to the 2026 Social Security wage base of $184,500 for the Social Security portion. Medicare tax continues above that base, and Additional Medicare Tax may apply depending on filing status and other earned income. The deductible portion of regular self-employment tax is generally one-half."}},
+  {"@type":"Question","name":"What is the QBI deduction for 1099 workers?","acceptedAnswer":{"@type":"Answer","text":"Eligible taxpayers may deduct up to 20% of qualified business income, subject to income thresholds, business type, and other limitations. This calculator uses a simplified assumption and does not determine eligibility or all deduction limits."}},
+  {"@type":"Question","name":"Should I form an S-Corp to save SE tax?","acceptedAnswer":{"@type":"Answer","text":"An S corporation may affect employment taxes, but potential savings depend on reasonable compensation, business income, costs, and compliance obligations. Consult a qualified tax professional before choosing an entity or tax election."}}
+]}
+</script>
 <style>
 :root{--bg:#07111F;--navy:#0D1B2A;--card:#0F1E2F;--gold:#B8924A;--gold2:#D4AA6A;--text1:#E8F0FA;--text2:#C8D8EC;--text3:#7A96B8;--red:#FF9EA8;--green:#6EDBA7;--border1:rgba(184,146,74,0.2);--border2:rgba(200,216,236,0.1);}
 *{box-sizing:border-box;margin:0;padding:0;}
@@ -112,10 +119,10 @@ footer a{color:var(--gold);text-decoration:none;}
 <div class="calc-body">
 <div class="fields-row">
 <div class="field"><label for="w2In">W-2 Salary (annual $)</label><input type="number" id="w2In" placeholder="e.g. 75,000" min="0" oninput="runCompare()"></div>
-<div class="field"><label for="gigIn">1099 Gross Income (annual $)</label><input type="number" id="gigIn" placeholder="e.g. 75,000" min="0" oninput="runCompare()"></div>
+<div class="field"><label for="gigIn">1099 Net Profit After Business Expenses (annual $)</label><input type="number" id="gigIn" placeholder="e.g. 75,000" min="0" oninput="runCompare()"></div>
 </div>
 <div class="fields-row">
-<div class="field"><label for="stateSel">State Income Tax</label><select id="stateSel" onchange="runCompare()"><option value="0">No state tax (TX, FL, NV, WA...)</option><option value="0.093">California (9.3%)</option><option value="0.0685">New York (6.85%)</option><option value="0.0495">Illinois (4.95%)</option><option value="0.05">Other state (~5%)</option></select></div>
+<div class="field"><label for="stateSel">State income-tax rate (flat estimate)</label><select id="stateSel" onchange="runCompare()"><option value="0">No state income tax (selected states)</option><option value="0.093">California (assumed flat 9.3%)</option><option value="0.0685">New York (assumed flat 6.85%)</option><option value="0.0495">Illinois (assumed flat 4.95%)</option><option value="0.05">Other state (assumed flat ~5%)</option></select></div>
 <div class="field"><label for="filingSel">Filing Status</label><select id="filingSel" onchange="runCompare()"><option value="single">Single</option><option value="mfj">Married Filing Jointly</option></select></div>
 </div>
 <button class="calc-btn" onclick="runCompare()">Compare My Tax Bill &rarr;</button>
@@ -123,13 +130,13 @@ footer a{color:var(--gold);text-decoration:none;}
 <div class="compare-grid">
 <div class="col-card col-w2"><div class="col-head">W-2 Employee</div><div class="col-body">
 <div class="row-item"><span class="row-label">Gross salary</span><span class="row-val" id="w2Gross">$0</span></div>
-<div class="row-item"><span class="row-label">FICA (employee 7.65%)</span><span class="row-val neg" id="w2Fica">-$0</span></div>
+<div class="row-item"><span class="row-label">FICA + Additional Medicare Tax (if applicable)</span><span class="row-val neg" id="w2Fica">-$0</span></div>
 <div class="row-item"><span class="row-label">Federal income tax</span><span class="row-val neg" id="w2Fed">-$0</span></div>
 <div class="row-item"><span class="row-label">State income tax</span><span class="row-val neg" id="w2State">-$0</span></div>
 </div><div class="net-row net-w2"><span class="net-label">Take-home pay</span><span class="net-val" id="w2Net">$0</span></div></div>
 <div class="col-card col-1099"><div class="col-head">1099 Contractor</div><div class="col-body">
-<div class="row-item"><span class="row-label">Gross income</span><span class="row-val gold" id="g99Gross">$0</span></div>
-<div class="row-item"><span class="row-label">SE tax (15.3%)</span><span class="row-val neg" id="g99SE">-$0</span></div>
+<div class="row-item"><span class="row-label">Net profit</span><span class="row-val gold" id="g99Gross">$0</span></div>
+<div class="row-item"><span class="row-label">Self-employment taxes (estimate)</span><span class="row-val neg" id="g99SE">-$0</span></div>
 <div class="row-item"><span class="row-label">Half SE deduction</span><span class="row-val pos" id="g99HalfSE">+$0</span></div>
 <div class="row-item"><span class="row-label">QBI deduction (20%)</span><span class="row-val pos" id="g99QBI">+$0</span></div>
 <div class="row-item"><span class="row-label">Federal income tax</span><span class="row-val neg" id="g99Fed">-$0</span></div>
@@ -137,30 +144,30 @@ footer a{color:var(--gold);text-decoration:none;}
 </div><div class="net-row net-1099"><span class="net-label">Take-home pay</span><span class="net-val" id="g99Net">$0</span></div></div>
 </div>
 <div class="verdict" id="verdict"></div>
-<div class="disclaimer">Rough estimate for educational purposes only. Real results depend on actual business expenses, state details, filing deductions, and your specific situation. This is not tax advice &mdash; consult a licensed CPA or tax professional.</div>
+<div class="disclaimer">Rough estimate for educational purposes only. Enter 1099 net profit after business expenses. State tax uses a simplified flat-rate assumption, not state tax brackets. The estimate assumes QBI eligibility and does not model QBI limits, other wages, credits, or all filing adjustments. This is not tax advice &mdash; consult a licensed CPA or tax professional.</div>
 </div></div></div></div>
 <div class="section">
 <h2>Why 1099 and W-2 Taxes Are Different</h2>
 <div class="explainer-grid">
 <div class="exp-card"><h3>W-2 Employee</h3><p>Your employer withholds taxes and pays half your FICA (7.65%). You never see the employer half &mdash; but on a $75,000 salary it costs them ~$5,750 extra.</p><ul><li>FICA: you pay 7.65%</li><li>Employer pays other 7.65%</li><li>Federal and state withheld automatically</li><li>Benefits (health, 401k) often included</li></ul></div>
-<div class="exp-card"><h3>1099 Contractor</h3><p>You pay both halves of FICA as SE tax (15.3%), but can deduct business expenses, half of SE tax, and up to 20% QBI deduction &mdash; often closing the gap significantly.</p><ul><li>SE tax: 15.3% on 92.35% of net income</li><li>Deduct half SE tax from AGI</li><li>QBI deduction: up to 20%</li><li>All business expenses: Schedule C</li></ul></div>
+<div class="exp-card"><h3>1099 Contractor</h3><p>You generally pay both shares of Social Security and Medicare taxes as self-employment tax. Deductible business expenses, half of regular SE tax, and a potential QBI deduction can affect the comparison.</p><ul><li>Regular SE tax is generally 15.3% on 92.35% of net earnings, up to the Social Security wage base for the Social Security portion</li><li>Additional Medicare Tax may apply</li><li>Deductible half of regular SE tax reduces AGI</li><li>Eligible taxpayers may claim up to 20% QBI, subject to limitations</li><li>Deduct ordinary and necessary business expenses on Schedule C</li></ul></div>
 </div>
 <h2>2026 Key Tax Rates</h2>
 <div style="overflow-x:auto;"><table class="rates-table">
 <thead><tr><th>Type</th><th>W-2 Employee</th><th>1099 Contractor</th></tr></thead><tbody>
-<tr style="background:rgba(13,27,42,0.5);"><td>FICA / SE tax</td><td>7.65% (employee) + 7.65% (employer)</td><td>15.3% on 92.35% of net</td></tr>
-<tr><td>SS wage base</td><td>$176,100</td><td>$176,100</td></tr>
-<tr style="background:rgba(13,27,42,0.5);"><td>Standard deduction (single)</td><td>$15,000</td><td>$15,000</td></tr>
-<tr><td>Standard deduction (MFJ)</td><td>$30,000</td><td>$30,000</td></tr>
+<tr style="background:rgba(13,27,42,0.5);"><td>FICA / SE tax</td><td>7.65% employee share; Additional Medicare Tax may apply</td><td>Regular SE tax plus Additional Medicare Tax when applicable</td></tr>
+<tr><td>SS wage base</td><td>$184,500</td><td>$184,500</td></tr>
+<tr style="background:rgba(13,27,42,0.5);"><td>Standard deduction (single)</td><td>$16,100</td><td>$16,100</td></tr>
+<tr><td>Standard deduction (MFJ)</td><td>$32,200</td><td>$32,200</td></tr>
 <tr style="background:rgba(13,27,42,0.5);"><td>Half SE tax deduction</td><td>N/A</td><td>Reduces AGI dollar-for-dollar</td></tr>
 <tr><td>QBI deduction</td><td>N/A</td><td>Up to 20% of qualified income</td></tr>
-<tr style="background:rgba(13,27,42,0.5);"><td>Business expense deductions</td><td>Very limited</td><td>Full Schedule C write-offs</td></tr>
+<tr style="background:rgba(13,27,42,0.5);"><td>Business expense deductions</td><td>Generally not deductible as employee business expenses</td><td>Ordinary and necessary business expenses may be deductible</td></tr>
 </tbody></table></div>
 <h2 style="margin-top:32px;">Frequently Asked Questions</h2>
-<div class="faq-item"><div class="faq-q">Do 1099 workers pay more taxes than W-2 employees?</div><div class="faq-a">1099 contractors pay SE tax of 15.3% vs 7.65% FICA for W-2 workers. However, deductions (half SE tax, QBI, Schedule C expenses) often bring the effective rate close to or below W-2 taxes. The more legitimate expenses you deduct, the more favorable 1099 becomes.</div></div>
-<div class="faq-item"><div class="faq-q">What is self-employment tax in 2026?</div><div class="faq-a">SE tax is 15.3% on the first $176,100 of net self-employment income (12.4% Social Security + 2.9% Medicare), applied to 92.35% of net earnings. Above $176,100 only the 2.9% Medicare rate applies. You deduct half of SE tax from gross income before calculating federal tax.</div></div>
-<div class="faq-item"><div class="faq-q">What is the QBI deduction and who qualifies?</div><div class="faq-a">The Qualified Business Income (QBI) deduction lets eligible self-employed workers deduct up to 20% of qualified business income. Most gig workers qualify if income is below $197,300 (single) or $394,600 (MFJ) in 2026. Certain professional service businesses have additional limits.</div></div>
-<div class="faq-item"><div class="faq-q">Should I form an S-Corp to reduce SE tax?</div><div class="faq-a">High earners (typically $80,000+ net self-employment income) may save SE tax via S-Corp election and a reasonable salary. At lower income levels the administrative costs usually outweigh any savings. Consult a licensed CPA before making this decision.</div></div>
+<div class="faq-item"><div class="faq-q">Do 1099 workers pay more taxes than W-2 employees?</div><div class="faq-a">Self-employed workers generally pay both shares of Social Security and Medicare taxes, while W-2 employees pay the employee share and their employer pays the employer share. Business deductions, benefits, filing details, and other income can change the overall comparison.</div></div>
+<div class="faq-item"><div class="faq-q">What is self-employment tax in 2026?</div><div class="faq-a">Regular SE tax is 12.4% Social Security tax on net earnings (up to the $184,500 wage base) plus 2.9% Medicare tax on all net earnings, generally after applying the 92.35% factor. An additional 0.9% Medicare tax may apply above $200,000 for single filers or $250,000 for joint filers. Half of regular SE tax is generally deductible for income-tax purposes.</div></div>
+<div class="faq-item"><div class="faq-q">What is the QBI deduction and who qualifies?</div><div class="faq-a">Eligible taxpayers may deduct up to 20% of qualified business income. Eligibility and limits depend on taxable income, filing status, business type, and other rules; the calculator uses a simplified assumption and may not reflect your allowed deduction.</div></div>
+<div class="faq-item"><div class="faq-q">Should I form an S-Corp to reduce SE tax?</div><div class="faq-a">An S corporation may affect employment taxes, but potential savings depend on reasonable compensation, business income, administrative costs, and compliance obligations. Consult a qualified tax professional before choosing an entity or tax election.</div></div>
 <h2 style="margin-top:32px;">Related Tools</h2>
 <div class="related-links">
 <a class="rel-link" href="/">Home &mdash; Deduction Finder &rarr;</a>
@@ -192,8 +199,8 @@ footer a{color:var(--gold);text-decoration:none;}
 function fmt(n){return "$"+Math.round(n).toLocaleString();}
 function fedTax(taxable,filing){
   var b=filing==="mfj"
-    ?[[0,23850,.10],[23850,96950,.12],[96950,206700,.22],[206700,394600,.24],[394600,501050,.32],[501050,751600,.35],[751600,1e9,.37]]
-    :[[0,11925,.10],[11925,48475,.12],[48475,103350,.22],[103350,197300,.24],[197300,250525,.32],[250525,626350,.35],[626350,1e9,.37]];
+    ?[[0,24800,.10],[24800,100800,.12],[100800,211400,.22],[211400,403550,.24],[403550,512450,.32],[512450,768700,.35],[768700,1e9,.37]]
+    :[[0,12400,.10],[12400,50400,.12],[50400,105700,.22],[105700,201775,.24],[201775,256225,.32],[256225,640600,.35],[640600,1e9,.37]];
   var tax=0;
   for(var i=0;i<b.length;i++){var lo=b[i][0],hi=b[i][1],r=b[i][2];if(taxable<=lo)break;tax+=(Math.min(taxable,hi)-lo)*r;}
   return Math.max(0,tax);
@@ -204,15 +211,18 @@ function runCompare(){
   var sr=parseFloat(document.getElementById("stateSel").value)||0;
   var filing=document.getElementById("filingSel").value;
   if(w2===0&&gig===0)return;
-  var std=filing==="mfj"?30000:15000;
-  var w2Fica=Math.min(w2,176100)*.062+w2*.0145;
+  var std=filing==="mfj"?32200:16100;
+  var medicareThreshold=filing==="mfj"?250000:200000;
+  var w2Fica=Math.min(w2,184500)*.062+w2*.0145+Math.max(0,w2-medicareThreshold)*.009;
   var w2Fed=fedTax(Math.max(0,w2-std),filing);
   var w2St=w2*sr;
   var w2Net=w2-w2Fica-w2Fed-w2St;
   var netSE=gig*.9235;
-  var se=Math.min(netSE,176100)*.153+Math.max(0,netSE-176100)*.029;
-  var halfSE=se/2;
-  var qbi=(gig-halfSE)*.20;
+  var regularSE=Math.min(netSE,184500)*.124+netSE*.029;
+  var additionalMedicare=Math.max(0,netSE-medicareThreshold)*.009;
+  var se=regularSE+additionalMedicare;
+  var halfSE=regularSE/2;
+  var qbi=Math.min(Math.max(0,gig-halfSE)*.20,Math.max(0,gig-halfSE-std)*.20);
   var g99Fed=fedTax(Math.max(0,gig-halfSE-qbi-std),filing);
   var g99St=gig*sr;
   var g99Net=gig-se-g99Fed-g99St;
@@ -230,7 +240,7 @@ function runCompare(){
   document.getElementById("g99Net").textContent=fmt(g99Net);
   var diff=g99Net-w2Net;
   var vEl=document.getElementById("verdict");
-  if(gig>0&&w2>0){vEl.innerHTML="<strong>"+(diff>0?"1099 nets "+fmt(Math.abs(diff))+" more":"W-2 nets "+fmt(Math.abs(diff))+" more")+"</strong> at these income levels after SE tax, QBI deduction, and federal tax. Real results vary based on actual business expenses &mdash; more Schedule C deductions make 1099 increasingly favorable.";}
+  if(gig>0&&w2>0){vEl.innerHTML="<strong>"+(diff>0?"1099 nets "+fmt(Math.abs(diff))+" more":"W-2 nets "+fmt(Math.abs(diff))+" more")+"</strong> in this simplified comparison. The 1099 input is net profit after business expenses; actual results vary with other income, credits, deductions, benefits, and state tax rules.";}
   else{vEl.innerHTML="Enter both a W-2 salary and 1099 income above to see the full comparison.";}
   document.getElementById("results").style.display="block";
 }
