@@ -280,52 +280,93 @@ function buildGrid(containerId) {
 }
 
 // ── CALCULATORS ──
-function runCalc() {
-  const job = document.getElementById('jobSel').value;
-  const income = parseFloat(document.getElementById('incomeIn').value);
-  if (!job || !income || income <= 0) { return; }
-  document.getElementById('resNum').textContent = 'Varies';
-  document.getElementById('resSub').textContent = 'Income alone cannot determine deductible expenses. Use your actual business miles and eligible costs; open the checklist for this job.';
-  document.getElementById('resBtn').onclick = () => showJobPage(job);
-  document.getElementById('calcRes').classList.add('show');
-}
+function runCalc() {
+  const job = document.getElementById('jobSel').value;
+  const incomeText = document.getElementById('incomeIn').value.trim();
+  const income = Number(incomeText);
+  const result = document.getElementById('calcRes');
+  const error = document.getElementById('heroCalcError');
+  const number = document.getElementById('resNum');
+  const detail = document.getElementById('resSub');
+  const button = document.getElementById('resBtn');
 
+  function reset(message) {
+    result.classList.remove('show');
+    number.textContent = '—';
+    detail.textContent = '';
+    button.onclick = null;
+    error.textContent = message;
+    return false;
+  }
+
+  if (!job) return reset('Choose your gig job to open its deduction checklist.');
+  if (!incomeText || !Number.isFinite(income) || income <= 0) {
+    return reset('Enter annual net business profit to open the checklist.');
+  }
+
+  number.textContent = 'Varies';
+  detail.textContent = 'This finder does not calculate deductions from income. Actual deductible expenses depend on your business records; open the checklist for this job.';
+  button.onclick = () => showJobPage(job);
+  result.classList.add('show');
+  error.textContent = '';
+  return true;
+}
 function federalIncomeTax2026(taxableIncome) {
-  const brackets = [
-    [0, 12400, 0.10],
-    [12400, 50400, 0.12],
-    [50400, 105700, 0.22],
-    [105700, 201775, 0.24],
-    [201775, 256225, 0.32],
-    [256225, 640600, 0.35],
-    [640600, Infinity, 0.37],
-  ];
-  return brackets.reduce((tax, [lower, upper, rate]) => {
-    return tax + Math.max(0, Math.min(taxableIncome, upper) - lower) * rate;
-  }, 0);
+  return TaxMath2026.federalIncomeTax(taxableIncome, 'single');
 }
 
 function runFullCalc() {
-  const income = parseFloat(document.getElementById('calcIncome').value);
-  const stateRate = parseFloat(document.getElementById('calcState').value);
-  if (!income || income <= 0) { return; }
-  const netSE = income * 0.9235;
-  const regularSeTax = Math.min(netSE, 184500) * 0.124 + netSE * 0.029;
-  const additionalMedicareTax = Math.max(0, netSE - 200000) * 0.009;
+  const incomeInput = document.getElementById('calcIncome');
+  const stateInput = document.getElementById('calcState');
+  const result = document.getElementById('fullCalcResult');
+  const error = document.getElementById('calcError');
+  const shareBar = document.querySelector('[data-share-kind="calc"]');
+  const incomeText = incomeInput.value.trim();
+  const stateText = stateInput.value.trim();
+  const income = Number(incomeText);
+  const stateRate = Number(stateText);
+
+  function reset(message) {
+    result.style.display = 'none';
+    if (shareBar) shareBar.style.display = 'none';
+    document.getElementById('fcSE').textContent = '$0';
+    document.getElementById('fcFed').textContent = '$0';
+    document.getElementById('fcState').textContent = '$0';
+    document.getElementById('fcDed').textContent = 'Not modeled';
+    document.getElementById('fcQuarterly').textContent = '$0';
+    error.textContent = message;
+  }
+
+  if (!incomeText || !Number.isFinite(income) || income < 0) {
+    reset('Enter annual net business profit after expenses.');
+    return false;
+  }
+  if (!stateText || !Number.isFinite(stateRate) || stateRate < 0) {
+    reset('Choose a state-rate scenario to include a state estimate.');
+    return false;
+  }
+
+  const rules = TAX_RULES_2026;
+  const netSE = income * rules.selfEmployment.netEarningsFactor;
+  const regularSeTax = TaxMath2026.regularSelfEmploymentTax(netSE);
+  const additionalMedicareTax = TaxMath2026.additionalMedicareTax(netSE, 'single');
   const seTax = Math.round(regularSeTax + additionalMedicareTax);
   const agi = income - (regularSeTax * 0.5);
-  const taxableIncome = Math.max(0, agi - 16100);
+  const taxableIncome = Math.max(0, agi - rules.standardDeduction.single);
   const fedTax = Math.round(federalIncomeTax2026(taxableIncome));
   const stateTax = Math.round(income * stateRate);
   const quarterly = Math.round((seTax + fedTax + stateTax) / 4);
-  document.getElementById('fcSE').textContent = '$' + seTax.toLocaleString();
-  document.getElementById('fcFed').textContent = '$' + fedTax.toLocaleString();
-  document.getElementById('fcState').textContent = '$' + stateTax.toLocaleString();
-  document.getElementById('fcDed').textContent = 'Not entered';
-  document.getElementById('fcQuarterly').textContent = '$' + quarterly.toLocaleString();
-  document.getElementById('fullCalcResult').style.display = 'block';
-}
-
+  document.getElementById('fcSE').textContent = '$' + seTax.toLocaleString('en-US');
+  document.getElementById('fcFed').textContent = '$' + fedTax.toLocaleString('en-US');
+  document.getElementById('fcState').textContent = '$' + stateTax.toLocaleString('en-US');
+  document.getElementById('fcDed').textContent = 'Not modeled';
+  document.getElementById('fcQuarterly').textContent = '$' + quarterly.toLocaleString('en-US');
+  result.style.display = 'block';
+  if (shareBar) shareBar.style.display = '';
+  error.textContent = '';
+  return true;
+}
+
 // ── INIT ──
 buildGrid('homeJobGrid');
 buildGrid('allJobGrid');

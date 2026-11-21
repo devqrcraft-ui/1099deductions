@@ -3258,7 +3258,7 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"1099 Tax Deductions Checklist 2026","description":"Explore common business deductions for self-employed workers and gig earners in 2026. Eligibility, documentation, and tax limits apply.","url":"https://www.1099deductions.com/","dateModified":"2026-11-02","author":{"@type":"Organization","name":"the 1099Deductions Team","url":"https://www.1099deductions.com"},"publisher":{"@type":"Organization","name":"1099Deductions.com","url":"https://www.1099deductions.com"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"1099 Tax Deductions Checklist 2026","description":"Explore common business deductions for self-employed workers and gig earners in 2026. Eligibility, documentation, and tax limits apply.","url":"https://www.1099deductions.com/","dateModified":"2026-11-21","author":{"@type":"Organization","name":"the 1099Deductions Team","url":"https://www.1099deductions.com"},"publisher":{"@type":"Organization","name":"1099Deductions.com","url":"https://www.1099deductions.com"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.1099deductions.com/"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"1099Deductions.com","url":"https://www.1099deductions.com","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.1099deductions.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
 </head>
@@ -3923,10 +3923,10 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
 
         <ul style="list-style:none;padding:0;margin:0 0 22px;display:flex;flex-direction:column;gap:8px;">
             <li style="color:var(--text2);font-size:14px;line-height:1.6;">✅ Checklists for DoorDash, Uber, Airbnb, OnlyFans, Etsy, Instacart, and more.</li>
-            <li style="color:var(--text2);font-size:14px;line-height:1.6;">✅ Based on IRS Schedule C and Publication 334 (2026).</li>
+            <li style="color:var(--text2);font-size:14px;line-height:1.6;">✅ Built from IRS guidance for gig businesses and rental hosts; Schedule E may apply to rental real estate.</li>
             <li style="color:var(--text2);font-size:14px;line-height:1.6;">✅ Free resource. No signup, no software required.</li>
           </ul>
-          <p style="font-size:13px;color:var(--text3);line-height:1.6;margin-bottom:22px;">Based on IRS Schedule C and Publication 334. General information only — not tax advice.</p>
+          <p style="font-size:13px;color:var(--text3);line-height:1.6;margin-bottom:22px;">IRS guidance varies by activity. Rental real estate is generally reported on Schedule E; substantial guest-convenience services can require Schedule C. General information only — not tax advice.</p>
 
 
 
@@ -3942,7 +3942,7 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
 
         <p style="font-size:14px;color:var(--text2);line-height:1.75;margin-bottom:22px;max-width:560px;">
   Free <strong>1099 tax deductions</strong> and <strong>self-employed tax write-offs</strong> for freelancers and gig workers.
-  Every checklist is <strong>IRS Schedule C compliant</strong> and covers DoorDash, Uber, Airbnb, Etsy, OnlyFans and more —
+  Guides point to relevant IRS rules; rental real estate may require Schedule E. They cover DoorDash, Uber, Airbnb, Etsy, OnlyFans and more —
   no signup, no fees, updated for 2026 IRS rules.
 </p>
 <div class="hero-chips">
@@ -4379,7 +4379,7 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
 
 
 
-            <input type="number" id="incomeIn" min="0" placeholder="e.g. 48,000" style="color:#E8F0FA;" oninput="runCalc()">
+            <input type="number" id="incomeIn" min="0" placeholder="e.g. 48000" style="color:#E8F0FA;" oninput="runCalc()">
 
 
 
@@ -4449,7 +4449,7 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
 
 
 
-              <option value="0.093">California (assumed flat 9.3%)</option>
+              <option value="0.093">California (9.3% flat-rate proxy; not CA brackets)</option>
 
 
 
@@ -4589,7 +4589,7 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
 
 
 
-          <button class="calc-submit" onclick="runCalc();window.track1099&&track1099('calculate',{tool:'hero'})">View My Deductions →</button>
+          <button class="calc-submit" onclick="if(runCalc()&&window.track1099)track1099('calculate',{tool:'hero'})">View My Deductions →</button><div id="heroCalcError" role="status" aria-live="polite" style="min-height:20px;margin-top:8px;color:#fca5a5;font-size:13px;"></div>
 
 
 
@@ -6068,7 +6068,7 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
 
 
 
-      <div class="section-sub">Enter your income to see your estimated SE tax, federal tax, and total deductions available.</div>
+      <div class="section-sub">Enter net business profit after expenses for a 2026 federal estimate and an optional state-tax proxy.</div>
 
 
 
@@ -6096,7 +6096,7 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
 
 
 
-        <div class="calc-head"><span>Full Tax Estimator</span><span style="opacity:0.6;font-size:10px;">2026 IRS RULES</span></div>
+        <div class="calc-head"><span>Full Tax Estimator</span><span style="opacity:0.6;font-size:10px;">2026 TAX ESTIMATE</span></div>
 
 
 
@@ -6124,7 +6124,7 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
 
 
 
-          <div class="field"><label class="field-label">Your Gig Job</label>
+          <div class="field"><label class="field-label">Work type (for related guides; not used in the estimate)</label>
 
 
 
@@ -6320,7 +6320,7 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
 
 
 
-            <input type="number" id="calcIncome" min="0" placeholder="e.g. 55,000" style="color:#E8F0FA;" oninput="runFullCalc()">
+            <input type="number" id="calcIncome" min="0" placeholder="e.g. 55000" style="color:#E8F0FA;" oninput="runFullCalc()">
 
 
 
@@ -6348,7 +6348,7 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
 
 
 
-          <div class="field"><label class="field-label">State income-tax rate (flat estimate)</label>
+          <div class="field"><label class="field-label">State income-tax rate (flat-rate proxy)</label>
 
 
 
@@ -6363,6 +6363,7 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
 
 
             <select id="calcState" aria-label="Select state for calculator" onchange="runFullCalc()">
+              <option value="" selected>Choose a state-rate scenario...</option>
 
 
 
@@ -6376,7 +6377,7 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
 
 
 
-              <option value="0.093">California (assumed flat 9.3%)</option>
+              <option value="0.093">California (9.3% flat-rate proxy; not CA brackets)</option>
 
 
 
@@ -6516,7 +6517,7 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
 
 
 
-          <button class="calc-submit" onclick="runFullCalc();window.track1099&&track1099('calculate',{tool:'full'});var r=document.getElementById('fullCalcResult');r&&r.scrollIntoView({behavior:'smooth',block:'nearest'})">Calculate My Taxes →</button>
+          <button class="calc-submit" onclick="if(runFullCalc()){window.track1099&&track1099('calculate',{tool:'full'});var r=document.getElementById('fullCalcResult');r&&r.scrollIntoView({behavior:'smooth',block:'nearest'})}">Calculate My Taxes →</button>
 
 
 
@@ -6530,7 +6531,7 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
 
 
 
-          <div id="fullCalcResult" style="display:none;margin-top:20px;">
+          <div id="calcError" role="status" aria-live="polite" style="min-height:20px;margin-top:8px;color:#fca5a5;font-size:13px;"></div><div id="fullCalcResult" style="display:none;margin-top:20px;">
 
 
 
@@ -6684,7 +6685,7 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
 
 
 
-                <div style="font-size:10px;color:var(--text3);font-family:monospace;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px;">State Tax</div>
+                <div style="font-size:10px;color:var(--text3);font-family:monospace;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px;">State Tax Proxy</div>
 
 
 
@@ -6740,7 +6741,7 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
 
 
 
-                <div style="font-size:10px;color:var(--gold);font-family:monospace;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px;">Business Expenses (not entered)</div>
+                <div style="font-size:10px;color:var(--gold);font-family:monospace;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px;">Additional Business Expenses</div>
 
 
 
@@ -6839,7 +6840,8 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
 
 
               <div style="font-size:13px;color:var(--text2);margin-top:4px;">Typical 2026 dates: Apr 15 · Jun 15 · Sep 15, 2026 · Jan 15, 2027</div>
-              <div style="font-size:12px;color:var(--text3);margin-top:8px;line-height:1.6;">Simplified estimate: enter net business profit after expenses. State tax uses the selected flat-rate assumption; the estimate does not include QBI, credits, other wages, or state-specific deductions. Verify your tax and payment requirements.</div>
+              <div style="font-size:12px;color:var(--text3);margin-top:8px;line-height:1.6;">Simplified federal estimate for a single filer using the $16,100 standard deduction. Enter net business profit after expenses; additional business expenses are not modeled. The state amount is a flat-rate proxy, not a state return. California uses progressive rates, so its 9.3% proxy is not a California tax calculation. This estimate excludes QBI, credits, other wages, and state-specific deductions. Verify your tax and payment requirements with the IRS and your state tax agency.</div>
+              <div style="font-size:12px;color:var(--text3);margin-top:8px;line-height:1.6;">Tax inputs checked November 21, 2026: <a href="https://www.irs.gov/irb/2025-45_IRB" target="_blank" rel="noopener noreferrer">2026 federal rates and standard deduction</a> &middot; <a href="https://www.irs.gov/taxtopics/tc554" target="_blank" rel="noopener noreferrer">self-employment tax</a> &middot; <a href="https://www.ssa.gov/OACT/COLA/cbb.html" target="_blank" rel="noopener noreferrer">Social Security wage base</a> &middot; <a href="https://www.irs.gov/taxtopics/tc560" target="_blank" rel="noopener noreferrer">Additional Medicare Tax</a>.</div>
 
 
 
@@ -6869,7 +6871,7 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
 
             
 <!-- SHARE:CALC:START -->
-<div class="share-bar" data-share-kind="calc" role="group" aria-label="Share or save this estimate"><div class="share-title">Share or save this estimate</div><div class="share-row"><button type="button" class="share-btn share-primary" data-share="copy">Copy result</button><button type="button" class="share-btn share-primary" data-share="native">Share…</button><button type="button" class="share-btn" data-share="whatsapp">WhatsApp</button><button type="button" class="share-btn" data-share="telegram">Telegram</button><button type="button" class="share-btn" data-share="viber">Viber</button><button type="button" class="share-btn" data-share="x">X</button><button type="button" class="share-btn" data-share="facebook">Facebook</button><button type="button" class="share-btn" data-share="linkedin">LinkedIn</button><button type="button" class="share-btn" data-share="sms">SMS</button><button type="button" class="share-btn" data-share="email">Email</button></div><div class="share-status" role="status" aria-live="polite" data-share-status></div></div>
+<div class="share-bar" data-share-kind="calc" role="group" aria-label="Share or save this estimate" style="display:none;"><div class="share-title">Share or save this estimate</div><div class="share-row"><button type="button" class="share-btn share-primary" data-share="copy">Copy result</button><button type="button" class="share-btn share-primary" data-share="native">Share…</button><button type="button" class="share-btn" data-share="whatsapp">WhatsApp</button><button type="button" class="share-btn" data-share="telegram">Telegram</button><button type="button" class="share-btn" data-share="viber">Viber</button><button type="button" class="share-btn" data-share="x">X</button><button type="button" class="share-btn" data-share="facebook">Facebook</button><button type="button" class="share-btn" data-share="linkedin">LinkedIn</button><button type="button" class="share-btn" data-share="sms">SMS</button><button type="button" class="share-btn" data-share="email">Email</button></div><div class="share-status" role="status" aria-live="polite" data-share-status></div></div>
 <!-- SHARE:CALC:END -->
 <a href="https://www.keepertax.com" target="_blank" class="aff-cta" style="display:block;text-align:center;">Find More Deductions with Keeper Tax →</a>
 <!-- SP:CALC:START -->
@@ -7893,6 +7895,7 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:52px 48
 
 
 
+<script src="/tax-rules-2026.js" defer></script>
 <script src="/app-data.js" defer></script>
 
 
@@ -11624,11 +11627,9 @@ BEHAVIOR:
 
     #ai-chat-send:disabled { background: #4a3a1a; cursor: not-allowed; }
 
-    @media (max-width: 600px) {
+    @media (max-width: 767px) {
       #ai-fab,
-      #ai-chat-window {
-        display: none !important;
-      }
+      #ai-chat-window { display: none !important; }
     }
 
 
@@ -13581,7 +13582,7 @@ document.addEventListener('dragstart',function(e){e.preventDefault();});
       
       <div style="font-size:12px;color:#7A96B8;line-height:1.65;margin-bottom:10px;">Estimates are based on current IRS guidance. This is not tax advice — consult a licensed professional for your situation.</div>
       <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;">
-        <span style="font-size:11px;color:#4A6A8A;">Last updated: <time datetime="2026-11-02" style="color:#7A96B8;">November 2, 2026</time></span>
+        <span style="font-size:11px;color:#4A6A8A;">Last updated: <time datetime="2026-11-21" style="color:#7A96B8;">November 21, 2026</time></span>
         <a href="https://www.irs.gov/businesses/small-businesses-self-employed/self-employed-individuals-tax-center" target="_blank" rel="noopener" style="font-size:11px;color:#B8924A;text-decoration:none;">IRS Self-Employed Tax Center →</a>
       </div>
     </div>
@@ -14082,9 +14083,9 @@ document.addEventListener('dragstart',function(e){e.preventDefault();});
 
 
   
-    <section style="margin: 40px 0; padding: 30px; background: #f8fafc; border-radius: 15px; border: 1px solid #e2e8f0;">
-        <h2 style="margin-top:0;">Master 1099 Deductions Guides 2026</h2>
-        <p>Deep dives into every major expense category to maximize your tax refund.</p>
+    <section style="margin: 40px 0; padding: 30px; background: #f8fafc; color: #1f2937; border-radius: 15px; border: 1px solid #e2e8f0;">
+        <h2 style="margin-top:0;color:#1f2937;">Master 1099 Deductions Guides 2026</h2>
+        <p style="color:#475569;">Deep dives into major expense categories, with eligibility and limits explained.</p>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
             <a href="/advertising-marketing-deductions-2026.html" style="color:#2563eb; text-decoration:none; font-weight:600;">➔ Advertising & Marketing</a>
             <a href="/travel-vehicle-deductions-2026.html" style="color:#2563eb; text-decoration:none; font-weight:600;">➔ Travel & Vehicle</a>
@@ -14193,7 +14194,8 @@ function downloadTaxCalendar() {
     var subject='Free 1099 tax calculator (2026)',text;
     if(kind==='calc'){
       var inc=money(val('calcIncome'));
-      text='My 2026 gig tax estimate'+(inc?' on '+inc+' income':'')+': self-employment tax '+txt('fcSE')+', federal income tax '+txt('fcFed')+', about '+txt('fcQuarterly')+' per quarter. Estimate only, not tax advice. Free calculator:';
+      var state=el('calcState'),stateLabel=state&&state.selectedIndex>=0?state.options[state.selectedIndex].text:'';
+      text='My 2026 federal tax estimate'+(inc?' for '+inc+' net business profit':'')+': SE tax '+txt('fcSE')+', federal income tax '+txt('fcFed')+', state-tax proxy '+txt('fcState')+' ('+stateLabel+'), about '+txt('fcQuarterly')+' per quarter. Assumptions: single filer; QBI, credits, other wages, and state-specific deductions excluded. Estimate only, not tax advice. Free calculator:';
     }else{
       var sel=el('jobSel'),job=(sel&&sel.value&&sel.options&&sel.selectedIndex>=0)?sel.options[sel.selectedIndex].text:'';
       text='Free 1099 tax deduction checklist for gig workers'+(job?' ('+job+')':'')+', 2026 IRS rules:';
@@ -14260,5 +14262,4 @@ function downloadTaxCalendar() {
 
 
 </html>
-
 
