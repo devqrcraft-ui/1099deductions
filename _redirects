@@ -174,3 +174,5 @@
 /deductions/* /deductions/:splat 200
 /privacy /privacy-policy.html 200
 /terms /terms-of-service.html 200
+/contact /contact.html 200
+/blog /blog/ 301
