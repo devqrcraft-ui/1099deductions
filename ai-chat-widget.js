@@ -41,7 +41,7 @@ Site navigation:
 - Home: hero section with savings estimator calculator on the right side
 - By Job Type: deduction checklists for Uber, DoorDash, Etsy, Airbnb, OnlyFans, Instacart, Amazon Flex, Freelance, and more
 - Calculator: tax savings estimator — user picks job, enters annual gig income, picks state → sees estimated tax savings
-- Deadlines: 2026 quarterly tax payment dates (Q1: Apr 15, Q2: Jun 16, Q3: Sep 15, Q4: Jan 15 2027)
+- Deadlines: 2026 quarterly tax payment dates (Q1: Apr 15, Q2: Jun 15, Q3: Sep 15, Q4: Jan 15 2027)
 - Blog: tax articles and guides
 - Find My Deductions button: takes user to the deduction finder tool
 
@@ -50,7 +50,7 @@ How the calculator works: Select gig job from dropdown → enter annual income �
 Key features: Free deduction checklists, IRS Schedule C compliant, all 50 states, 2026 tax rules, free PDF export, no registration ever.
 
 Common deductions by job:
-- All drivers (Uber/DoorDash/Lyft): mileage ($0.725/mile 2026), phone, insurance
+- All drivers (Uber/DoorDash/Lyft): mileage (72.5¢/mile (Jan–Jun) or 76¢/mile (Jul–Dec) 2026), phone, insurance
 - Etsy/freelance: home office, supplies, software, shipping
 - Airbnb: utilities %, repairs, cleaning, supplies
 - OnlyFans: equipment, internet, home studio, subscriptions

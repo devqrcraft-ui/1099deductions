@@ -5,7 +5,7 @@
 
 | Parameter | Value |
 |---|---|
-| IRS mileage rate 2026 | 72.5¢/mile |
+| IRS mileage rate 2026 | 72.5¢/mile (Jan–Jun) or 76¢/mile (Jul–Dec) |
 | SE tax rate | 15.3% (12.4% SS + 2.9% Medicare) |
 | SE tax formula | net × 0.9235 × 0.153 |
 | 1099-NEC threshold (OBBBA 2026) | $2,000 |
@@ -13,7 +13,7 @@
 | QBI deduction | 20% of net profit |
 | Standard deduction (single) | $15,000 |
 | Standard deduction (married) | $30,000 |
-| Quarterly deadlines | Apr 15, Jun 16, Sep 15, Jan 15 |
+| Quarterly deadlines | Apr 15, Jun 15, Sep 15, Jan 15 |
 
 ## Platform Tax Estimates 2026
 
@@ -31,11 +31,11 @@
 
 | Deduction | Max / Typical | IRS Form |
 |---|---|---|
-| Mileage (72.5¢/mile) | $14,500 at 20k miles | Schedule C |
+| Mileage (72.5¢/mile (Jan–Jun) or 76¢/mile (Jul–Dec)) | $14,500 at 20k miles | Schedule C |
 | Home office ($5/sqft) | $1,500 (300 sqft) | Form 8829 |
 | Health insurance | 100% of premiums | Schedule 1 |
-| SEP-IRA contribution | up to $69,000 | Schedule 1 |
-| Solo 401k | up to $69,000 | Schedule 1 |
+| SEP-IRA contribution | up to $72,000 (about 20% of net self-employment earnings) | Schedule 1 |
+| Solo 401k | up to $72,000 total (plus catch-up if 50 or older) | Schedule 1 |
 | Phone/internet (business %) | $600–$1,200 | Schedule C |
 | Equipment / supplies | actual cost | Schedule C |
 | Professional services | actual cost | Schedule C |

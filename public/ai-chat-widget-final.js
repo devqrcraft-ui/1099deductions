@@ -15,7 +15,7 @@ SITE PAGES (JavaScript SPA):
 - HOME: "Find Every Tax Write-Off You're Missing". Savings Estimator on the right.
 - BY JOB TYPE: Grid of 14 gig jobs → click → deduction checklist for that job.
 - CALCULATOR: 1) pick job 2) enter income 3) pick state 4) click "Calculate My Tax Savings →"
-- DEADLINES: 2026 IRS quarterly dates. Q1: Apr 15, Q2: Jun 16, Q3: Sep 15, Q4: Jan 15 2027.
+- DEADLINES: 2026 IRS quarterly dates. Q1: Apr 15, Q2: Jun 15, Q3: Sep 15, Q4: Jan 15 2027.
 - BLOG: Tax articles.
 
 GIG JOBS (14): DoorDash, Uber, Instacart, Amazon Flex, Lyft, Etsy, OnlyFans, Airbnb, Fiverr, TaskRabbit, Rover, Upwork, Postmates, Shipt.
@@ -39,7 +39,7 @@ SITE PAGES:
 - ALL STATES: Tax rates all 50 states. No-tax: FL, TX, NV, WA, WY, SD, TN, NH.
 - BLOG: Tax tips, IRS updates 2026.
 
-KEY FACTS: FICA 7.65%, standard deduction $14,600 single / $29,200 married. Free, no data stored.
+KEY FACTS: FICA 7.65%, standard deduction $16,100 single / $32,200 married. Free, no data stored.
 
 BEHAVIOR:
 - Short answers (1-3 sentences)
@@ -60,7 +60,7 @@ SITE PAGES:
 - PLATFORMS: DoorDash, Uber, Lyft, Instacart, Etsy, OnlyFans, Airbnb, Upwork, Fiverr — each with deductions
 - RESOURCES: Guides for quarterly taxes, Schedule C, SE tax
 
-KEY FACTS: SE Tax = 15.3%. Quarterly 2026: Q1 Apr 15, Q2 Jun 16, Q3 Sep 15, Q4 Jan 15 2027. Pay quarterly if owe $1,000+. Mileage: 67¢/mile.
+KEY FACTS: SE Tax = 15.3%. Quarterly 2026: Q1 Apr 15, Q2 Jun 15, Q3 Sep 15, Q4 Jan 15 2027. Pay quarterly if owe $1,000+. Mileage: 67¢/mile.
 
 BEHAVIOR:
 - Short answers (1-3 sentences)
@@ -404,7 +404,7 @@ BEHAVIOR:
   input.addEventListener('keydown', e => { if (e.key === 'Enter') sendMessage(); });
 
   // Auto-open after 6s
-  setTimeout(() => { if (!isOpen) openChat(); }, 6000);
+  /* chat auto-open removed */
 
 })();
 // v12

@@ -3,8 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>1099-NEC vs W-2 Tax Calculator 2026 — Compare What You Re... | 1099 Deductions 2026</title>
-<meta name="description" content="Compare your exact 2026 tax bill as a 1099 contractor vs W-2 employee. SE tax, federal, state, and real take-home pay side by side. Free, no signup.">
+<title>2026 1099 vs W-2 Tax Calculator | Side-by-Side Estimate</title>
+<meta name="description" content="Compare estimated 2026 federal taxes for W-2 wages and 1099 net profit. Uses simplified state-rate proxies and a conditional QBI estimate; credits and full state rules are not modeled.">
+<meta property="og:title" content="2026 1099 vs W-2 Tax Calculator | Side-by-Side Estimate">
+<meta property="og:description" content="Compare estimated 2026 federal taxes for W-2 wages and 1099 net profit, with disclosed state-rate and QBI assumptions.">
+<meta property="og:url" content="https://www.1099deductions.com/1099-vs-w2-tax-calculator-2026">
+<meta name="twitter:title" content="2026 1099 vs W-2 Tax Calculator">
+<meta name="twitter:description" content="Compare estimated 2026 federal taxes for W-2 wages and 1099 net profit, with disclosed state-rate and QBI assumptions.">
 <link rel="canonical" href="https://www.1099deductions.com/1099-vs-w2-tax-calculator-2026">
   <meta name="keywords" content="vs w2 tax calculator tax deductions 2026, vs w2 tax calculator 1099 taxes, gig worker tax deductions 2026, self employed tax deductions, 1099 deductions checklist">
   <meta name="author" content="the 1099Deductions Team">
@@ -18,7 +23,14 @@
   <meta name="twitter:creator" content="@1099deductions">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do 1099 workers pay more taxes than W-2 employees?","acceptedAnswer":{"@type":"Answer","text":"1099 contractors pay SE tax of 15.3% on net earnings vs 7.65% FICA for W-2 employees (employers pay the other 7.65%). However, 1099 workers can deduct business expenses, half of SE tax, and up to 20% QBI deduction, often reducing their effective rate significantly."}},{"@type":"Question","name":"What is self-employment tax in 2026?","acceptedAnswer":{"@type":"Answer","text":"SE tax is 15.3% on the first $176,100 of net self-employment income (12.4% Social Security + 2.9% Medicare), applied to 92.35% of net earnings. Above $176,100 only the 2.9% Medicare rate applies. You deduct half of SE tax from gross income."}},{"@type":"Question","name":"What is the QBI deduction for 1099 workers?","acceptedAnswer":{"@type":"Answer","text":"The Qualified Business Income deduction lets eligible self-employed workers deduct up to 20% of qualified business income. Most 1099 gig workers qualify if income is below $197,300 (single) or $394,600 (MFJ) in 2026."}},{"@type":"Question","name":"Should I form an S-Corp to save SE tax?","acceptedAnswer":{"@type":"Answer","text":"High earners (typically $80,000+ net self-employment income) may save SE tax via S-Corp election and paying a reasonable salary. At lower income levels the administrative cost usually outweighs savings. Consult a licensed CPA."}}]}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"Do 1099 workers pay more taxes than W-2 employees?","acceptedAnswer":{"@type":"Answer","text":"Self-employed workers generally pay both the employer and employee shares of Social Security and Medicare taxes. W-2 employees pay the employee share through payroll withholding, and their employer pays the employer share. Business expenses and other deductions may affect the overall comparison."}},
+  {"@type":"Question","name":"What is self-employment tax in 2026?","acceptedAnswer":{"@type":"Answer","text":"Self-employment tax generally applies at 15.3% to 92.35% of net earnings, up to the 2026 Social Security wage base of $184,500 for the Social Security portion. Medicare tax continues above that base, and Additional Medicare Tax may apply depending on filing status and other earned income. The deductible portion of regular self-employment tax is generally one-half."}},
+  {"@type":"Question","name":"What is the QBI deduction for 1099 workers?","acceptedAnswer":{"@type":"Answer","text":"Eligible taxpayers may qualify for a deduction of up to 20% of qualified business income, subject to trade eligibility, taxable-income limits, wage/property rules, and other restrictions. This calculator only applies a simplified assumed amount and does not determine eligibility or the allowed deduction."}},
+  {"@type":"Question","name":"Should I form an S-Corp to save SE tax?","acceptedAnswer":{"@type":"Answer","text":"An S corporation may affect employment taxes, but potential savings depend on reasonable compensation, business income, costs, and compliance obligations. Consult a qualified tax professional before choosing an entity or tax election."}}
+]}
+</script>
 <style>
 :root{--bg:#07111F;--navy:#0D1B2A;--card:#0F1E2F;--gold:#B8924A;--gold2:#D4AA6A;--text1:#E8F0FA;--text2:#C8D8EC;--text3:#7A96B8;--red:#FF9EA8;--green:#6EDBA7;--border1:rgba(184,146,74,0.2);--border2:rgba(200,216,236,0.1);}
 *{box-sizing:border-box;margin:0;padding:0;}
@@ -98,69 +110,91 @@ h2{font-size:20px;font-weight:600;color:var(--text1);margin-bottom:16px;}
 .rel-link:hover{border-color:var(--gold);color:var(--gold2);}
 footer{background:var(--navy);border-top:1px solid var(--border2);padding:24px 20px;text-align:center;font-size:13px;color:var(--text3);}
 footer a{color:var(--gold);text-decoration:none;}
+@media(max-width:540px){
+  nav{height:auto;min-height:60px;padding:8px 6px;flex-direction:column;align-items:flex-start;gap:6px;}
+  .nav-links{width:100%;gap:8px 12px;flex-wrap:wrap;justify-content:flex-start;}
+  .nav-links a{font-size:13px;}
+  .nav-cta{padding:5px 8px;font-size:13px!important;}
+  .breadcrumb,.hero,.calc-wrap,.section{padding-left:6px;padding-right:6px;}
+  .hero{padding-top:24px;padding-bottom:20px;}
+  .calc-head{flex-wrap:wrap;gap:4px 12px;padding:12px;}
+  .calc-head span:first-child{font-size:12px;}
+  .calc-head span:last-child{font-size:9px;}
+  .calc-body{padding:16px 12px;}
+  .fields-row{grid-template-columns:minmax(0,1fr);gap:12px;}
+  .field{min-width:0;}
+  .field label{font-size:14px;}
+  .field input,.field select{width:100%;min-width:0;font-size:16px;}
+  .calc-btn{font-size:16px;}
+  .compare-grid,.explainer-grid{grid-template-columns:minmax(0,1fr);}
+  .rates-table{font-size:12px;}
+  .rates-table th,.rates-table td{padding:8px 5px;}
+}
 </style>    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"1099-NEC vs W-2 Tax Calculator 2026 — Compare What You Really Owe | Free","description":"Compare your exact 2026 tax bill as a 1099 contractor vs W-2 employee. SE tax, federal, state, and real take-home pay side by side. Free, no signup.","url":"https://www.1099deductions.com/1099-vs-w2-tax-calculator-2026","dateModified":"2026-05-01","author":{"@type":"Organization","name":"the 1099Deductions Team","url":"https://1099deductions.com"},"publisher":{"@type":"Organization","name":"1099Deductions.com","url":"https://www.1099deductions.com"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://1099deductions.com"},{"@type":"ListItem","position":2,"name":"1099-NEC vs W-2 Tax Calculator 2026","item":"https://1099deductions.com/1099-vs-w2-tax-calculator-2026"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"2026 1099 vs W-2 Tax Calculator | Side-by-Side Estimate","description":"Compare estimated 2026 federal taxes for W-2 wages and 1099 net profit. Uses simplified state-rate proxies and a conditional QBI estimate; credits and full state rules are not modeled.","url":"https://www.1099deductions.com/1099-vs-w2-tax-calculator-2026","dateModified":"2026-11-21","author":{"@type":"Organization","name":"the 1099Deductions Team","url":"https://1099deductions.com"},"publisher":{"@type":"Organization","name":"1099Deductions.com","url":"https://www.1099deductions.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.1099deductions.com/"},{"@type":"ListItem","position":2,"name":"1099-NEC vs W-2 Tax Calculator 2026","item":"https://www.1099deductions.com/1099-vs-w2-tax-calculator-2026"}]}</script>
+<script src="/tax-rules-2026.js"></script>
 </head><body>
 <nav><a class="logo" href="/">1099Deductions.com</a><div class="nav-links"><a href="/">Home</a><a href="/deductions/">By Job Type</a><a href="/#calculator">Calculator</a><a href="/1099-vs-w2-tax-calculator-2026" style="color:var(--gold2);">W-2 vs 1099</a><a class="nav-cta" href="/deductions/">Find My Deductions</a></div></nav>
 <div class="breadcrumb"><a href="/">Home</a> &rsaquo; 1099 vs W-2 Calculator 2026</div>
-<div class="hero"><div class="eyebrow">2026 Tax Calculator</div><h1>1099-NEC vs W-2: What You Owe in Taxes (2026 Calculator)</h1><p class="hero-sub">Enter your income to compare your exact tax bill as a contractor vs employee &mdash; SE tax, federal, state, and real take-home pay side by side.</p></div>
+<div class="hero"><div class="eyebrow">2026 Tax Calculator</div><h1>1099-NEC vs W-2: What You Owe in Taxes (2026 Calculator)</h1><p class="hero-sub">Enter income to compare estimated federal taxes for a contractor and an employee. State-tax proxies, QBI assumptions, and exclusions are shown below.</p></div>
 <div class="calc-wrap"><div class="calc-card">
-<div class="calc-head"><span>1099 vs W-2 Comparison Calculator</span><span>2026 IRS RULES</span></div>
+<div class="calc-head"><span>1099 vs W-2 Comparison Calculator</span><span>2026 FEDERAL ESTIMATE</span></div>
 <div class="calc-body">
 <div class="fields-row">
-<div class="field"><label for="w2In">W-2 Salary (annual $)</label><input type="number" id="w2In" placeholder="e.g. 75,000" min="0" oninput="runCompare()"></div>
-<div class="field"><label for="gigIn">1099 Gross Income (annual $)</label><input type="number" id="gigIn" placeholder="e.g. 75,000" min="0" oninput="runCompare()"></div>
+<div class="field"><label for="w2In">W-2 Salary (annual $)</label><input type="number" id="w2In" placeholder="e.g. 75000" min="0" oninput="runCompare()"></div>
+<div class="field"><label for="gigIn">1099 Net Profit After Business Expenses (annual $)</label><input type="number" id="gigIn" placeholder="e.g. 75000" min="0" oninput="runCompare()"></div>
 </div>
 <div class="fields-row">
-<div class="field"><label for="stateSel">State Income Tax</label><select id="stateSel" onchange="runCompare()"><option value="0">No state tax (TX, FL, NV, WA...)</option><option value="0.093">California (9.3%)</option><option value="0.0685">New York (6.85%)</option><option value="0.0495">Illinois (4.95%)</option><option value="0.05">Other state (~5%)</option></select></div>
+<div class="field"><label for="stateSel">State income-tax rate (flat-rate proxy)</label><select id="stateSel" onchange="runCompare()"><option value="" selected>Choose a state-rate scenario...</option><option value="0">No state income tax (selected states)</option><option value="0.093">California (9.3% flat-rate proxy; not CA brackets)</option><option value="0.0685">New York (assumed flat 6.85%)</option><option value="0.0495">Illinois (assumed flat 4.95%)</option><option value="0.05">Other state (assumed flat ~5%)</option></select></div>
 <div class="field"><label for="filingSel">Filing Status</label><select id="filingSel" onchange="runCompare()"><option value="single">Single</option><option value="mfj">Married Filing Jointly</option></select></div>
 </div>
-<button class="calc-btn" onclick="runCompare()">Compare My Tax Bill &rarr;</button>
-<div id="results">
+<button class="calc-btn" onclick="runCompare()">Compare Estimated Taxes &rarr;</button>
+<div id="compareError" role="status" aria-live="polite" style="min-height:20px;margin:8px 0;color:#fca5a5;font-size:13px;"></div> <div id="results" style="display:none;">
 <div class="compare-grid">
 <div class="col-card col-w2"><div class="col-head">W-2 Employee</div><div class="col-body">
 <div class="row-item"><span class="row-label">Gross salary</span><span class="row-val" id="w2Gross">$0</span></div>
-<div class="row-item"><span class="row-label">FICA (employee 7.65%)</span><span class="row-val neg" id="w2Fica">-$0</span></div>
+<div class="row-item"><span class="row-label">FICA + Additional Medicare Tax (if applicable)</span><span class="row-val neg" id="w2Fica">-$0</span></div>
 <div class="row-item"><span class="row-label">Federal income tax</span><span class="row-val neg" id="w2Fed">-$0</span></div>
 <div class="row-item"><span class="row-label">State income tax</span><span class="row-val neg" id="w2State">-$0</span></div>
-</div><div class="net-row net-w2"><span class="net-label">Take-home pay</span><span class="net-val" id="w2Net">$0</span></div></div>
+</div><div class="net-row net-w2"><span class="net-label">After modeled taxes</span><span class="net-val" id="w2Net">$0</span></div></div>
 <div class="col-card col-1099"><div class="col-head">1099 Contractor</div><div class="col-body">
-<div class="row-item"><span class="row-label">Gross income</span><span class="row-val gold" id="g99Gross">$0</span></div>
-<div class="row-item"><span class="row-label">SE tax (15.3%)</span><span class="row-val neg" id="g99SE">-$0</span></div>
+<div class="row-item"><span class="row-label">Net profit</span><span class="row-val gold" id="g99Gross">$0</span></div>
+<div class="row-item"><span class="row-label">Self-employment taxes (estimate)</span><span class="row-val neg" id="g99SE">-$0</span></div>
 <div class="row-item"><span class="row-label">Half SE deduction</span><span class="row-val pos" id="g99HalfSE">+$0</span></div>
 <div class="row-item"><span class="row-label">QBI deduction (20%)</span><span class="row-val pos" id="g99QBI">+$0</span></div>
 <div class="row-item"><span class="row-label">Federal income tax</span><span class="row-val neg" id="g99Fed">-$0</span></div>
 <div class="row-item"><span class="row-label">State income tax</span><span class="row-val neg" id="g99State">-$0</span></div>
 </div><div class="net-row net-1099"><span class="net-label">Take-home pay</span><span class="net-val" id="g99Net">$0</span></div></div>
-</div>
+<div class="result-actions" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;"><button type="button" class="calc-btn" style="width:auto;flex:1 1 180px;" onclick="copyCompareResult()">Copy comparison</button><button type="button" class="calc-btn" style="width:auto;flex:1 1 180px;" onclick="shareCompareResult()">Share estimate</button><span id="copyCompareStatus" role="status" aria-live="polite" style="flex-basis:100%;font-size:12px;color:#7A96B8;"></span></div> </div>
 <div class="verdict" id="verdict"></div>
-<div class="disclaimer">Rough estimate for educational purposes only. Real results depend on actual business expenses, state details, filing deductions, and your specific situation. This is not tax advice &mdash; consult a licensed CPA or tax professional.</div>
+<div class="disclaimer">Estimate for education only. Enter annual W-2 wages and 1099 net profit after business expenses. “After modeled taxes” is not full paycheck take-home: benefits, retirement contributions, credits, other income/wages, withholding, and full state rules are not modeled. The state amount is a flat-rate proxy, not a state return. California uses progressive rates, so its 9.3% proxy is not a California tax calculation. The 1099 result includes a simplified QBI assumption; eligibility, the full 2026 QBI limits (including the minimum deduction), and all filing adjustments are not calculated. Additional Medicare and Social Security calculations assume the entered job is the only earned income. This is not tax advice; consult a licensed tax professional.</div>
+<div style="font-size:12px;color:#7A96B8;line-height:1.7;margin-top:10px;">Tax inputs checked November 21, 2026: <a href="https://www.irs.gov/irb/2025-45_IRB" target="_blank" rel="noopener noreferrer">2026 federal tax rates and standard deduction</a> &middot; <a href="https://www.irs.gov/taxtopics/tc554" target="_blank" rel="noopener noreferrer">self-employment tax</a> &middot; <a href="https://www.ssa.gov/OACT/COLA/cbb.html" target="_blank" rel="noopener noreferrer">Social Security wage base</a> &middot; <a href="https://www.irs.gov/taxtopics/tc560" target="_blank" rel="noopener noreferrer">Additional Medicare Tax</a> &middot; <a href="https://www.irs.gov/pub/irs-dft/f8995--dft.pdf" target="_blank" rel="noopener noreferrer">2026 draft Form 8995 (QBI)</a>.</div>
 </div></div></div></div>
 <div class="section">
 <h2>Why 1099 and W-2 Taxes Are Different</h2>
 <div class="explainer-grid">
 <div class="exp-card"><h3>W-2 Employee</h3><p>Your employer withholds taxes and pays half your FICA (7.65%). You never see the employer half &mdash; but on a $75,000 salary it costs them ~$5,750 extra.</p><ul><li>FICA: you pay 7.65%</li><li>Employer pays other 7.65%</li><li>Federal and state withheld automatically</li><li>Benefits (health, 401k) often included</li></ul></div>
-<div class="exp-card"><h3>1099 Contractor</h3><p>You pay both halves of FICA as SE tax (15.3%), but can deduct business expenses, half of SE tax, and up to 20% QBI deduction &mdash; often closing the gap significantly.</p><ul><li>SE tax: 15.3% on 92.35% of net income</li><li>Deduct half SE tax from AGI</li><li>QBI deduction: up to 20%</li><li>All business expenses: Schedule C</li></ul></div>
+<div class="exp-card"><h3>1099 Contractor</h3><p>You generally pay both shares of Social Security and Medicare taxes as self-employment tax. Deductible business expenses, half of regular SE tax, and a potential QBI deduction can affect the comparison.</p><ul><li>Regular SE tax is generally 15.3% on 92.35% of net earnings, up to the Social Security wage base for the Social Security portion</li><li>Additional Medicare Tax may apply</li><li>Deductible half of regular SE tax reduces AGI</li><li>Eligible taxpayers may claim up to 20% QBI, subject to limitations</li><li>Deduct ordinary and necessary business expenses on Schedule C</li></ul></div>
 </div>
 <h2>2026 Key Tax Rates</h2>
 <div style="overflow-x:auto;"><table class="rates-table">
 <thead><tr><th>Type</th><th>W-2 Employee</th><th>1099 Contractor</th></tr></thead><tbody>
-<tr style="background:rgba(13,27,42,0.5);"><td>FICA / SE tax</td><td>7.65% (employee) + 7.65% (employer)</td><td>15.3% on 92.35% of net</td></tr>
-<tr><td>SS wage base</td><td>$176,100</td><td>$176,100</td></tr>
-<tr style="background:rgba(13,27,42,0.5);"><td>Standard deduction (single)</td><td>$15,000</td><td>$15,000</td></tr>
-<tr><td>Standard deduction (MFJ)</td><td>$30,000</td><td>$30,000</td></tr>
+<tr style="background:rgba(13,27,42,0.5);"><td>FICA / SE tax</td><td>7.65% employee share; Additional Medicare Tax may apply</td><td>Regular SE tax plus Additional Medicare Tax when applicable</td></tr>
+<tr><td>SS wage base</td><td>$184,500</td><td>$184,500</td></tr>
+<tr style="background:rgba(13,27,42,0.5);"><td>Standard deduction (single)</td><td>$16,100</td><td>$16,100</td></tr>
+<tr><td>Standard deduction (MFJ)</td><td>$32,200</td><td>$32,200</td></tr>
 <tr style="background:rgba(13,27,42,0.5);"><td>Half SE tax deduction</td><td>N/A</td><td>Reduces AGI dollar-for-dollar</td></tr>
 <tr><td>QBI deduction</td><td>N/A</td><td>Up to 20% of qualified income</td></tr>
-<tr style="background:rgba(13,27,42,0.5);"><td>Business expense deductions</td><td>Very limited</td><td>Full Schedule C write-offs</td></tr>
+<tr style="background:rgba(13,27,42,0.5);"><td>Business expense deductions</td><td>Generally not deductible as employee business expenses</td><td>Ordinary and necessary business expenses may be deductible</td></tr>
 </tbody></table></div>
 <h2 style="margin-top:32px;">Frequently Asked Questions</h2>
-<div class="faq-item"><div class="faq-q">Do 1099 workers pay more taxes than W-2 employees?</div><div class="faq-a">1099 contractors pay SE tax of 15.3% vs 7.65% FICA for W-2 workers. However, deductions (half SE tax, QBI, Schedule C expenses) often bring the effective rate close to or below W-2 taxes. The more legitimate expenses you deduct, the more favorable 1099 becomes.</div></div>
-<div class="faq-item"><div class="faq-q">What is self-employment tax in 2026?</div><div class="faq-a">SE tax is 15.3% on the first $176,100 of net self-employment income (12.4% Social Security + 2.9% Medicare), applied to 92.35% of net earnings. Above $176,100 only the 2.9% Medicare rate applies. You deduct half of SE tax from gross income before calculating federal tax.</div></div>
-<div class="faq-item"><div class="faq-q">What is the QBI deduction and who qualifies?</div><div class="faq-a">The Qualified Business Income (QBI) deduction lets eligible self-employed workers deduct up to 20% of qualified business income. Most gig workers qualify if income is below $197,300 (single) or $394,600 (MFJ) in 2026. Certain professional service businesses have additional limits.</div></div>
-<div class="faq-item"><div class="faq-q">Should I form an S-Corp to reduce SE tax?</div><div class="faq-a">High earners (typically $80,000+ net self-employment income) may save SE tax via S-Corp election and a reasonable salary. At lower income levels the administrative costs usually outweigh any savings. Consult a licensed CPA before making this decision.</div></div>
+<div class="faq-item"><div class="faq-q">Do 1099 workers pay more taxes than W-2 employees?</div><div class="faq-a">Self-employed workers generally pay both shares of Social Security and Medicare taxes, while W-2 employees pay the employee share and their employer pays the employer share. Business deductions, benefits, filing details, and other income can change the overall comparison.</div></div>
+<div class="faq-item"><div class="faq-q">What is self-employment tax in 2026?</div><div class="faq-a">Regular SE tax is 12.4% Social Security tax on net earnings (up to the $184,500 wage base) plus 2.9% Medicare tax on all net earnings, generally after applying the 92.35% factor. An additional 0.9% Medicare tax may apply above $200,000 for single filers or $250,000 for joint filers. Half of regular SE tax is generally deductible for income-tax purposes.</div></div>
+<div class="faq-item"><div class="faq-q">What is the QBI deduction and who qualifies?</div><div class="faq-a">Eligible taxpayers may deduct up to 20% of qualified business income. Eligibility and limits depend on taxable income, filing status, business type, and other rules; the calculator uses a simplified assumption and may not reflect your allowed deduction.</div></div>
+<div class="faq-item"><div class="faq-q">Should I form an S-Corp to reduce SE tax?</div><div class="faq-a">An S corporation may affect employment taxes, but potential savings depend on reasonable compensation, business income, administrative costs, and compliance obligations. Consult a qualified tax professional before choosing an entity or tax election.</div></div>
 <h2 style="margin-top:32px;">Related Tools</h2>
 <div class="related-links">
 <a class="rel-link" href="/">Home &mdash; Deduction Finder &rarr;</a>
@@ -181,7 +215,7 @@ footer a{color:var(--gold);text-decoration:none;}
       
       <div style="font-size:12px;color:#7A96B8;line-height:1.65;margin-bottom:10px;">Estimates are based on current IRS guidance. This is not tax advice — consult a licensed professional for your situation.</div>
       <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;">
-        <span style="font-size:11px;color:#4A6A8A;">Last updated: <time datetime="2026-05-01" style="color:#7A96B8;">May 2026</time></span>
+        <span style="font-size:11px;color:#4A6A8A;">Last updated: <time datetime="2026-11-21" style="color:#7A96B8;">November 21, 2026</time></span>
         <a href="https://www.irs.gov/businesses/small-businesses-self-employed/self-employed-individuals-tax-center" target="_blank" rel="noopener" style="font-size:11px;color:#B8924A;text-decoration:none;">IRS Self-Employed Tax Center →</a>
       </div>
     </div>
@@ -189,30 +223,39 @@ footer a{color:var(--gold);text-decoration:none;}
 </div>
 <!-- AUTHOR-BOX:END -->
 <script>
-function fmt(n){return "$"+Math.round(n).toLocaleString();}
-function fedTax(taxable,filing){
-  var b=filing==="mfj"
-    ?[[0,23850,.10],[23850,96950,.12],[96950,206700,.22],[206700,394600,.24],[394600,501050,.32],[501050,751600,.35],[751600,1e9,.37]]
-    :[[0,11925,.10],[11925,48475,.12],[48475,103350,.22],[103350,197300,.24],[197300,250525,.32],[250525,626350,.35],[626350,1e9,.37]];
-  var tax=0;
-  for(var i=0;i<b.length;i++){var lo=b[i][0],hi=b[i][1],r=b[i][2];if(taxable<=lo)break;tax+=(Math.min(taxable,hi)-lo)*r;}
-  return Math.max(0,tax);
+function fmt(n){return "$"+Math.round(n).toLocaleString("en-US");}
+function fedTax(taxable,filing){return TaxMath2026.federalIncomeTax(taxable,filing);}
+function resetCompare(message){
+  document.getElementById("results").style.display="none";
+  document.getElementById("verdict").textContent="";
+  ["w2Gross","w2Fica","w2Fed","w2State","w2Net","g99Gross","g99SE","g99HalfSE","g99QBI","g99Fed","g99State","g99Net"].forEach(function(id){var e=document.getElementById(id);if(e)e.textContent=id.endsWith("Gross")||id.endsWith("Net")?"$0":"-$0";});
+  document.getElementById("g99HalfSE").textContent="+$0";
+  document.getElementById("g99QBI").textContent="+$0";
+  document.getElementById("compareError").textContent=message;
+  return false;
 }
 function runCompare(){
-  var w2=Math.max(0,parseFloat(document.getElementById("w2In").value)||0);
-  var gig=Math.max(0,parseFloat(document.getElementById("gigIn").value)||0);
-  var sr=parseFloat(document.getElementById("stateSel").value)||0;
+  var w2Text=document.getElementById("w2In").value.trim();
+  var gigText=document.getElementById("gigIn").value.trim();
+  var stateText=document.getElementById("stateSel").value.trim();
+  var w2=Number(w2Text),gig=Number(gigText),sr=Number(stateText);
   var filing=document.getElementById("filingSel").value;
-  if(w2===0&&gig===0)return;
-  var std=filing==="mfj"?30000:15000;
-  var w2Fica=Math.min(w2,176100)*.062+w2*.0145;
+  if(!w2Text||!gigText)return resetCompare("Enter both a W-2 salary and 1099 net profit to compare them.");
+  if(!Number.isFinite(w2)||w2<0||!Number.isFinite(gig)||gig<0)return resetCompare("Enter valid non-negative dollar amounts in both income fields.");
+  if(!stateText||!Number.isFinite(sr)||sr<0)return resetCompare("Choose a state-rate scenario before calculating.");
+  var rules=TAX_RULES_2026;
+  var std=rules.standardDeduction[filing];
+  var wageBase=rules.selfEmployment.socialSecurityWageBase;
+  var w2Fica=Math.min(w2,wageBase)*.062+w2*.0145+TaxMath2026.additionalMedicareTax(w2,filing);
   var w2Fed=fedTax(Math.max(0,w2-std),filing);
   var w2St=w2*sr;
   var w2Net=w2-w2Fica-w2Fed-w2St;
-  var netSE=gig*.9235;
-  var se=Math.min(netSE,176100)*.153+Math.max(0,netSE-176100)*.029;
-  var halfSE=se/2;
-  var qbi=(gig-halfSE)*.20;
+  var netSE=gig*rules.selfEmployment.netEarningsFactor;
+  var regularSE=TaxMath2026.regularSelfEmploymentTax(netSE);
+  var additionalMedicare=TaxMath2026.additionalMedicareTax(netSE,filing);
+  var se=regularSE+additionalMedicare;
+  var halfSE=regularSE/2;
+  var qbi=Math.min(Math.max(0,gig-halfSE)*.20,Math.max(0,gig-halfSE-std)*.20);
   var g99Fed=fedTax(Math.max(0,gig-halfSE-qbi-std),filing);
   var g99St=gig*sr;
   var g99Net=gig-se-g99Fed-g99St;
@@ -230,77 +273,30 @@ function runCompare(){
   document.getElementById("g99Net").textContent=fmt(g99Net);
   var diff=g99Net-w2Net;
   var vEl=document.getElementById("verdict");
-  if(gig>0&&w2>0){vEl.innerHTML="<strong>"+(diff>0?"1099 nets "+fmt(Math.abs(diff))+" more":"W-2 nets "+fmt(Math.abs(diff))+" more")+"</strong> at these income levels after SE tax, QBI deduction, and federal tax. Real results vary based on actual business expenses &mdash; more Schedule C deductions make 1099 increasingly favorable.";}
-  else{vEl.innerHTML="Enter both a W-2 salary and 1099 income above to see the full comparison.";}
+  if(Math.abs(diff)<0.5)vEl.textContent="Estimated amounts after modeled taxes are equal under these assumptions.";
+  else vEl.innerHTML="<strong>"+(diff>0?"1099 estimates "+fmt(Math.abs(diff))+" more":"W-2 estimates "+fmt(Math.abs(diff))+" more")+" after modeled taxes.</strong> Actual results depend on expenses, other income, benefits, credits, filing details, and state rules.";
   document.getElementById("results").style.display="block";
+  document.getElementById("compareError").textContent="";
+  return true;
 }
-</script>
+function compareShareText(){
+  var state=document.getElementById("stateSel"),filing=document.getElementById("filingSel");
+  return "2026 1099 vs W-2 estimate\nW-2 salary: "+fmt(Number(document.getElementById("w2In").value))+"; after modeled taxes: "+document.getElementById("w2Net").textContent+"\n1099 net profit: "+fmt(Number(document.getElementById("gigIn").value))+"; after modeled taxes: "+document.getElementById("g99Net").textContent+"\nFiling status: "+filing.selectedOptions[0].text+". State-tax proxy: "+state.selectedOptions[0].text+". QBI eligibility and limits are simplified assumptions. Full state rules, other wages, credits, benefits, and other income are not modeled. Estimate only; not tax advice. "+location.href;
+}
+function copyCompareResult(){
+  if(document.getElementById("results").style.display==="none")return;
+  var text=compareShareText(),status=document.getElementById("copyCompareStatus");
+  var copy=navigator.clipboard&&window.isSecureContext?navigator.clipboard.writeText(text):Promise.reject();
+  copy.then(function(){status.textContent="Estimate copied.";}).catch(function(){status.textContent="Copy unavailable here; select and copy the estimate manually.";});
+}
+function shareCompareResult(){
+  if(document.getElementById("results").style.display==="none")return;
+  var text=compareShareText();
+  if(navigator.share)navigator.share({title:document.title,text:text,url:location.href}).catch(function(){});
+  else copyCompareResult();
+}</script>
   <!-- REVIEWS SECTION -->
-  <section id="reviews" style="max-width:780px;margin:0 auto 36px;padding:0 clamp(14px,4vw,28px)">
-    <h2 style="font-size:clamp(18px,4vw,20px);font-weight:800;color:#e8edf8;margin:0 0 6px">What 1099 Contractors Say</h2>
-    <p style="font-size:13px;color:rgba(255,255,255,0.8);margin:0 0 20px">No sign-up required. No hidden fees. Ever.</p>
-    <div style="display:flex;flex-direction:column;gap:16px">
-
-      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:18px 20px">
-        <div style="display:flex;gap:14px">
-          <div style="width:44px;height:44px;border-radius:50%;flex-shrink:0;background:rgba(184,146,74,0.15);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#B8924A">KM</div>
-          <div style="flex:1">
-            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:5px">
-              <span style="font-weight:700;font-size:14px;color:#C8D8EC">Kevin M.</span>
-              <span style="font-size:12px;color:rgba(255,255,255,0.35)">·</span>
-              <span style="font-size:12px;color:rgba(255,255,255,0.8)">Texas</span>
-              <span style="font-size:12px;color:rgba(255,255,255,0.35)">·</span>
-              <span style="font-size:11px;font-weight:600;color:#B8924A;background:rgba(184,146,74,0.1);border:1px solid rgba(184,146,74,0.25);border-radius:4px;padding:1px 7px">Freelance Developer</span>
-            </div>
-            <div style="color:#B8924A;font-size:15px;margin-bottom:7px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p style="margin:0 0 8px;font-size:14px;line-height:1.75;color:rgba(255,255,255,0.8)">I have been 1099 for 4 years and never fully understood what I could deduct until I found this site. The home office, internet, and software deductions alone saved me over $3,800 on my 2025 return. Way better than anything my accountant explained.</p>
-            <div style="font-size:11px;color:rgba(255,255,255,0.7)">February 17, 2026</div>
-          </div>
-        </div>
-      </div>
-
-      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:18px 20px">
-        <div style="display:flex;gap:14px">
-          <div style="width:44px;height:44px;border-radius:50%;flex-shrink:0;background:rgba(184,146,74,0.15);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#B8924A">LR</div>
-          <div style="flex:1">
-            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:5px">
-              <span style="font-weight:700;font-size:14px;color:#C8D8EC">Laura R.</span>
-              <span style="font-size:12px;color:rgba(255,255,255,0.35)">·</span>
-              <span style="font-size:12px;color:rgba(255,255,255,0.8)">California</span>
-              <span style="font-size:12px;color:rgba(255,255,255,0.35)">·</span>
-              <span style="font-size:11px;font-weight:600;color:#B8924A;background:rgba(184,146,74,0.1);border:1px solid rgba(184,146,74,0.25);border-radius:4px;padding:1px 7px">Graphic Designer</span>
-            </div>
-            <div style="color:#B8924A;font-size:15px;margin-bottom:7px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p style="margin:0 0 8px;font-size:14px;line-height:1.75;color:rgba(255,255,255,0.8)">Switched from W-2 to 1099 last year and had no idea what I was doing. This site taught me about QBI deduction, SE tax deduction, and health insurance write-off. Filed my first Schedule C with confidence. No paywall, no upsell, just real information.</p>
-            <div style="font-size:11px;color:rgba(255,255,255,0.7)">March 5, 2026</div>
-          </div>
-        </div>
-      </div>
-
-      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:14px 18px">
-        <div style="display:flex;gap:14px">
-          <div style="width:40px;height:40px;border-radius:50%;flex-shrink:0;background:rgba(184,146,74,0.1);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;color:#B8924A">JP</div>
-          <div style="flex:1">
-            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:5px">
-              <span style="font-weight:700;font-size:14px;color:#C8D8EC">James P.</span>
-              <span style="font-size:12px;color:rgba(255,255,255,0.35)">·</span>
-              <span style="font-size:12px;color:rgba(255,255,255,0.8)">Florida</span>
-              <span style="font-size:12px;color:rgba(255,255,255,0.35)">·</span>
-              <span style="font-size:11px;font-weight:600;color:#B8924A;background:rgba(184,146,74,0.1);border:1px solid rgba(184,146,74,0.25);border-radius:4px;padding:1px 7px">Consultant</span>
-            </div>
-            <div style="color:#B8924A;font-size:15px;margin-bottom:7px">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
-            <p style="margin:0 0 8px;font-size:13px;line-height:1.7;color:rgba(255,255,255,0.7)">Good reference for quarterly estimated taxes. The state-by-state breakdown is useful — Florida has no state income tax which this confirmed. Bookmarked for Q3.</p>
-            <div style="font-size:11px;color:rgba(255,255,255,0.7)">April 9, 2026</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <div style="margin-top:18px;padding:11px 16px;background:rgba(76,175,80,0.06);border:1px solid rgba(76,175,80,0.15);border-radius:8px;display:flex;align-items:center;gap:10px">
-      <span style="color:#4CAF50">&#10003;</span>
-      <span style="font-size:12px;color:rgba(255,255,255,0.5)">1099Deductions.com is 100% free · No account required · No data stored · No surprises</span>
-    </div>
-  </section>
+  
 
   <section id="contact" style="max-width:780px;margin:0 auto 40px;padding:0 clamp(14px,4vw,28px)">
     <div style="background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
