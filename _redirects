@@ -187,7 +187,7 @@
 /deductions/airbnb/doordash /deductions/doordash/ 301
 /deductions/grubhub-california/uber-california /deductions/uber-california/ 301
 /deductions/instacart-florida/doordash-florida /deductions/doordash-florida/ 301
-/deductions/lyft-texas/uber-texas /deductions/uber-texas/ 301
+/deductions/lyft-texas/uber-texas /deductions/uber/ 301
 /deductions/* /deductions/:splat 200
 /privacy /privacy-policy.html 200
 /terms /terms-of-service 301
